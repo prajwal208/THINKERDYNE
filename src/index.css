@@ -86,10 +86,6 @@ a {
   transition: color var(--transition-base);
 }
 
-a:hover {
-  color: var(--color-primary-dark);
-}
-
 img {
   max-width: 100%;
   height: auto;
