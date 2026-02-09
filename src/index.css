@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 /* Sacrasys-style design system */
 :root {
+    --font-primary: "Montserrat", "Inter", system-ui, -apple-system, sans-serif;
   /* Colors – professional blue theme */
   --color-primary: #0d47a1;
   --color-primary-dark: #0a3d8a;
@@ -15,7 +19,7 @@
   --color-white: #ffffff;
 
   /* Typography */
-  font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
+ 
   line-height: 1.6;
   font-weight: 400;
   font-synthesis: none;
@@ -58,17 +62,22 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 }
 
+
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: var(--font-primary);
 }
 
 a {
@@ -141,7 +150,6 @@ p {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.75rem;
-  font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
