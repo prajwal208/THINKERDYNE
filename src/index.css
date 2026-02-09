@@ -1,0 +1,197 @@
+/* Sacrasys-style design system */
+:root {
+  /* Colors – professional blue theme */
+  --color-primary: #0d47a1;
+  --color-primary-dark: #0a3d8a;
+  --color-primary-light: #1565c0;
+  --color-bg: #f0f5fc;
+  --color-bg-alt: #e3ebf7;
+  --color-bg-dark: #0a3d8a;
+  --color-bg-card: #ffffff;
+  --color-text: #1a2332;
+  --color-text-muted: #4a5f7f;
+  --color-accent: #0d47a1;
+  --color-border: #c5d4eb;
+  --color-white: #ffffff;
+
+  /* Typography */
+  font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  /* Spacing */
+  --section-padding-y: 5rem;
+  --section-padding-y-lg: 7rem;
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+  --gap-grid: 2rem;
+  --gap-section: 4rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Typography scale */
+  --text-hero: clamp(2.5rem, 5vw, 4rem);
+  --text-h1: clamp(2rem, 4vw, 3.25rem);
+  --text-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* Section base */
+.section {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+.section--lg {
+  padding-top: var(--section-padding-y-lg);
+  padding-bottom: var(--section-padding-y-lg);
+}
+
+.section--dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
+}
+
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--text-hero); }
+h2 { font-size: var(--text-h2); margin-bottom: 1rem; }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: 1.125rem; }
+
+p {
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+  font-size: var(--text-body);
+}
+
+/* Buttons – no transform on hover to prevent content shift (Sacrasys-style) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color var(--transition-base), color var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.4);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.25);
+}
+
+.btn--light {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.btn--light:hover {
+  background-color: var(--color-bg-alt);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+}
