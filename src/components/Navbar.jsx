@@ -52,12 +52,12 @@ export default function Navbar() {
         <nav className={`navbar__nav ${isOpen ? 'navbar__nav--open' : ''}`}>
           <ul className="navbar__list">
             <li>
-              <Link to={routes.home} className="navbar__link" onClick={closeMenu}>
+              <Link  className="navbar__link" onClick={closeMenu}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to={routes.about} className="navbar__link" onClick={closeMenu}>
+              <Link  className="navbar__link" onClick={closeMenu}>
                 About Us
               </Link>
             </li>

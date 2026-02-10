@@ -28,14 +28,24 @@ export const images = {
     'https://cdn.prod.website-files.com/60cd9919964427f5bd537eb7/60cd9919964427a905537ec9_Group%20210.png',
 };
 
+// export const routes = {
+//   home: '/',
+//   about: '/about',
+//   pcbDesign: '/pcb-design',
+//   pcbAnalysis: '/pcb-analysis',
+//   manufacturing: '/manufacturing',
+//   reverseEngineering: '/reverse-engineering',
+//   contact: '/#contact',
+// };
+
 export const routes = {
   home: '/',
-  about: '/about',
-  pcbDesign: '/pcb-design',
-  pcbAnalysis: '/pcb-analysis',
-  manufacturing: '/manufacturing',
-  reverseEngineering: '/reverse-engineering',
-  contact: '/#contact',
+  about: '/',
+  pcbDesign: '/',
+  pcbAnalysis: '/',
+  manufacturing: '/',
+  reverseEngineering: '/',
+  contact: '/',
 };
 
 /** Core service slugs for navigation */
