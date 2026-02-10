@@ -1,0 +1,108 @@
+.cae-softwares {
+  padding: var(--section-padding-y) 0;
+  background: var(--color-bg-alt);
+  overflow: hidden;
+}
+
+.cae-softwares__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: var(--text-h2);
+  color: var(--color-text);
+}
+
+.cae-softwares__title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  margin: 0.75rem auto 0;
+}
+
+.cae-softwares__scroll-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cae-softwares__track {
+  display: flex;
+  width: max-content;
+  animation: cae-scroll 40s linear infinite;
+}
+
+.cae-softwares__track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cae-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.cae-softwares__logos {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.cae-softwares__logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 56px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-text);
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: opacity var(--transition-fast);
+}
+
+.cae-softwares__logo:hover {
+  opacity: 1;
+  color: var(--color-primary);
+}
+
+.cae-softwares__logo--altium {
+  font-style: italic;
+}
+
+.cae-softwares__logo--cadence {
+  font-variant: normal;
+  text-decoration: none;
+}
+
+.cae-softwares__logo--cradle::before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  margin-right: 0.5rem;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cae-softwares__logo--mentor {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.cae-softwares__logo--zuken {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cae-softwares__track {
+    animation: none;
+  }
+}

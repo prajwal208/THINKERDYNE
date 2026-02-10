@@ -20,7 +20,6 @@ export default function About() {
       <div className="container">
         <div className="about__grid">
           <div className="about__content">
-            <h2 className="about__title">Welcome to THINKERDYNE</h2>
             <p className="about__lead">
               Thinkerdyne offers PCB layout services to design custom printed circuit boards for a wide range of applications.
             </p>

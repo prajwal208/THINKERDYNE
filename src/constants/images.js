@@ -26,6 +26,13 @@ export const images = {
     'https://cdn.prod.website-files.com/60cd9919964427f5bd537eb7/60cd99199644277bbc537ec7_Group%20211.png',
   whyBg:
     'https://cdn.prod.website-files.com/60cd9919964427f5bd537eb7/60cd9919964427a905537ec9_Group%20210.png',
+  // Industries (Unsplash - thematic)
+  industryDefense: `${BASE}/photo-1476304884322-d2f12336f717?w=600`,
+  industryAerospace: `${BASE}/photo-1446776811953-b23d57bd21aa?w=600`,
+  industryAutomotive: `${BASE}/photo-1492144534655-ae79c964c9d7?w=600`,
+  industryTelecom: `${BASE}/photo-1512941937669-90a1b58e7e9c?w=600`,
+  industryIndustrial: `${BASE}/photo-1581091226825-a6a2a5aee158?w=600`,
+  industryConsumer: `${BASE}/photo-1558618666-fcd25c85cd64?w=600`,
 };
 
 // export const routes = {

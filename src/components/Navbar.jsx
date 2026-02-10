@@ -52,13 +52,13 @@ export default function Navbar() {
         <nav className={`navbar__nav ${isOpen ? 'navbar__nav--open' : ''}`}>
           <ul className="navbar__list">
             <li>
-              <Link  className="navbar__link" onClick={closeMenu}>
-                Home
+              <Link to={routes.home} className="navbar__link" onClick={closeMenu}>
+                HOME
               </Link>
             </li>
             <li>
-              <Link  className="navbar__link" onClick={closeMenu}>
-                About Us
+              <Link to="/about" className="navbar__link" onClick={closeMenu}>
+                ABOUT US
               </Link>
             </li>
             <li className="navbar__dropdown" ref={dropdownRef}>
@@ -69,7 +69,7 @@ export default function Navbar() {
                 aria-expanded={dropdownOpen}
                 aria-haspopup="true"
               >
-                Engineering Services
+                ENGINEERING SERVICES
                 <span className="navbar__dropdown-chevron" aria-hidden="true" />
               </button>
               <ul className={`navbar__dropdown-menu ${dropdownOpen ? 'navbar__dropdown-menu--open' : ''}`}>
@@ -83,8 +83,8 @@ export default function Navbar() {
               </ul>
             </li>
           </ul>
-          <a href={`${routes.home}#contact`} className="btn btn--primary navbar__cta" onClick={closeMenu}>
-            Contact Us
+          <a href={`${routes.home}#contact`} className="navbar__link navbar__contact" onClick={closeMenu}>
+            CONTACT US
           </a>
         </nav>
       </div>

@@ -3,7 +3,7 @@
   background-color: var(--color-bg-dark);
   background-size: cover;
   background-position: center;
-  text-align: center;
+  text-align: left;
 }
 
 .hero::before {
@@ -41,6 +41,8 @@
 
 .hero__container {
   max-width: 800px;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .hero__title {
@@ -60,7 +62,7 @@
 .hero__tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem 1rem;
   margin-bottom: 2.5rem;
 }

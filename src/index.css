@@ -121,6 +121,11 @@ img {
   background-color: var(--color-bg-alt);
 }
 
+/* Remove gap where Solutions section was removed (Services followed by Why) */
+.services + .why {
+  margin-top: calc(-1 * var(--section-padding-y));
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.5em;

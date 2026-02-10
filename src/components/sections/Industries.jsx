@@ -1,14 +1,15 @@
 import { useRef } from 'react';
 import { useFadeInUp, useStaggerChildren } from '../../hooks/useScrollAnimation';
+import { images } from '../../constants/images';
 import './Industries.css';
 
 const INDUSTRIES = [
-  'Defense',
-  'Aerospace',
-  'Automotive',
-  'Telecommunication',
-  'Industrial',
-  'Consumer Electronics',
+  { name: 'Defense', image: images.industryDefense },
+  { name: 'Aerospace', image: images.industryAerospace },
+  { name: 'Automotive', image: images.industryAutomotive },
+  { name: 'Telecommunication', image: images.industryTelecom },
+  { name: 'Industrial', image: images.industryIndustrial },
+  { name: 'Consumer Electronics', image: images.industryConsumer },
 ];
 
 export default function Industries() {
@@ -23,8 +24,12 @@ export default function Industries() {
         <h2 className="industries__title" ref={titleRef}>Industries We Serve</h2>
         <div className="industries__grid" ref={gridRef}>
           {INDUSTRIES.map((industry) => (
-            <div key={industry} className="industries__item">
-              <span className="industries__item-name">{industry}</span>
+            <div
+              key={industry.name}
+              className="industries__item"
+              style={{ backgroundImage: `url(${industry.image})` }}
+            >
+              <span className="industries__item-name">{industry.name}</span>
             </div>
           ))}
         </div>

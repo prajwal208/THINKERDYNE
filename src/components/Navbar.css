@@ -78,7 +78,10 @@
 .navbar__nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex: 1;
   gap: 2.5rem;
+  margin-left: 2rem;
 }
 
 .navbar__list {
@@ -95,6 +98,8 @@
   font-size: 0.9375rem;
   color: var(--color-text);
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .navbar__link::after {
@@ -116,8 +121,17 @@
   color: var(--color-primary);
 }
 
-.navbar__cta {
+.navbar__contact {
   flex-shrink: 0;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar__contact:hover {
+  color: var(--color-primary);
 }
 
 /* Dropdown */
