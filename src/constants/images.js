@@ -33,6 +33,11 @@ export const images = {
   industryTelecom: `${BASE}/photo-1512941937669-90a1b58e7e9c?w=600`,
   industryIndustrial: `${BASE}/photo-1581091226825-a6a2a5aee158?w=600`,
   industryConsumer: `${BASE}/photo-1558618666-fcd25c85cd64?w=600`,
+  // Why THINKERDYNE card images
+  whyExperience: `${BASE}/photo-1518770660439-4636190af475?w=400`,
+  whyExcellence: `${BASE}/photo-1581092918484-8313a1cc8bd5?w=400`,
+  whyTimeToMarket: `${BASE}/photo-1497366216548-37526070297c?w=400`,
+  whyReliable: `${BASE}/photo-1581091226825-a6a2a5aee158?w=400`,
 };
 
 // export const routes = {

@@ -13,7 +13,7 @@ const CAE_LOGOS = [
 export default function CaeSoftwares() {
   return (
     <section className="cae-softwares" aria-label="CAE Softwares">
-      <h2 className="cae-softwares__title">CAE SOFTWARES</h2>
+      <h2 className="cae-softwares__title">Software We Use</h2>
       <div className="cae-softwares__scroll-wrap">
         <div className="cae-softwares__track">
           <div className="cae-softwares__logos">

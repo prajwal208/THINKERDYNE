@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <header className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
-      <div className="navbar__inner container">
+      <div className="navbar__inner">
         <Link to={routes.home} className="navbar__logo" onClick={closeMenu}>
           THINKERDYNE
         </Link>
@@ -83,9 +83,9 @@ export default function Navbar() {
               </ul>
             </li>
           </ul>
-          <a href={`${routes.home}#contact`} className="navbar__link navbar__contact" onClick={closeMenu}>
+          <Link to="/contact" className="navbar__link navbar__contact" onClick={closeMenu}>
             CONTACT US
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

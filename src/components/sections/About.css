@@ -5,6 +5,15 @@
   align-items: start;
 }
 
+.about__visual--inline {
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
+.about__visual--inline img {
+  aspect-ratio: 16/9;
+}
+
 .about__title {
   margin-bottom: 1rem;
 }

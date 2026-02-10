@@ -1,9 +1,15 @@
+.about-page__section .container {
+  max-width: 800px;
+}
+
 .about-page__h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: var(--text-h2);
 }
 
 .about-page__h2--light {
   color: var(--color-white);
+  margin-bottom: 1.5rem;
 }
 
 .about-page__lead {
@@ -12,53 +18,36 @@
   margin-bottom: 1rem;
 }
 
-.about-page__subtitle {
-  margin-bottom: 2rem;
-  font-size: 1.125rem;
+.about-page__lead strong {
+  color: var(--color-text);
+}
+
+.about-page__section p {
   color: var(--color-text-muted);
-}
-
-.about-page__services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-
-.about-page__card {
-  display: block;
-  padding: 2rem;
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.about-page__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(26, 35, 50, 0.1);
-  border-color: var(--color-primary-light);
-}
-
-.about-page__card-title {
-  margin-bottom: 0.75rem;
-}
-
-.about-page__card-desc {
   margin-bottom: 1rem;
-  font-size: var(--text-small);
+}
+
+.about-page__highlights {
+  margin: 1.5rem 0 0;
+  padding-left: 1.5rem;
   color: var(--color-text-muted);
 }
 
-.about-page__card-link {
-  font-weight: 600;
-  font-size: var(--text-small);
+.about-page__highlights li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-page__highlights li::marker {
   color: var(--color-primary);
 }
 
-.about-page__card-link::after {
-  content: ' →';
+.about-page__find .container {
+  max-width: var(--container-max);
+}
+
+.about-page__find .btn {
+  margin-bottom: 2rem;
 }
 
 .about-page__find-grid {
@@ -66,6 +55,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
+  margin-top: 2rem;
+}
+
+.about-page__find-heading {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .about-page__address {
@@ -93,6 +91,8 @@
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
 @media (max-width: 767px) {

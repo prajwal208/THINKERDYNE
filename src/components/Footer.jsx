@@ -14,7 +14,7 @@ const QUICK_LINKS = [
   { label: 'HOME', to: routes.home },
   { label: 'ABOUT US', to: '/about' },
   { label: 'ENGINEERING SERVICES', to: routes.home },
-  { label: 'CONTACT US', to: `${routes.home}#contact` },
+  { label: 'CONTACT US', to: '/contact' },
 ];
 
 export default function Footer() {
@@ -64,9 +64,7 @@ export default function Footer() {
           <ul className="footer__list">
             {QUICK_LINKS.map((link) => (
               <li key={link.label}>
-                {link.label === 'CONTACT US' ? (
-                  <a href={`${routes.home}#contact`}>{link.label}</a>
-                ) : link.to.startsWith('http') ? (
+                {link.to.startsWith('http') ? (
                   <a href={link.to} target="_blank" rel="noopener noreferrer">{link.label}</a>
                 ) : (
                   <Link to={link.to}>{link.label}</Link>

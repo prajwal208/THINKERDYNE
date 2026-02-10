@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <CaeSoftwares />
-      <About />
+      {/* <About /> */}
       <Services />
       <Why />
       <Industries />

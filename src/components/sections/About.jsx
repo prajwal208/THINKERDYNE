@@ -23,6 +23,9 @@ export default function About() {
             <p className="about__lead">
               Thinkerdyne offers PCB layout services to design custom printed circuit boards for a wide range of applications.
             </p>
+            <div className="about__visual about__visual--inline" aria-hidden="true">
+              <img src={images.aboutSection} alt="" />
+            </div>
             <p>
               Our expert team of PCB designers possess extensive knowledge and experience in developing high-quality printed circuit board layouts. By leveraging the latest design tools and techniques, we ensure optimal performance, reliability, and cost-effectiveness in every project.
             </p>
