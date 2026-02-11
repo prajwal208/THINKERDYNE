@@ -15,7 +15,8 @@
 
 .infrastructure__placeholder {
   aspect-ratio: 16/6;
-  min-height: 180px;
+  /* min-height: 180px; */
+  margin-top: 1rem;
   background: var(--color-bg-alt);
   border: 2px solid var(--color-primary);
   border-radius: 12px;
