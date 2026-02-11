@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { images } from '../../constants/images';
+import heroVideo from '../../assets/6466100-uhd_3840_2160_30fps.mp4ui ';
 import './Hero.css';
 
 const prefersReducedMotion = () =>
@@ -46,7 +46,18 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="hero section section--lg" style={{ backgroundImage: `url(${images.heroBg})` }}>
+    <section id="hero" className="hero section section--lg">
+      <div className="hero__video-wrap" aria-hidden="true">
+        <video
+          className="hero__video"
+          src={heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+          tabIndex={-1}
+        />
+      </div>
       <div className="hero__graphics" aria-hidden="true" />
       <div className="container hero__container">
         <h1 className="hero__title" ref={titleRef}>
