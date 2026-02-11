@@ -140,7 +140,7 @@ export default function Contact() {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="contact-page__field">
+                  {/* <div className="contact-page__field">
                     <label>Preferred Method of Contact</label>
                     <div className="contact-page__radio-group">
                       {['Email', 'WhatsApp', 'Phone'].map((method) => (
@@ -156,7 +156,7 @@ export default function Contact() {
                         </label>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                   <div className="contact-page__field">
                     <label htmlFor="service">Services</label>
                     <select

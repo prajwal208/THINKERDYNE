@@ -3,6 +3,8 @@
   background: var(--color-bg-alt);
   overflow: hidden;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .cae-softwares__title {
@@ -30,14 +32,17 @@
 
 .cae-softwares__scroll-wrap {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  margin-left: calc(-50vw + 50%);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .cae-softwares__track {
   display: flex;
   width: max-content;
-  animation: cae-scroll 10s linear infinite;
+  animation: cae-scroll 50s linear infinite;
 }
 
 .cae-softwares__track:hover {

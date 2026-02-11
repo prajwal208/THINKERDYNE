@@ -51,25 +51,25 @@ export const images = {
   contactBg: `${BASE}/photo-1423666639041-f56000c27a9a?w=1200`,
 };
 
-// export const routes = {
-//   home: '/',
-//   about: '/about',
-//   pcbDesign: '/pcb-design',
-//   pcbAnalysis: '/pcb-analysis',
-//   manufacturing: '/manufacturing',
-//   reverseEngineering: '/reverse-engineering',
-//   contact: '/#contact',
-// };
-
 export const routes = {
   home: '/',
-  about: '/',
-  pcbDesign: '/',
-  pcbAnalysis: '/',
-  manufacturing: '/',
-  reverseEngineering: '/',
-  contact: '/',
+  about: '/about',
+  pcbDesign: '/pcb-design',
+  pcbAnalysis: '/pcb-analysis',
+  manufacturing: '/manufacturing',
+  reverseEngineering: '/reverse-engineering',
+  contact: '/#contact',
 };
+
+// export const routes = {
+//   home: '/',
+//   about: '/',
+//   pcbDesign: '/',
+//   pcbAnalysis: '/',
+//   manufacturing: '/',
+//   reverseEngineering: '/',
+//   contact: '/',
+// };
 
 /** Core service slugs for navigation — first four only */
 export const serviceRoutes = [

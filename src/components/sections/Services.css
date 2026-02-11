@@ -21,6 +21,14 @@
   height: 665px;
 }
 
+@media (max-width: 1024px) {
+  .services__content {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 1rem;
+  }
+}
+
 .services__header-wrap {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -78,6 +86,10 @@
 @media (max-width: 599px) {
   .services__grid {
     grid-template-columns: 1fr;
+  }
+
+  .services__card {
+    min-width: 0;
   }
 }
 

@@ -94,7 +94,7 @@
 
 .contact-page__form-title {
   margin: 0 0 0.5rem;
-  font-size: var(--text-h2);
+  font-size: 28px;
   font-weight: 700;
   color: var(--color-text);
 }

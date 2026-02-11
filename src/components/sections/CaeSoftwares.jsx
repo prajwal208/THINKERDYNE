@@ -3,6 +3,11 @@ import './CaeSoftwares.css';
 const CAE_LOGOS = [
   { name: 'Altium', className: 'cae-softwares__logo--altium' },
   { name: 'KiCad', className: '' },
+  { name: 'KiCad', className: '' },
+  { name: 'KiCad', className: '' },
+  { name: 'KiCad', className: '' },
+  { name: 'KiCad', className: '' },
+  { name: 'KiCad', className: '' },
 ];
 
 export default function CaeSoftwares() {
