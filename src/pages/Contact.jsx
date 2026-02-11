@@ -10,7 +10,7 @@ export default function Contact() {
     lastName: '',
     email: '',
     phone: '',
-    contactMethod: 'Phone',
+    contactMethod: 'Email',
     service: '',
     comments: '',
   });
@@ -29,21 +29,22 @@ export default function Contact() {
     <>
       <PageHero
         title="CONTACT US"
-        subtitle="Looking forward to a great partnership"
-        backgroundImage={images.about}
+        subtitle="Looking forward for great Partnership"
+        backgroundImage={images.contactBg}
       />
       <div className="contact-page">
         <section className="contact-page__intro section section--alt">
-          <div className="container">
+          <div className="container contact-page__intro-inner">
             <h2 className="contact-page__h2">How we can HELP?</h2>
             <p className="contact-page__lead">
-              We would love to work with you! You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss. At Thinkerdyne, we provide the exceptional service we'd want to experience ourselves.
+              We would love to work with you! You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss, never to be seen or heard from again. At Thinkerdyne, we provide the exceptional service we'd want to experience ourselves!
             </p>
+            <p className="contact-page__tagline">PCB Design Company In Bangalore – Thinkerdyne</p>
           </div>
         </section>
 
         <section className="contact-page__main section">
-          <div className="container contact-page__grid">
+          <div className="container contact-page__main-inner">
             <div className="contact-page__info">
               <h3 className="contact-page__info-heading">Contact Address</h3>
               <p className="contact-page__address">
@@ -66,6 +67,19 @@ export default function Contact() {
                 Monday to Saturday<br />
                 09:30 am to 06:30 pm
               </p>
+
+              <div className="contact-page__map-wrap">
+                <iframe
+                  title="Thinkerdyne Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.370099584!2d77.6685!3d12.8486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUwJzU1LjAiTiA3N8KwNDAnMDYuNiJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0, borderRadius: '12px' }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
 
             <div className="contact-page__form-wrap">
@@ -129,7 +143,7 @@ export default function Contact() {
                   <div className="contact-page__field">
                     <label>Preferred Method of Contact</label>
                     <div className="contact-page__radio-group">
-                      {['Phone', 'WhatsApp', 'Email'].map((method) => (
+                      {['Email', 'WhatsApp', 'Phone'].map((method) => (
                         <label key={method} className="contact-page__radio">
                           <input
                             type="radio"

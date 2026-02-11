@@ -33,8 +33,26 @@ export default function Navbar() {
   return (
     <header className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
-        <Link to={routes.home} className="navbar__logo" onClick={closeMenu}>
-          THINKERDYNE
+        <Link to={routes.home} className="navbar__brand" onClick={closeMenu}>
+          {/* <span className="navbar__logo-placeholder" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" strokeWidth="1.5" />
+              <circle cx="14" cy="14" r="3" fill="currentColor" />
+              <circle cx="7" cy="7" r="1.5" fill="currentColor" />
+              <circle cx="21" cy="7" r="1.5" fill="currentColor" />
+              <circle cx="7" cy="21" r="1.5" fill="currentColor" />
+              <circle cx="21" cy="21" r="1.5" fill="currentColor" />
+              <line x1="14" y1="11" x2="14" y2="4" stroke="currentColor" strokeWidth="1.2" />
+              <line x1="14" y1="17" x2="14" y2="24" stroke="currentColor" strokeWidth="1.2" />
+              <line x1="11" y1="14" x2="4" y2="14" stroke="currentColor" strokeWidth="1.2" />
+              <line x1="17" y1="14" x2="24" y2="14" stroke="currentColor" strokeWidth="1.2" />
+              <line x1="12" y1="12" x2="8.5" y2="8.5" stroke="currentColor" strokeWidth="1" />
+              <line x1="16" y1="12" x2="19.5" y2="8.5" stroke="currentColor" strokeWidth="1" />
+              <line x1="12" y1="16" x2="8.5" y2="19.5" stroke="currentColor" strokeWidth="1" />
+              <line x1="16" y1="16" x2="19.5" y2="19.5" stroke="currentColor" strokeWidth="1" />
+            </svg>
+          </span> */}
+          <span className="navbar__logo">THINKERDYNE</span>
         </Link>
 
         <button

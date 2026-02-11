@@ -6,6 +6,24 @@
   text-align: left;
 }
 
+.hero__graphics {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 260px;
+  height: 260px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='rgba(255,255,255,0.12)' stroke-width='2'/%3E%3Ccircle cx='100' cy='100' r='55' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1.5'/%3E%3Ccircle cx='100' cy='100' r='30' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='1'/%3E%3Cline x1='20' y1='100' x2='180' y2='100' stroke='rgba(255,255,255,0.06)' stroke-width='1'/%3E%3Cline x1='100' y1='20' x2='100' y2='180' stroke='rgba(255,255,255,0.06)' stroke-width='1'/%3E%3Ccircle cx='100' cy='20' r='3' fill='rgba(255,255,255,0.15)'/%3E%3Ccircle cx='180' cy='100' r='3' fill='rgba(255,255,255,0.15)'/%3E%3Ccircle cx='100' cy='180' r='3' fill='rgba(255,255,255,0.15)'/%3E%3Ccircle cx='20' cy='100' r='3' fill='rgba(255,255,255,0.15)'/%3E%3Ccircle cx='156' cy='44' r='2.5' fill='rgba(255,255,255,0.12)'/%3E%3Ccircle cx='44' cy='156' r='2.5' fill='rgba(255,255,255,0.12)'/%3E%3Ccircle cx='156' cy='156' r='2.5' fill='rgba(255,255,255,0.12)'/%3E%3Ccircle cx='44' cy='44' r='2.5' fill='rgba(255,255,255,0.12)'/%3E%3C/svg%3E") center/contain no-repeat;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.8;
+  animation: heroGraphicsSpin 60s linear infinite;
+}
+
+@keyframes heroGraphicsSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -20,23 +38,12 @@
 }
 
 .hero .hero__title,
-.hero .hero__subline,
-.hero .hero__tag {
+.hero .hero__subline {
   color: var(--color-white);
 }
 
 .hero .hero__subline {
   color: rgba(255, 255, 255, 0.9);
-}
-
-.hero .hero__tag {
-  color: var(--color-white);
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.hero .hero__tag:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
 }
 
 .hero__container {
@@ -55,31 +62,41 @@
 
 .hero__subline {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--color-text-muted);
 }
 
-.hero__tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.5rem 1rem;
-  margin-bottom: 2.5rem;
+/* Service list in hero */
+.hero__service-list {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2rem;
 }
 
-.hero__tag {
-  padding: 0.4rem 0.9rem;
-  font-size: var(--text-small);
+.hero__service-item {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
   font-weight: 500;
-  color: var(--color-primary);
-  background-color: rgba(13, 71, 161, 0.08);
-  border-radius: 9999px;
-  transition: background-color var(--transition-base), color var(--transition-base);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
 }
 
-.hero__tag:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+.hero__service-item::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+}
+
+@media (max-width: 599px) {
+  .hero__service-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero__cta {

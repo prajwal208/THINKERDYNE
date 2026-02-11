@@ -36,13 +36,14 @@ export default function Services() {
     >
       <div className="services__overlay" aria-hidden="true" />
       <div className="services__content">
-        <div className="services__header-wrap">
+        <div className="services__header-wrap container container--narrow">
           <div className="services__header" ref={headerRef}>
             <h2 className="services__title">Core Services</h2>
             <p className="services__subtitle">We have the best value for you</p>
+            <p className="services__bullets">Defense | Aerospace | Automotive | Telecommunication | Industrial | Consumer Electronics</p>
           </div>
         </div>
-        <div className="services__grid-wrap">
+        <div className="services__grid-wrap container container--narrow">
           <div className="services__grid" ref={gridRef}>
             {serviceRoutes.map((service) => (
               <Link

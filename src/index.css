@@ -101,6 +101,10 @@ img {
   padding-right: var(--container-padding);
 }
 
+.container--narrow {
+  max-width: 1100px;
+}
+
 /* Section base */
 .section {
   padding-top: var(--section-padding-y);

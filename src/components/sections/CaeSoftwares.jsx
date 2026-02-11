@@ -1,19 +1,15 @@
 import './CaeSoftwares.css';
 
 const CAE_LOGOS = [
-  { name: 'ADS', className: '' },
   { name: 'Altium', className: 'cae-softwares__logo--altium' },
-  { name: 'Cadence', className: 'cae-softwares__logo--cadence' },
-  { name: 'Cradle', className: 'cae-softwares__logo--cradle' },
-  { name: 'Mentor Graphics', className: 'cae-softwares__logo--mentor' },
-  { name: 'Valor', className: '' },
-  { name: 'Zuken', className: 'cae-softwares__logo--zuken' },
+  { name: 'KiCad', className: '' },
 ];
 
 export default function CaeSoftwares() {
   return (
     <section className="cae-softwares" aria-label="CAE Softwares">
-      <h2 className="cae-softwares__title">Software We Use</h2>
+      <h2 className="cae-softwares__title">Software Infrastructure</h2>
+      <p className="cae-softwares__subtitle">Software We Use</p>
       <div className="cae-softwares__scroll-wrap">
         <div className="cae-softwares__track">
           <div className="cae-softwares__logos">

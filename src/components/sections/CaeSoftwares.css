@@ -2,6 +2,7 @@
   padding: var(--section-padding-y) 0;
   background: var(--color-bg-alt);
   overflow: hidden;
+  width: 100%;
 }
 
 .cae-softwares__title {
@@ -20,6 +21,13 @@
   margin: 0.75rem auto 0;
 }
 
+.cae-softwares__subtitle {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
 .cae-softwares__scroll-wrap {
   position: relative;
   width: 100%;
@@ -29,7 +37,7 @@
 .cae-softwares__track {
   display: flex;
   width: max-content;
-  animation: cae-scroll 40s linear infinite;
+  animation: cae-scroll 10s linear infinite;
 }
 
 .cae-softwares__track:hover {

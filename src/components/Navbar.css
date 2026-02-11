@@ -24,6 +24,27 @@
   box-sizing: border-box;
 }
 
+.navbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar__logo-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.65rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar__logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -31,7 +52,7 @@
   color: var(--color-text);
 }
 
-.navbar__logo:hover {
+.navbar__brand:hover .navbar__logo {
   color: var(--color-primary);
 }
 
@@ -215,8 +236,18 @@
 }
 
 @media (max-width: 767px) {
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-height: 72px;
+  }
+
   .navbar__toggle {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar__nav {
@@ -228,7 +259,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 1.5rem;
+    padding: 1.5rem var(--container-padding);
     background-color: var(--color-bg);
     box-shadow: 0 8px 24px rgba(26, 35, 50, 0.12);
     max-height: 0;
@@ -236,6 +267,7 @@
     opacity: 0;
     visibility: hidden;
     transition: max-height 0.35s ease, opacity 0.3s ease, visibility 0.3s ease;
+    text-align: left;
   }
 
   .navbar__nav--open {
@@ -254,9 +286,14 @@
     margin-bottom: 1rem;
   }
 
+  .navbar__list li {
+    display: block;
+  }
+
   .navbar__link {
     display: block;
     padding: 0.75rem 0;
+    text-align: left;
   }
 
   .navbar__dropdown {
@@ -267,6 +304,7 @@
     width: 100%;
     justify-content: space-between;
     padding: 0.75rem 0;
+    text-align: left;
   }
 
   .navbar__dropdown-menu {
@@ -292,9 +330,13 @@
 
   .navbar__dropdown-link {
     padding: 0.5rem 0;
+    text-align: left;
   }
 
-  .navbar__cta {
+  .navbar__contact {
+    display: block;
+    padding: 0.75rem 0;
+    text-align: left;
     width: 100%;
   }
 }
