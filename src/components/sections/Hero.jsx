@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import heroVideo from '../../assets/6466100-uhd_3840_2160_30fps.mp4ui ';
+import heroVideo from '../../assets/6466100-uhd_3840_2160_30fps.mp4';
 import './Hero.css';
 
 const prefersReducedMotion = () =>
