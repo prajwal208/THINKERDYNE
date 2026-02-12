@@ -1,13 +1,10 @@
+import altiumLogo from '../../assets/altium_logo.png';
+import kicadLogo from '../../assets/kicad_logo.png';
 import './CaeSoftwares.css';
 
 const CAE_LOGOS = [
-  { name: 'Altium', className: 'cae-softwares__logo--altium' },
-  { name: 'KiCad', className: '' },
-  { name: 'KiCad', className: '' },
-  { name: 'KiCad', className: '' },
-  { name: 'KiCad', className: '' },
-  { name: 'KiCad', className: '' },
-  { name: 'KiCad', className: '' },
+  { name: 'Altium Designer', src: altiumLogo },
+  { name: 'KiCad', src: kicadLogo },
 ];
 
 export default function CaeSoftwares() {
@@ -15,28 +12,18 @@ export default function CaeSoftwares() {
     <section className="cae-softwares" aria-label="CAE Softwares">
       <h2 className="cae-softwares__title">Software Infrastructure</h2>
       <p className="cae-softwares__subtitle">Software We Use</p>
-      <div className="cae-softwares__scroll-wrap">
-        <div className="cae-softwares__track">
-          <div className="cae-softwares__logos">
-            {CAE_LOGOS.map((logo) => (
-              <span
-                key={logo.name}
-                className={`cae-softwares__logo ${logo.className}`}
-              >
-                {logo.name}
-              </span>
-            ))}
-          </div>
-          <div className="cae-softwares__logos" aria-hidden="true">
-            {CAE_LOGOS.map((logo) => (
-              <span
-                key={`dup-${logo.name}`}
-                className={`cae-softwares__logo ${logo.className}`}
-              >
-                {logo.name}
-              </span>
-            ))}
-          </div>
+      <div className="cae-softwares__logos-wrap">
+        <div className="cae-softwares__logos">
+          {CAE_LOGOS.map((logo) => (
+            <div key={logo.name} className="cae-softwares__logo">
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="cae-softwares__logo-img"
+              />
+              <span className="cae-softwares__logo-text">{logo.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,20 +1,21 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import heroVideo from '../../assets/6466100-uhd_3840_2160_30fps.mp4';
-import './Hero.css';
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import heroVideo from "../../assets/6466100-uhd_3840_2160_30fps.mp4";
+import "./Hero.css";
 
 const prefersReducedMotion = () =>
-  typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  typeof window !== "undefined" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const SERVICES = [
-  'Embedded Hardware',
-  'Embedded Firmware',
-  'PCB Design & Analysis',
-  'PCB Fabrication',
-  'PCB Assembly',
-  'PCB Testing & Validation',
-  'Wiring Harness',
-  'Component Procurement',
+  "Embedded Hardware",
+  "Component Sourcing",
+  "Embedded Firmware",
+  "PCB Fabrication & Assembly",
+  "PCB Desing & Analysis",
+  "PCB Testing & Validation",
+  "Reverse Engineering",
+  "Wiring Harness",
 ];
 
 export default function Hero() {
@@ -39,9 +40,9 @@ export default function Hero() {
         y: 0,
         duration: 0.7,
         stagger: 0.12,
-        ease: 'power2.out',
+        ease: "power2.out",
         delay: 0.2,
-      }
+      },
     );
   }, []);
 
@@ -61,10 +62,13 @@ export default function Hero() {
       <div className="hero__graphics" aria-hidden="true" />
       <div className="container hero__container">
         <h1 className="hero__title" ref={titleRef}>
-          <span className="hero__title-line">Tailored Engineering Solutions</span>
+          <span className="hero__title-line">
+            Engineering the Future of Connected Devices
+          </span>
         </h1>
         <p className="hero__subline" ref={sublineRef}>
-          Comprehensive engineering services to bring your product from concept to production.
+          Turning concepts into production-ready products through expert
+          engineering.
         </p>
         <ul className="hero__service-list" ref={listRef} role="list">
           {SERVICES.map((service) => (

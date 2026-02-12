@@ -1,32 +1,58 @@
-import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { useFadeInUp, useStaggerChildren } from '../../hooks/useScrollAnimation';
-import { serviceRoutes, images } from '../../constants/images';
-import './Services.css';
+import { useRef } from "react";
+import { Link } from "react-router-dom";
+import {
+  useFadeInUp,
+  useStaggerChildren,
+} from "../../hooks/useScrollAnimation";
+import {
+  coreServicesCategory1,
+  coreServicesCategory2,
+  images,
+} from "../../constants/images";
+import imgEmbeddedHardware from "../../assets/embedd_ hardware.jpg";
+import imgEmbeddedFirmware from "../../assets/embedded_firmware.jpg";
+import imgPcbDesign from "../../assets/pcb_design.jpg";
+import imgReverseEngineering from "../../assets/reverse_engineering.jpg";
+import imgWiringHarness from "../../assets/wiringharness.jpg";
+import "./Services.css";
 
 const SERVICE_DESCRIPTIONS = {
-  'PCB Design':
-    'Thinkerdyne is a premier provider of PCB design services for UK, Europe and beyond. Our customers trust us for reliable, high-quality designs and many of our new customers come from referrals. OEMs and engineering teams depend on us for their PCB requirements, from schematic capture through to manufacturing-ready layouts. We leverage industry-standard CAE tools and best practices to deliver designs that meet your performance, cost and timeline goals.',
-  'PCB Analysis':
-    'Thinkerdyne takes your PCB through a comprehensive set of tests including signal integrity, power integrity and thermal analysis. Our 24-hour tech support means you can reach a live engineer whenever you need help. We are committed to personal customer service and direct interaction with CAM professionals, so you get clear answers and faster resolution. Whether you need design review, DFM checks or failure analysis, our team is equipped to support you around the clock.',
-  'Manufacturing Service':
-    'Thinkerdyne offers complete electronics manufacturing services with our own state-of-the-art facility. We ensure consistent quality, after-sales support and review of engineering files at no extra charge for custom PCB fabrication. Our goal is to meet and exceed customer expectations for both prototype and volume production. From assembly to testing and logistics, we provide end-to-end manufacturing solutions for the UK, Europe and global customers.',
-  'Reverse Engineering':
-    'Thinkerdyne is equipped to provide world-class PCB reverse engineering services. We can extract schematics, recreate layouts and document legacy boards for obsolescence management, repair or redesign. Our process is precise, confidential and tailored to your project needs. Get instant quotes, upload files and track status through our streamlined workflow. We support quick-turn reverse engineering for defence, aerospace, industrial and consumer applications.',
+  "Embedded Hardware":
+    "Our engineering team develops production-ready embedded hardware and firmware for reliable, high-performance electronic systems.",
+  "Embedded Firmware":
+    "Our engineering team develops production-ready embedded hardware and firmware for reliable, high-performance electronic systems.",
+  "PCB Design & Analysis":
+    "With extensive PCB design expertise, our engineering team delivers solutions ranging from compact controller boards to complex high-speed electronic systems. Our team provides comprehensive signal integrity, power integrity, and thermal analysis to ensure reliable and high-performance electronic systems.",
+  "Reverse Engineering":
+    "Our engineering team provides reverse engineering solutions to recreate, analyze, and optimize existing electronic hardware.",
+  "Component Sourcing":
+    "Our engineering team ensures reliable component sourcing, providing genuine electronic components to support prototype and production requirements.",
+  "Fabrication & Assembly":
+    "We deliver reliable PCB fabrication and assembly services through trusted global vendor partnerships, ensuring high-quality and production-ready electronic assemblies.",
+  "Testing & Validation":
+    "Thinkerdyne delivers PCB testing and validation services to ensure reliable, high-performance, and production-ready electronic assemblies.",
+  "Wiring Harness":
+    "Thinkerdyne provides custom wiring harness solutions for reliable, efficient, and production-ready electrical connectivity.",
 };
 
 const SERVICE_IMAGES = {
-  'PCB Design': images.circuitBoard,
-  'PCB Analysis': images.lab,
-  'Manufacturing Service': images.factory,
-  'Reverse Engineering': images.electronics,
+  "Embedded Hardware": imgEmbeddedHardware,
+  "Embedded Firmware": imgEmbeddedFirmware,
+  "PCB Design & Analysis": imgPcbDesign,
+  "Reverse Engineering": imgReverseEngineering,
+  "Component Sourcing": images.coreServiceComponentSourcing,
+  "Fabrication & Assembly": images.coreServiceFabrication,
+  "Testing & Validation": images.coreServiceTesting,
+  "Wiring Harness": imgWiringHarness,
 };
 
 export default function Services() {
   const headerRef = useRef(null);
-  const gridRef = useRef(null);
+  const grid1Ref = useRef(null);
+  const grid2Ref = useRef(null);
   useFadeInUp({ ref: headerRef });
-  useStaggerChildren({ containerRef: gridRef, selector: '.services__card' });
+  useStaggerChildren({ containerRef: grid1Ref, selector: ".services__card" });
+  useStaggerChildren({ containerRef: grid2Ref, selector: ".services__card" });
 
   return (
     <section
@@ -39,13 +65,18 @@ export default function Services() {
         <div className="services__header-wrap container container--narrow">
           <div className="services__header" ref={headerRef}>
             <h2 className="services__title">Core Services</h2>
-            <p className="services__subtitle">We have the best value for you</p>
-            <p className="services__bullets">Defense | Aerospace | Automotive | Telecommunication | Industrial | Consumer Electronics</p>
+            <p className="services__subtitle">
+              Your trusted partner for reliable and value-driven engineering
+              solutions.
+            </p>
           </div>
         </div>
         <div className="services__grid-wrap container container--narrow">
-          <div className="services__grid" ref={gridRef}>
-            {serviceRoutes.map((service) => (
+          <h3 className="services__category-title">
+            Electronic Hardware Development
+          </h3>
+          <div className="services__grid" ref={grid1Ref}>
+            {coreServicesCategory1.map((service) => (
               <Link
                 key={service.title}
                 to={service.path}
@@ -58,7 +89,28 @@ export default function Services() {
                 <p className="services__card-desc">
                   {SERVICE_DESCRIPTIONS[service.title]}
                 </p>
-                <span className="services__card-link">Know more</span>
+                <span className="services__card-link">Know more →</span>
+              </Link>
+            ))}
+          </div>
+          <h3 className="services__category-title">
+            Integrated Manufacturing Services
+          </h3>
+          <div className="services__grid" ref={grid2Ref}>
+            {coreServicesCategory2.map((service) => (
+              <Link
+                key={service.title}
+                to={service.path}
+                className="services__card"
+              >
+                <div className="services__card-img-wrap" aria-hidden="true">
+                  <img src={SERVICE_IMAGES[service.title]} alt="" />
+                </div>
+                <h3 className="services__card-title">{service.title}</h3>
+                <p className="services__card-desc">
+                  {SERVICE_DESCRIPTIONS[service.title]}
+                </p>
+                <span className="services__card-link">Know more →</span>
               </Link>
             ))}
           </div>

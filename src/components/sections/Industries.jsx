@@ -1,15 +1,22 @@
 import { useRef } from 'react';
 import { useFadeInUp, useStaggerChildren } from '../../hooks/useScrollAnimation';
 import { images } from '../../constants/images';
+import imgDefense from '../../assets/defense.jpg';
+import imgRoboticAutomation from '../../assets/robotic_automation.jpg';
+import imgIotSmartDevices from '../../assets/iotsmart_device.jpg';
 import './Industries.css';
 
 const INDUSTRIES = [
-  { name: 'Defense', image: images.industryDefense },
+  { name: 'Defense', image: imgDefense },
   { name: 'Aerospace', image: images.industryAerospace },
   { name: 'Automotive', image: images.industryAutomotive },
+  { name: 'Medical', image: images.industryMedical },
+  { name: 'Robotics & Automation', image: imgRoboticAutomation },
   { name: 'Telecommunication', image: images.industryTelecom },
   { name: 'Industrial', image: images.industryIndustrial },
   { name: 'Consumer Electronics', image: images.industryConsumer },
+  { name: 'Energy & Power', image: images.industryEnergy },
+  { name: 'IoT & Smart Devices', image: imgIotSmartDevices },
 ];
 
 export default function Industries() {

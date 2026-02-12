@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PageHero from '../components/PageHero';
-import { images, serviceRoutes } from '../constants/images';
+import { images } from '../constants/images';
 import './ContactPage.css';
 
 export default function Contact() {
@@ -10,8 +10,6 @@ export default function Contact() {
     lastName: '',
     email: '',
     phone: '',
-    contactMethod: 'Email',
-    service: '',
     comments: '',
   });
 
@@ -29,17 +27,15 @@ export default function Contact() {
     <>
       <PageHero
         title="CONTACT US"
-        subtitle="Looking forward for great Partnership"
+        subtitle="Delivering reliable solutions backed by engineering expertise."
         backgroundImage={images.contactBg}
       />
       <div className="contact-page">
         <section className="contact-page__intro section section--alt">
           <div className="container contact-page__intro-inner">
-            <h2 className="contact-page__h2">How we can HELP?</h2>
-            <p className="contact-page__lead">
-              We would love to work with you! You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss, never to be seen or heard from again. At Thinkerdyne, we provide the exceptional service we'd want to experience ourselves!
+            <p className="contact-page__lead contact-page__lead--tagline">
+              Delivering reliable solutions backed by engineering expertise.
             </p>
-            <p className="contact-page__tagline">PCB Design Company In Bangalore – Thinkerdyne</p>
           </div>
         </section>
 
@@ -83,7 +79,7 @@ export default function Contact() {
             </div>
 
             <div className="contact-page__form-wrap">
-              <h2 className="contact-page__form-title">Tell us about your PROJECT</h2>
+              <h2 className="contact-page__form-title">Discuss Your Project Requirements</h2>
               <p className="contact-page__form-subtitle">
                 We operate in an industry built on trust. This can only be achieved through communication and experienced support – from the first contact past your ten-year anniversary.
               </p>
@@ -139,37 +135,6 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                     />
-                  </div>
-                  {/* <div className="contact-page__field">
-                    <label>Preferred Method of Contact</label>
-                    <div className="contact-page__radio-group">
-                      {['Email', 'WhatsApp', 'Phone'].map((method) => (
-                        <label key={method} className="contact-page__radio">
-                          <input
-                            type="radio"
-                            name="contactMethod"
-                            value={method}
-                            checked={formData.contactMethod === method}
-                            onChange={handleChange}
-                          />
-                          <span>{method}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </div> */}
-                  <div className="contact-page__field">
-                    <label htmlFor="service">Services</label>
-                    <select
-                      id="service"
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                    >
-                      <option value="">Select a service</option>
-                      {serviceRoutes.map((s) => (
-                        <option key={s.title} value={s.title}>{s.title}</option>
-                      ))}
-                    </select>
                   </div>
                   <div className="contact-page__field">
                     <label htmlFor="comments">Comments</label>

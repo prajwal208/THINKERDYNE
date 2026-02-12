@@ -6,27 +6,17 @@
 }
 
 .services.section {
-  padding-top: 2.5rem;
+  padding-top: var(--section-padding-y);
   padding-bottom: var(--section-padding-y);
 }
-
-/* Light overlay so background image is clearly visible (Sacrasys-style) */
-
 
 .services__content {
   position: relative;
   z-index: 1;
   padding-left: 18px;
   padding-right: 18px;
-  height: 665px;
-}
-
-@media (max-width: 1024px) {
-  .services__content {
-    height: auto;
-    min-height: auto;
-    padding-bottom: 1rem;
-  }
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
 }
 
 .services__header-wrap {
@@ -53,6 +43,19 @@
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
   text-align: center;
+  color: var(--color-primary);
+}
+
+.services__category-title {
+  margin: 2rem 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.services__category-title:first-of-type {
+  margin-top: 0;
 }
 
 .services__bullets {
@@ -95,10 +98,10 @@
 
 .services__card {
   min-width: 200px;
-  display: block;
-  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.25rem 1.5rem;
   background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
   border-radius: 10px;
   text-decoration: none;
   color: inherit;
@@ -115,16 +118,20 @@
 .services__card-img-wrap {
   width: 100%;
   aspect-ratio: 16/10;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   border-radius: 8px;
   overflow: hidden;
   background: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .services__card-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .services__card-title {
@@ -135,6 +142,7 @@
   margin-bottom: 1rem;
   font-size: var(--text-small);
   line-height: 1.6;
+  flex: 1;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -151,7 +159,7 @@
 }
 
 .services__card-link::after {
-  content: '→';
+  content: '';
 }
 
 @media (prefers-reduced-motion: reduce) {

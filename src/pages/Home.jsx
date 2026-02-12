@@ -4,7 +4,6 @@ import Services from '../components/sections/Services';
 import Why from '../components/sections/Why';
 import Industries from '../components/sections/Industries';
 import Testimonials from '../components/sections/Testimonials';
-import Infrastructure from '../components/sections/Infrastructure';
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <Why />
       <Industries />
       <Testimonials />
-      <Infrastructure />
     </>
   );
 }

@@ -61,6 +61,32 @@
   object-fit: cover;
 }
 
+.about-page__img-wrap--placeholder {
+  background: #e8eef5;
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.about-page__placeholder-label {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+.about-page__mission-full {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about-page__icons-note {
+  margin: 0 0 1rem;
+  font-size: var(--text-small);
+  color: var(--color-primary);
+}
+
 .about-page__pillars-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -70,11 +96,27 @@
 
 .about-page__pillar {
   max-width: 320px;
-  background: #e3ecf7;
-  border: 2px solid var(--color-primary);
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-primary-dark);
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
+}
+
+.about-page__pillar-icon-img,
+.about-page__pillar-icon-svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-page__pillar-icon-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .about-page__infra-placeholder .container {

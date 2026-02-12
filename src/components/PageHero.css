@@ -27,6 +27,11 @@
   font-size: var(--text-h1);
 }
 
+.page-hero__service-name {
+  color: #a78bfa;
+  font-weight: 700;
+}
+
 .page-hero__subtitle {
   margin: 0.75rem 0 0;
   color: rgba(255, 255, 255, 0.9);

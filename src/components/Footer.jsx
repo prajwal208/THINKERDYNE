@@ -3,13 +3,6 @@ import { Link } from 'react-router-dom';
 import { routes, serviceRoutes } from '../constants/images';
 import './sections/Footer.css';
 
-const CORE_SERVICES = [
-  'PCB DESIGN',
-  'PCB ANALYSIS',
-  'MANUFACTURING SERVICES',
-  'REVERSE ENGINEERING',
-];
-
 const QUICK_LINKS = [
   { label: 'HOME', to: routes.home },
   { label: 'ABOUT US', to: '/about' },
@@ -58,9 +51,9 @@ export default function Footer() {
         <div className="footer__col">
           <h3 className="footer__heading">Core Services</h3>
           <ul className="footer__list">
-            {CORE_SERVICES.map((item) => (
-              <li key={item}>
-                <Link to={routes.home}>{item}</Link>
+            {serviceRoutes.map((service) => (
+              <li key={service.title}>
+                <Link to={service.path}>{service.title}</Link>
               </li>
             ))}
           </ul>

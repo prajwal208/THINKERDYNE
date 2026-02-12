@@ -7,6 +7,12 @@ import PcbDesign from './pages/PcbDesign';
 import PcbAnalysis from './pages/PcbAnalysis';
 import Manufacturing from './pages/Manufacturing';
 import ReverseEngineering from './pages/ReverseEngineering';
+import EmbeddedHardware from './pages/EmbeddedHardware';
+import EmbeddedFirmware from './pages/EmbeddedFirmware';
+import ComponentSourcing from './pages/ComponentSourcing';
+import FabricationAssembly from './pages/FabricationAssembly';
+import TestingValidation from './pages/TestingValidation';
+import WiringHarness from './pages/WiringHarness';
 import './App.css';
 
 function App() {
@@ -20,6 +26,12 @@ function App() {
         <Route path="pcb-analysis" element={<PcbAnalysis />} />
         <Route path="manufacturing" element={<Manufacturing />} />
         <Route path="reverse-engineering" element={<ReverseEngineering />} />
+        <Route path="embedded-hardware" element={<EmbeddedHardware />} />
+        <Route path="embedded-firmware" element={<EmbeddedFirmware />} />
+        <Route path="component-sourcing" element={<ComponentSourcing />} />
+        <Route path="fabrication-assembly" element={<FabricationAssembly />} />
+        <Route path="testing-validation" element={<TestingValidation />} />
+        <Route path="wiring-harness" element={<WiringHarness />} />
       </Route>
     </Routes>
   );
