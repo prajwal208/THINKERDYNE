@@ -84,7 +84,7 @@ export default function FabricationAssembly() {
           <div className="container">
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={images.pcbAssemblyService} alt="PCB assembly services" />
+                <img src={images.pcbLayout} alt="PCB assembly services" />
               </div>
               <div className="service-page__content">
                 <h2 className="service-page__h2">PCB Assembly Services</h2>

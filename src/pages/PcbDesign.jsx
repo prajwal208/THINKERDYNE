@@ -123,7 +123,7 @@ export default function PcbDesign() {
         <section className="section">
           <div className="container">
             <SectionSplit
-              image={images.pcbAnalysisImg}
+              image={images.pcbLayout}
               imageAlt="PCB analysis"
             >
               <h2 className="service-page__h2">PCB Analysis and Validation:</h2>
