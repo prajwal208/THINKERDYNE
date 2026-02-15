@@ -57,9 +57,16 @@
 
 .contact-page__address,
 .contact-page__phones,
-.contact-page__emails,
+.contact-page__emails {
+  margin: 0 0 3.5rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
 .contact-page__hours {
-  margin: 0 0 2rem;
+  margin: 0 0 0;
+  padding-top: 0.5rem;
   color: var(--color-text-muted);
   line-height: 1.7;
   font-size: 1rem;
@@ -125,6 +132,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
+  flex: 1;
+  min-height: 0;
 }
 
 .contact-page__form-title {
@@ -215,7 +224,7 @@
 
 .contact-page__submit {
   align-self: flex-start;
-  margin-top: 0.25rem;
+  margin-top: auto;
   padding: 0.625rem 1.5rem;
   font-size: 0.9375rem;
 }

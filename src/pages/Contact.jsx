@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
               ) : (
                 <form className="contact-page__form" onSubmit={handleSubmit}>
-                  <div className="contact-page__row contact-page__row--three">
+                  <div className="contact-page__row">
                     <div className="contact-page__field">
                       <label htmlFor="firstName">First Name</label>
                       <input
@@ -101,6 +101,8 @@ export default function Contact() {
                         required
                       />
                     </div>
+                  </div>
+                  <div className="contact-page__row">
                     <div className="contact-page__field">
                       <label htmlFor="email">Email</label>
                       <input
@@ -112,16 +114,16 @@ export default function Contact() {
                         required
                       />
                     </div>
-                  </div>
-                  <div className="contact-page__field">
-                    <label htmlFor="phone">Phone / Mobile</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
+                    <div className="contact-page__field">
+                      <label htmlFor="phone">Phone / Mobile</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                      />
+                    </div>
                   </div>
                   <div className="contact-page__field">
                     <label htmlFor="comments">Comments</label>
