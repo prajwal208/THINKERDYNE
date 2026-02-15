@@ -68,7 +68,7 @@ export default function Contact() {
             <div className="contact-page__form-wrap">
               <h2 className="contact-page__form-title">Discuss Your Project Requirements</h2>
               <p className="contact-page__form-subtitle">
-                We operate in an industry built on trust. This can only be achieved through communication and experienced support – from the first contact past your ten-year anniversary.
+                We operate in an industry built on trust. This can only be achieved through communication and experience.
               </p>
               <p className="contact-page__form-cta">Request a Call Back!</p>
 
@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
               ) : (
                 <form className="contact-page__form" onSubmit={handleSubmit}>
-                  <div className="contact-page__row">
+                  <div className="contact-page__row contact-page__row--three">
                     <div className="contact-page__field">
                       <label htmlFor="firstName">First Name</label>
                       <input
@@ -101,17 +101,17 @@ export default function Contact() {
                         required
                       />
                     </div>
-                  </div>
-                  <div className="contact-page__field">
-                    <label htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
+                    <div className="contact-page__field">
+                      <label htmlFor="email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                   </div>
                   <div className="contact-page__field">
                     <label htmlFor="phone">Phone / Mobile</label>
@@ -128,7 +128,7 @@ export default function Contact() {
                     <textarea
                       id="comments"
                       name="comments"
-                      rows={4}
+                      rows={3}
                       value={formData.comments}
                       onChange={handleChange}
                       placeholder="Tell us about your project..."
