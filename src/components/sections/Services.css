@@ -6,7 +6,7 @@
 }
 
 .services.section {
-  padding-top: var(--section-padding-y);
+  padding-top: 2.5rem;
   padding-bottom: var(--section-padding-y);
 }
 
@@ -15,7 +15,7 @@
   z-index: 1;
   padding-left: 18px;
   padding-right: 18px;
-  padding-top: var(--section-padding-y);
+  padding-top: 2rem;
   padding-bottom: var(--section-padding-y);
 }
 

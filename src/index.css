@@ -60,6 +60,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+/* When scrolling to a section, keep the whole section in view */
+section[id] {
+  scroll-margin-top: 1rem;
 }
 
 

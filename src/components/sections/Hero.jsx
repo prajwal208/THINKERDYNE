@@ -7,14 +7,17 @@ const prefersReducedMotion = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-const SERVICES = [
+const ELECTRONIC_HARDWARE = [
   "Embedded Hardware",
-  "Component Sourcing",
   "Embedded Firmware",
-  "PCB Fabrication & Assembly",
-  "PCB Desing & Analysis",
-  "PCB Testing & Validation",
+  "PCB Design & Analysis",
   "Reverse Engineering",
+];
+
+const INTEGRATED_MANUFACTURING = [
+  "Component Sourcing",
+  "Fabrication & Assembly",
+  "Testing & Validation",
   "Wiring Harness",
 ];
 
@@ -70,13 +73,28 @@ export default function Hero() {
           Turning concepts into production-ready products through expert
           engineering.
         </p>
-        <ul className="hero__service-list" ref={listRef} role="list">
-          {SERVICES.map((service) => (
-            <li key={service} className="hero__service-item">
-              {service}
-            </li>
-          ))}
-        </ul>
+        <div className="hero__service-groups" ref={listRef}>
+          <div className="hero__service-group">
+            <h3 className="hero__service-group-title">Electronic Hardware Development</h3>
+            <ul className="hero__service-list" role="list">
+              {ELECTRONIC_HARDWARE.map((service) => (
+                <li key={service} className="hero__service-item">
+                  {service}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="hero__service-group">
+            <h3 className="hero__service-group-title">Integrated Manufacturing Service</h3>
+            <ul className="hero__service-list" role="list">
+              {INTEGRATED_MANUFACTURING.map((service) => (
+                <li key={service} className="hero__service-item">
+                  {service}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <a href="#services" className="btn btn--primary hero__cta" ref={ctaRef}>
           Discover More
         </a>

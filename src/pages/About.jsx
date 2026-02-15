@@ -90,14 +90,14 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-page__section section section--dark about-page__cta">
+        {/* <section className="about-page__section section section--dark about-page__cta">
           <div className="container about-page__cta-inner">
             <h2 className="about-page__h2 about-page__h2--light">Your vision, our engineering,<br />let's make it happen...</h2>
             <Link to="/contact" className="btn btn--light">Contact Us</Link>
           </div>
-        </section>
+        </section> */}
 
-        <section className="about-page__section section section--dark about-page__find">
+        {/* <section className="about-page__section section section--dark about-page__find">
           <div className="container">
             <div className="about-page__find-grid">
               <div className="about-page__find-content">
@@ -116,7 +116,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );
