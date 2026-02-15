@@ -59,9 +59,9 @@
 }
 
 .hero__container {
-  max-width: 800px;
+  max-width: 1210px;
   margin-right: auto;
-  margin-left: 0;
+  margin-left: auto;
 }
 
 .hero__title {
@@ -70,6 +70,10 @@
 
 .hero__title-line {
   display: block;
+}
+
+.hero__title-nowrap {
+  white-space: nowrap;
 }
 
 .hero__subline {
@@ -107,7 +111,7 @@
 
 .hero__service-item {
   position: relative;
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
   font-size: clamp(0.9rem, 1.5vw, 1.05rem);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);

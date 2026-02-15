@@ -66,7 +66,7 @@ export default function Hero() {
       <div className="container hero__container">
         <h1 className="hero__title" ref={titleRef}>
           <span className="hero__title-line">
-            Engineering the Future of Connected Devices
+            Engineering the Future of <span className="hero__title-nowrap">Connected Devices</span>
           </span>
         </h1>
         <p className="hero__subline" ref={sublineRef}>

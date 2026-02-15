@@ -31,13 +31,13 @@ export default function Contact() {
         backgroundImage={images.contactBg}
       />
       <div className="contact-page">
-        <section className="contact-page__intro section section--alt">
+        {/* <section className="contact-page__intro section section--alt">
           <div className="container contact-page__intro-inner">
             <p className="contact-page__lead contact-page__lead--tagline">
               Delivering reliable solutions backed by engineering expertise.
             </p>
           </div>
-        </section>
+        </section> */}
 
         <section className="contact-page__main section">
           <div className="container contact-page__main-inner">

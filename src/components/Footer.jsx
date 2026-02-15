@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { routes, serviceRoutes } from '../constants/images';
+import { routes, coreServicesCategory1, coreServicesCategory2 } from '../constants/images';
 import './sections/Footer.css';
 
 const QUICK_LINKS = [
@@ -48,10 +48,19 @@ export default function Footer() {
             </p>
           </address>
         </div>
-        <div className="footer__col">
+        <div className="footer__col footer__core-services">
           <h3 className="footer__heading">Core Services</h3>
+          <h4 className="footer__subheading">Electronic Hardware Development</h4>
           <ul className="footer__list">
-            {serviceRoutes.map((service) => (
+            {coreServicesCategory1.map((service) => (
+              <li key={service.title}>
+                <Link to={service.path}>{service.title}</Link>
+              </li>
+            ))}
+          </ul>
+          <h4 className="footer__subheading">Integrated Manufacturing Service</h4>
+          <ul className="footer__list">
+            {coreServicesCategory2.map((service) => (
               <li key={service.title}>
                 <Link to={service.path}>{service.title}</Link>
               </li>
@@ -76,10 +85,6 @@ export default function Footer() {
           <h3 className="footer__heading">Follow Us</h3>
           <div className="footer__socials">
             <a href="https://www.linkedin.com/company/thinkerdyne" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="LinkedIn">LINKEDIN</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="Facebook">FACEBOOK</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="Twitter">TWITTER</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="Instagram">INSTAGRAM</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="YouTube">YOUTUBE</a>
           </div>
           <p className="footer__copy">
             © THINKERDYNE, All Right Reserved.

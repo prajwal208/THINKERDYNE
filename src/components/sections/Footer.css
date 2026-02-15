@@ -44,6 +44,19 @@
   margin-top: 0.5rem;
 }
 
+.footer__subheading {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__subheading:first-of-type {
+  margin-top: 0.5rem;
+}
+
 .footer__col {
   min-width: 0;
 }
