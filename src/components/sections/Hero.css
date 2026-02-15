@@ -59,9 +59,11 @@
 }
 
 .hero__container {
-  max-width: 1210px;
+  max-width: var(--container-max);
   margin-right: auto;
   margin-left: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 .hero__title {
@@ -136,6 +138,11 @@
 @media (max-width: 599px) {
   .hero__service-group-title {
     font-size: 1rem;
+  }
+
+  /* Allow "Connected Devices" to wrap on small screens so left alignment is preserved (no overflow) */
+  .hero__title-nowrap {
+    white-space: normal;
   }
 }
 
