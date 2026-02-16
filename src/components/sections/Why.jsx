@@ -1,30 +1,67 @@
-import { useRef } from 'react';
-import { useFadeInUp, useStaggerChildren } from '../../hooks/useScrollAnimation';
-import { images } from '../../constants/images';
-import './Why.css';
+import { useRef } from "react";
+import {
+  useFadeInUp,
+  useStaggerChildren,
+} from "../../hooks/useScrollAnimation";
+import { images } from "../../constants/images";
+import bgImage from "../../assets/bg.jpeg";
+import "./Why.css";
 
 const FACTORS = [
-  { title: 'Experience', description: 'Proven expertise in PCB design and electronics.', image: images.whyExperience },
-  { title: 'Excellence', description: 'High-quality deliverables and attention to detail.', image: images.whyGlobalReach },
-  { title: 'Time To Market', description: 'Efficient processes to accelerate your product launch.', image: images.whyTimeToMarket },
-  { title: 'Reliable Partner', description: 'Dedicated support and long-term collaboration.', image: images.whyReliable },
-  { title: 'Innovation', description: 'Cutting-edge technology and forward-thinking methodologies.', image: images.whyInnovation },
-  { title: 'Quality Assurance', description: 'Rigorous testing and validation at every stage.', image: images.whyReliable },
-  { title: 'Customer Focus', description: 'Tailored solutions built around your unique requirements.', image: images.whyCustomerFocus },
-  { title: 'Global Reach', description: 'Serving clients worldwide with scalable solutions.', image: images.whyGlobalReach },
+  {
+    title: "Experience",
+    description: "Proven expertise in PCB design and electronics.",
+    image: images.whyExperience,
+  },
+  {
+    title: "Excellence",
+    description: "High-quality deliverables and attention to detail.",
+    image: images.whyGlobalReach,
+  },
+  {
+    title: "Time To Market",
+    description: "Efficient processes to accelerate your product launch.",
+    image: images.whyTimeToMarket,
+  },
+  {
+    title: "Reliable Partner",
+    description: "Dedicated support and long-term collaboration.",
+    image: images.whyReliable,
+  },
+  {
+    title: "Quality Assurance",
+    description: "Rigorous testing and validation at every stage.",
+    image: images.whyReliable,
+  },
+  {
+    title: "Innovation",
+    description: "Cutting-edge technology and forward-thinking methodologies.",
+    image: images.whyInnovation,
+  },
+
+  {
+    title: "Customer Focus",
+    description: "Tailored solutions built around your unique requirements.",
+    image: images.whyCustomerFocus,
+  },
+  {
+    title: "Global Reach",
+    description: "Serving clients worldwide with scalable solutions.",
+    image: images.whyGlobalReach,
+  },
 ];
 
 export default function Why() {
   const headerRef = useRef(null);
   const gridRef = useRef(null);
   useFadeInUp({ ref: headerRef });
-  useStaggerChildren({ containerRef: gridRef, selector: '.why__card' });
+  useStaggerChildren({ containerRef: gridRef, selector: ".why__card" });
 
   return (
     <section
       id="why"
       className="why section"
-      style={{ backgroundImage: `url(${images.whyBg})` }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="why__overlay" aria-hidden="true" />
       <div className="container why__content">

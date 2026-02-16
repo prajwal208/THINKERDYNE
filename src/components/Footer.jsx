@@ -1,13 +1,17 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { routes, coreServicesCategory1, coreServicesCategory2 } from '../constants/images';
-import './sections/Footer.css';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import {
+  routes,
+  coreServicesCategory1,
+  coreServicesCategory2,
+} from "../constants/images";
+import "./sections/Footer.css";
 
 const QUICK_LINKS = [
-  { label: 'HOME', to: routes.home },
-  { label: 'ABOUT US', to: '/about' },
-  { label: 'ENGINEERING SERVICES', to: routes.home },
-  { label: 'CONTACT US', to: '/contact' },
+  { label: "HOME", to: routes.home },
+  { label: "ABOUT US", to: "/about" },
+  { label: "ENGINEERING SERVICES", to: routes.home },
+  { label: "CONTACT US", to: "/contact" },
 ];
 
 export default function Footer() {
@@ -15,11 +19,11 @@ export default function Footer() {
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(window.scrollY > 400);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <footer id="contact" className="footer">
@@ -29,66 +33,131 @@ export default function Footer() {
           <h3 className="footer__heading">Find Us</h3>
           <address className="footer__address">
             <p className="footer__line">
-              <span className="footer__icon footer__icon--location" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span
+                className="footer__icon footer__icon--location"
+                aria-hidden="true"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
               </span>
-              THINKERDYNE TECHNOLOGIES NO: 59,60, NL ARCADE, SECOND MAIN, VINAYAKA LAYOUT, SHANTHIPURA ELECTRONIC CITY, PHASE II, BANGALORE, KARNATAKA. 560100
+              THINKERDYNE TECHNOLOGIES NO: 59,60, NL ARCADE, SECOND MAIN,
+              VINAYAKA LAYOUT, SHANTHIPURA ELECTRONIC CITY, PHASE II, BANGALORE,
+              KARNATAKA. 560100
             </p>
             <p className="footer__line">
-              <span className="footer__icon footer__icon--phone" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span
+                className="footer__icon footer__icon--phone"
+                aria-hidden="true"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
               </span>
-              <a href="tel:+919677510113">+91 9677510113</a>
+              <a href="tel:+919677510113">+91 9000000000</a>
             </p>
             <p className="footer__line">
-              <span className="footer__icon footer__icon--email" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span
+                className="footer__icon footer__icon--email"
+                aria-hidden="true"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
               </span>
               <a href="mailto:info@thinkerdyne.com">info@thinkerdyne.com</a>
             </p>
+            <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p>
           </address>
         </div>
         <div className="footer__col footer__core-services">
           <h3 className="footer__heading">Core Services</h3>
-          <h4 className="footer__subheading">Electronic Hardware Development</h4>
-          <ul className="footer__list">
-            {coreServicesCategory1.map((service) => (
-              <li key={service.title}>
-                <Link to={service.path}>{service.title}</Link>
-              </li>
-            ))}
-          </ul>
-          <h4 className="footer__subheading">Integrated Manufacturing Service</h4>
-          <ul className="footer__list">
-            {coreServicesCategory2.map((service) => (
-              <li key={service.title}>
-                <Link to={service.path}>{service.title}</Link>
-              </li>
-            ))}
-          </ul>
+          <div className="footer__core-services-grid">
+            <div className="footer__core-services-col">
+              <h4 className="footer__subheading">
+                Electronic Hardware Development
+              </h4>
+              <ul className="footer__list">
+                {coreServicesCategory1.map((service) => (
+                  <li key={service.title}>
+                    <Link to={service.path}>{service.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="footer__core-services-col">
+              <h4 className="footer__subheading">
+                Integrated Manufacturing Service
+              </h4>
+              <ul className="footer__list">
+                {coreServicesCategory2.map((service) => (
+                  <li key={service.title}>
+                    <Link to={service.path}>{service.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="footer__col">
           <h3 className="footer__heading">Quick Links</h3>
           <ul className="footer__list">
             {QUICK_LINKS.map((link) => (
               <li key={link.label}>
-                {link.to.startsWith('http') ? (
-                  <a href={link.to} target="_blank" rel="noopener noreferrer">{link.label}</a>
+                {link.to.startsWith("http") ? (
+                  <a href={link.to} target="_blank" rel="noopener noreferrer">
+                    {link.label}
+                  </a>
                 ) : (
                   <Link to={link.to}>{link.label}</Link>
                 )}
               </li>
             ))}
           </ul>
-        </div>
-        <div className="footer__col footer__follow">
-          <h3 className="footer__heading">Follow Us</h3>
-          <div className="footer__socials">
-            <a href="https://www.linkedin.com/company/thinkerdyne" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="LinkedIn">LINKEDIN</a>
+          <div className="footer__col footer__follow">
+            <h3 className="footer__heading">Follow Us</h3>
+            <div className="footer__socials">
+              <a
+                href="https://www.linkedin.com/company/thinkerdyne"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer__social"
+                aria-label="LinkedIn"
+              >
+                LINKEDIN
+              </a>
+            </div>
+            {/* <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p> */}
           </div>
-          <p className="footer__copy">
-            © THINKERDYNE, All Right Reserved.
-          </p>
         </div>
       </div>
       {showScrollTop && (

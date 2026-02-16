@@ -23,7 +23,7 @@
 
 .industries__grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   justify-content: center;
   justify-items: stretch;
@@ -63,11 +63,13 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .industries__item::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(

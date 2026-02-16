@@ -14,6 +14,7 @@ import imgEmbeddedFirmware from "../../assets/embedded_firmware.jpg";
 import imgPcbDesign from "../../assets/pcb_design.jpg";
 import imgReverseEngineering from "../../assets/reverse_engineering.jpg";
 import imgWiringHarness from "../../assets/wiringharness.jpg";
+import bgImage from "../../assets/bg.jpeg";
 import "./Services.css";
 
 const SERVICE_DESCRIPTIONS = {
@@ -58,7 +59,7 @@ export default function Services() {
     <section
       id="services"
       className="services section"
-      style={{ backgroundImage: `url(${images.servicesBg})` }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="services__overlay" aria-hidden="true" />
       <div className="services__content">

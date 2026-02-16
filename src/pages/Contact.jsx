@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import PageHero from '../components/PageHero';
-import { images } from '../constants/images';
-import './ContactPage.css';
+import { useState } from "react";
+import PageHero from "../components/PageHero";
+import { images } from "../constants/images";
+import "./ContactPage.css";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    comments: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    comments: "",
   });
 
   const handleChange = (e) => {
@@ -44,37 +44,47 @@ export default function Contact() {
             <div className="contact-page__info">
               <h3 className="contact-page__info-heading">Contact Address</h3>
               <p className="contact-page__address">
-                THINKERDYNE Technologies<br />
-                No 59, 60, NL Arcade, Second Main, Vinayaka Layout, Shanthipura, Electronic City, Phase II, Bengaluru, Karnataka, India – 560100.
+                THINKERDYNE TECHNOLOGIES PRIVATE LIMITED
+                <br />
+                No 59, 60, NL Arcade, Second Main, Vinayaka Layout, Shanthipura,
+                Electronic City, Phase II, Bengaluru, Karnataka, India – 560100.
               </p>
 
               <h3 className="contact-page__info-heading">Let's Talk</h3>
               <p className="contact-page__phones">
-                <a href="tel:+919677510113">+91 9677510113</a>
+                <a href="tel:+919677510113">+91 9000000000</a>
               </p>
 
               <h3 className="contact-page__info-heading">Email Us</h3>
               <p className="contact-page__emails">
-                <a href="mailto:info@thinkerdyne.com">info@thinkerdyne.com</a>
+                <a href="mailto:info@thinkerdyne.com">info@thinkerdyne.com</a>{" "}
+                <br />
+                <a href="mailto:info@thinkerdyne.com">sales@thinkerdyne.com</a>
               </p>
+              <p className="contact-page__emails"></p>
 
               <h3 className="contact-page__info-heading">Working Hours</h3>
               <p className="contact-page__hours">
-                Monday to Saturday<br />
+                Monday to Saturday
+                <br />
                 09:30 am to 06:30 pm
               </p>
             </div>
 
             <div className="contact-page__form-wrap">
-              <h2 className="contact-page__form-title">Discuss Your Project Requirements</h2>
+              <h2 className="contact-page__form-title">
+                Discuss Your Project Requirements
+              </h2>
               <p className="contact-page__form-subtitle">
-                We operate in an industry built on trust. This can only be achieved through communication and experience.
+                We operate in an industry built on trust. This can only be
+                achieved through communication and experience.
               </p>
               <p className="contact-page__form-cta">Request a Call Back!</p>
 
               {submitted ? (
                 <div className="contact-page__feedback contact-page__feedback--success">
-                  Thank you! We have received your request and will get back to you soon.
+                  Thank you! We have received your request and will get back to
+                  you soon.
                 </div>
               ) : (
                 <form className="contact-page__form" onSubmit={handleSubmit}>
@@ -136,7 +146,10 @@ export default function Contact() {
                       placeholder="Tell us about your project..."
                     />
                   </div>
-                  <button type="submit" className="btn btn--primary contact-page__submit">
+                  <button
+                    type="submit"
+                    className="btn btn--primary contact-page__submit"
+                  >
                     Submit Form
                   </button>
                 </form>
@@ -149,7 +162,7 @@ export default function Contact() {
           <div className="contact-page__map-wrap contact-page__map-wrap--full">
             <iframe
               title="Thinkerdyne Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.370099584!2d77.6685!3d12.8486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUwJzU1LjAiTiA3N8KwNDAnMDYuNiJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.9316968373914!2d77.68266419999999!3d12.847688099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d000dfa568b%3A0xfb0e30d0878a2ada!2sThinkerdyne%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1771261621792!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -157,6 +170,15 @@ export default function Contact() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
+            {/* <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.9316968373914!2d77.68266419999999!3d12.847688099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d000dfa568b%3A0xfb0e30d0878a2ada!2sThinkerdyne%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1771261621792!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe> */}
           </div>
         </section>
       </div>

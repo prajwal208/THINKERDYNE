@@ -63,10 +63,11 @@ export default function Hero() {
         />
       </div>
       <div className="hero__graphics" aria-hidden="true" />
-      <div className="container hero__container">
+      <div className=" hero__container">
         <h1 className="hero__title" ref={titleRef}>
           <span className="hero__title-line">
-            Engineering the Future of <span className="hero__title-nowrap">Connected Devices</span>
+            Engineering the Future <br />
+            <span className="hero__title-nowrap"> of Connected Devices</span>
           </span>
         </h1>
         <p className="hero__subline" ref={sublineRef}>
@@ -75,7 +76,9 @@ export default function Hero() {
         </p>
         <div className="hero__service-groups" ref={listRef}>
           <div className="hero__service-group">
-            <h3 className="hero__service-group-title">Electronic Hardware Development</h3>
+            <h3 className="hero__service-group-title">
+              Electronic Hardware Development
+            </h3>
             <ul className="hero__service-list" role="list">
               {ELECTRONIC_HARDWARE.map((service) => (
                 <li key={service} className="hero__service-item">
@@ -85,7 +88,9 @@ export default function Hero() {
             </ul>
           </div>
           <div className="hero__service-group">
-            <h3 className="hero__service-group-title">Integrated Manufacturing Service</h3>
+            <h3 className="hero__service-group-title">
+              Integrated Manufacturing Service
+            </h3>
             <ul className="hero__service-list" role="list">
               {INTEGRATED_MANUFACTURING.map((service) => (
                 <li key={service} className="hero__service-item">

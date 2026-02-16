@@ -30,7 +30,7 @@
 
 .services__header {
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,11 +44,13 @@
   font-size: 1.125rem;
   text-align: center;
   color: var(--color-primary);
+
+  font-weight: 600;
 }
 
 .services__category-title {
   margin: 2rem 0 1rem;
-  font-size: 1.125rem;
+  font-size: 1.625rem;
   font-weight: 700;
   text-align: center;
   color: var(--color-text);
@@ -68,7 +70,6 @@
 .services__grid-wrap {
   width: 100%;
   padding: 0;
-  
 }
 
 .services__grid {
@@ -105,7 +106,10 @@
   border-radius: 10px;
   text-decoration: none;
   color: inherit;
-  transition: box-shadow var(--transition-base), transform var(--transition-base), background-color var(--transition-base);
+  transition:
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    background-color var(--transition-base);
   box-shadow: 0 2px 8px rgba(26, 35, 50, 0.06);
 }
 
@@ -159,7 +163,7 @@
 }
 
 .services__card-link::after {
-  content: '';
+  content: "";
 }
 
 @media (prefers-reduced-motion: reduce) {
