@@ -27,6 +27,7 @@
   gap: 1.5rem;
   justify-content: center;
   justify-items: stretch;
+  align-items: stretch;
   width: 100%;
   max-width: 100%;
 }
@@ -52,8 +53,7 @@
 .industries__item {
   position: relative;
   width: 100%;
-  min-height: 200px;
-  aspect-ratio: 3/2;
+  min-height: 280px;
   flex-shrink: 0;
   border-radius: 12px;
   overflow: hidden;

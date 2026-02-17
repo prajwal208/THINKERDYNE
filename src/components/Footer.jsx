@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="footer">
       <div className="footer__bg" aria-hidden="true" />
-      <div className="container footer__inner">
+      <div className="footer__inner">
         <div className="footer__col footer__find">
           <h3 className="footer__heading">Find Us</h3>
           <address className="footer__address">
@@ -96,7 +96,6 @@ export default function Footer() {
               </span>
               <a href="mailto:info@thinkerdyne.com">info@thinkerdyne.com</a>
             </p>
-            <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p>
           </address>
         </div>
         <div className="footer__col footer__core-services">
@@ -143,20 +142,21 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="footer__col footer__follow">
-            <h3 className="footer__heading">Follow Us</h3>
-            <div className="footer__socials">
-              <a
-                href="https://www.linkedin.com/company/thinkerdyne"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="footer__social"
-                aria-label="LinkedIn"
-              >
-                LINKEDIN
-              </a>
-            </div>
-            {/* <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p> */}
+        </div>
+      </div>
+      <div className="footer__bottom">
+        <div className="footer__bottom-inner">
+          <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p>
+          <div className="footer__socials">
+            <a
+              href="https://www.linkedin.com/company/thinkerdyne"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__social"
+              aria-label="LinkedIn"
+            >
+              LINKEDIN
+            </a>
           </div>
         </div>
       </div>
