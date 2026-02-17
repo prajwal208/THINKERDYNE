@@ -11,60 +11,24 @@ const VALUES_TEXT =
   "Our values are built on trust, technical excellence, innovation, and a client-first approach, ensuring quality and reliability in every engagement";
 
 const MissionIcon = () => (
-  <span className="about-page__pillar-icon-svg" aria-hidden="true">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#0d47a1"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <circle cx="12" cy="12" r="6" />
-      <circle cx="12" cy="12" r="2" />
-    </svg>
-  </span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="12" r="6" />
+    <circle cx="12" cy="12" r="2" />
+  </svg>
 );
 
 const VisionIcon = () => (
-  <span className="about-page__pillar-icon-svg" aria-hidden="true">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#0d47a1"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
-  </span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+    <circle cx="12" cy="12" r="3" />
+  </svg>
 );
 
 const ValuesIcon = () => (
-  <span className="about-page__pillar-icon-svg" aria-hidden="true">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="48"
-      height="48"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#0d47a1"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-    </svg>
-  </span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+  </svg>
 );
 
 export default function About() {
@@ -107,24 +71,31 @@ export default function About() {
             </div>
           </div>
         </section>
-        <section className="about-page__section section about-page__pillars">
+        <section className="about-page__section section about-page__pillars" aria-labelledby="mission-vision-values-heading">
           <div className="container">
+            <h2 id="mission-vision-values-heading" className="about-page__pillars-heading">Mission, Vision & Values</h2>
             <div className="about-page__pillars-grid">
-              <div className="about-page__pillar">
-                <MissionIcon />
+              <article className="about-page__pillar about-page__pillar--mission">
+                <div className="about-page__pillar-icon-wrap">
+                  <MissionIcon />
+                </div>
                 <h3 className="about-page__pillar-title">Mission</h3>
                 <p className="about-page__pillar-text">{MISSION_TEXT}</p>
-              </div>
-              <div className="about-page__pillar">
-                <VisionIcon />
+              </article>
+              <article className="about-page__pillar about-page__pillar--vision">
+                <div className="about-page__pillar-icon-wrap">
+                  <VisionIcon />
+                </div>
                 <h3 className="about-page__pillar-title">Vision</h3>
                 <p className="about-page__pillar-text">{VISION_TEXT}</p>
-              </div>
-              <div className="about-page__pillar">
-                <ValuesIcon />
+              </article>
+              <article className="about-page__pillar about-page__pillar--values">
+                <div className="about-page__pillar-icon-wrap">
+                  <ValuesIcon />
+                </div>
                 <h3 className="about-page__pillar-title">Values</h3>
                 <p className="about-page__pillar-text">{VALUES_TEXT}</p>
-              </div>
+              </article>
             </div>
           </div>
         </section>
