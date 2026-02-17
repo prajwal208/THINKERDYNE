@@ -23,14 +23,14 @@
   margin-bottom: 1.5rem;
   text-align: center;
   width: 100%;
-  max-width: 960px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .services__header {
   text-align: center;
-  max-width: 700px;
+  /* max-width: 700px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,7 +41,7 @@
 
 .services__subtitle {
   margin-bottom: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   text-align: center;
   color: var(--color-primary);
 
@@ -68,6 +68,7 @@
 }
 
 .services__grid-wrap {
+  margin-top: 3rem;
   width: 100%;
   padding: 0;
 }

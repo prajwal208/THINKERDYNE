@@ -46,7 +46,7 @@ export const images = {
   coreServiceFabrication: `${BASE}/photo-1581091226825-a6a2a5aee158?w=600`,
   coreServiceTesting: `${BASE}/photo-1504384308090-c894fdcc538d?w=600`,
   coreServiceWiringHarness: `${BASE}/photo-1581092918484-8313a1cc8bd5?w=600`,
-  // Embedded Hardware / Firmware page section images
+  // Hardware Design / Firmware page section images
   embeddedHardwareSection: `${BASE}/photo-1518770660439-4636190af475?w=800`,
   embeddedFirmwareSection: `${BASE}/photo-1625138846393-40e8daefd239?w=800`,
   // BOM / Fabrication / Assembly / Wiring section images
@@ -112,8 +112,8 @@ export const routes = {
 
 /** Core services in two categories: Electronic Hardware Development + Integrated Manufacturing Services */
 export const coreServicesCategory1 = [
-  { title: 'Embedded Hardware', path: routes.embeddedHardware },
-  { title: 'Embedded Firmware', path: routes.embeddedFirmware },
+  { title: 'Hardware Design', path: routes.embeddedHardware },
+  { title: 'Firmware Development', path: routes.embeddedFirmware },
   { title: 'PCB Design & Analysis', path: routes.pcbDesign },
   { title: 'Reverse Engineering', path: routes.reverseEngineering },
 ];

@@ -29,7 +29,7 @@ export default function EmbeddedFirmware() {
     <>
       <PageHero
         title="Engineering Services:"
-        serviceName="Embedded Firmware"
+        serviceName="Firmware Development"
         backgroundImage={images.pcbAnalysis}
       />
       <div className="service-page">

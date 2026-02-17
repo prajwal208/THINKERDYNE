@@ -32,7 +32,7 @@ export default function EmbeddedHardware() {
     <>
       <PageHero
         title="Engineering Services:"
-        serviceName="Embedded Hardware"
+        serviceName="Hardware Design"
         backgroundImage={images.pcbDesign}
       />
       <div className="service-page">

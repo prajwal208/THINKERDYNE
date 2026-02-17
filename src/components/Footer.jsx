@@ -12,6 +12,7 @@ const QUICK_LINKS = [
   { label: "ABOUT US", to: "/about" },
   { label: "ENGINEERING SERVICES", to: routes.home },
   { label: "CONTACT US", to: "/contact" },
+   { label: "LINKEDIN", to: "/contact" },
 ];
 
 export default function Footer() {
@@ -147,7 +148,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
           <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p>
-          <div className="footer__socials">
+          {/* <div className="footer__socials">
             <a
               href="https://www.linkedin.com/company/thinkerdyne"
               target="_blank"
@@ -157,7 +158,7 @@ export default function Footer() {
             >
               LINKEDIN
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       {showScrollTop && (

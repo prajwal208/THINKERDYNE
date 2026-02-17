@@ -105,6 +105,12 @@
   align-items: stretch;
 }
 
+.about-page__pillars-grid--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .about-page__pillar {
   background: var(--color-bg-card);
   border-radius: 20px;
@@ -181,6 +187,86 @@
   color: var(--color-text-muted);
   line-height: 1.65;
   flex-grow: 1;
+}
+
+/* Why Work With Thinkerdyne */
+.about-page__why-work-title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.about-page__why-work-intro {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-page__strengths-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 1rem;
+}
+
+.about-page__strengths-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-page__strengths-list li {
+  margin-bottom: 1rem;
+}
+
+.about-page__strengths-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about-page__strengths-list strong {
+  color: var(--color-primary);
+}
+
+/* Our Infrastructure */
+.about-page__infra-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-page__infra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.about-page__infra-col-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.about-page__infra-frame {
+  min-height: 280px;
+  border-radius: 16px;
+  border: 2px solid var(--color-primary-dark);
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-page__infra-placeholder-text {
+  font-size: 1rem;
+  color: var(--color-primary);
+  text-align: center;
+  font-weight: 500;
 }
 
 .about-page__infra-placeholder .container {
@@ -290,7 +376,8 @@
     order: -1;
   }
 
-  .about-page__pillars-grid {
+  .about-page__pillars-grid,
+  .about-page__pillars-grid--two {
     grid-template-columns: 1fr;
   }
 
@@ -300,6 +387,10 @@
 
   .about-page__pillar {
     padding: 2rem 1.5rem;
+  }
+
+  .about-page__infra-grid {
+    grid-template-columns: 1fr;
   }
 
   .about-page__find-grid {

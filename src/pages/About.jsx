@@ -4,11 +4,9 @@ import { images } from "../constants/images";
 import "./AboutPage.css";
 
 const MISSION_TEXT =
-  "To deliver innovative, reliable, and production-ready electronics product development solutions that help our customers transform ideas into successful products";
+  "To deliver innovative, production-ready electronics product development that help our customers transform ideas into successful products";
 const VISION_TEXT =
-  "To empower global innovation by delivering cutting-edge electronics product development solutions with uncompromising quality and engineering excellence";
-const VALUES_TEXT =
-  "Our values are built on trust, technical excellence, innovation, and a client-first approach, ensuring quality and reliability in every engagement";
+  "To drive global innovation by delivering cutting-edge electronics development solutions with uncompromising quality and engineering excellence";
 
 const MissionIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -22,12 +20,6 @@ const VisionIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
     <circle cx="12" cy="12" r="3" />
-  </svg>
-);
-
-const ValuesIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
   </svg>
 );
 
@@ -46,35 +38,17 @@ export default function About() {
               <img src={images.aboutEvolution} alt="" />
             </div>
             <div className="about-page__text">
-              <h2 className="about-page__h2">Our Evolution</h2>
+              <h2 className="about-page__h2">Thinkerdyne - Engineering Beyond Expectations</h2>
               <p className="about-page__lead">
-                Established in 2024, <strong>THINKERDYNE Technologies</strong>{" "}
-                is a Bengaluru-based electronics engineering services company
-                specializing in electronics product development. We are driven
-                by a commitment to innovation, precision, and engineering
-                excellence, delivering reliable and production-ready solutions
-                for modern electronic systems across industries including
-                industrial automation, embedded systems, power electronics, IoT,
-                and advanced electronic products.
-              </p>
-              <p className="about-page__lead">
-                Founded by engineers with over two decades of combined industry
-                experience, THINKERDYNE brings deep technical expertise and
-                practical insight into every project. Our team is experienced in
-                developing complex and high-performance electronic products,
-                covering hardware design, PCB development, system integration,
-                and manufacturing support. We focus on delivering efficient,
-                scalable, and cost-effective solutions that meet global quality
-                standards and support our customers from concept through
-                production.
+                Content to be provided. Replace this block with the final copy for this section.
               </p>
             </div>
           </div>
         </section>
-        <section className="about-page__section section about-page__pillars" aria-labelledby="mission-vision-values-heading">
+        <section className="about-page__section section about-page__pillars" aria-labelledby="mission-vision-heading">
           <div className="container">
-            <h2 id="mission-vision-values-heading" className="about-page__pillars-heading">Mission, Vision & Values</h2>
-            <div className="about-page__pillars-grid">
+            <h2 id="mission-vision-heading" className="about-page__pillars-heading">Mission & Vision</h2>
+            <div className="about-page__pillars-grid about-page__pillars-grid--two">
               <article className="about-page__pillar about-page__pillar--mission">
                 <div className="about-page__pillar-icon-wrap">
                   <MissionIcon />
@@ -89,13 +63,53 @@ export default function About() {
                 <h3 className="about-page__pillar-title">Vision</h3>
                 <p className="about-page__pillar-text">{VISION_TEXT}</p>
               </article>
-              <article className="about-page__pillar about-page__pillar--values">
-                <div className="about-page__pillar-icon-wrap">
-                  <ValuesIcon />
+            </div>
+          </div>
+        </section>
+
+        <section className="about-page__section section section--alt about-page__why-work">
+          <div className="container">
+            <h2 className="about-page__h2 about-page__why-work-title">Why Work With Thinkerdyne</h2>
+            <p className="about-page__lead about-page__why-work-intro">
+              At Thinkerdyne, we combine strong technical expertise with a manufacturing-focused approach to deliver reliable, production-ready electronics designs. We support the complete product development lifecycle, ensuring every design meets performance, quality, and manufacturability standards.
+            </p>
+            <h3 className="about-page__strengths-heading">Our key strengths include:</h3>
+            <ul className="about-page__strengths-list">
+              <li>
+                <strong>Proven PCB and Hardware Design Expertise</strong> — Extensive experience in schematic design, multi-layer PCB layout, and embedded hardware development.
+              </li>
+              <li>
+                <strong>Manufacturing-Optimized and Reliable Designs</strong> — Focused on robust, manufacturable solutions that improve reliability and reduce production risks.
+              </li>
+              <li>
+                <strong>End-to-End Engineering Support</strong> — Complete support from concept and design to documentation and production readiness.
+              </li>
+              <li>
+                <strong>Efficient Execution and Clear Communication</strong> — Structured workflows, fast response, and professional coordination throughout the project.
+              </li>
+              <li>
+                <strong>Commitment to Quality and Engineering Excellence</strong> — Use of industry-standard tools and best practices to ensure high-performance, dependable designs.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="about-page__section section about-page__infra" aria-labelledby="our-infrastructure-heading">
+          <div className="container">
+            <h2 id="our-infrastructure-heading" className="about-page__h2 about-page__infra-title">Our Infrastructure</h2>
+            <div className="about-page__infra-grid">
+              <div className="about-page__infra-col">
+                <h3 className="about-page__infra-col-title">Engineering Team</h3>
+                <div className="about-page__infra-frame">
+                  <span className="about-page__infra-placeholder-text">Keep the photo frame – Will provide the image later</span>
                 </div>
-                <h3 className="about-page__pillar-title">Values</h3>
-                <p className="about-page__pillar-text">{VALUES_TEXT}</p>
-              </article>
+              </div>
+              <div className="about-page__infra-col">
+                <h3 className="about-page__infra-col-title">Electronics LAB</h3>
+                <div className="about-page__infra-frame">
+                  <span className="about-page__infra-placeholder-text">Keep the photo frame – Will provide the image later</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>

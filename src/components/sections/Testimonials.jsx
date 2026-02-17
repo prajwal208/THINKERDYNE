@@ -47,6 +47,14 @@ const TESTIMONIALS = [
     initial: "AS",
     platform: "P",
   },
+   {
+    name: "Ajay Sahoo",
+    role: "Product Manager",
+    text: "Thinkerdyne delivered our PCB fabrication and assembly project with great attention to detail. The team was responsive and the final boards met all our specifications. We will use them again for future builds.",
+    rating: 5,
+    initial: "AS",
+    platform: "P",
+  },
 ];
 
 function TestimonialCard({ t, isExpanded, onToggle }) {

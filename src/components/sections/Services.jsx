@@ -18,9 +18,9 @@ import bgImage from "../../assets/bg.jpeg";
 import "./Services.css";
 
 const SERVICE_DESCRIPTIONS = {
-  "Embedded Hardware":
+  "Hardware Design":
     "Our engineering team develops production-ready embedded hardware and firmware for reliable, high-performance electronic systems.",
-  "Embedded Firmware":
+  "Firmware Development":
     "Our engineering team develops production-ready embedded hardware and firmware for reliable, high-performance electronic systems.",
   "PCB Design & Analysis":
     "With extensive PCB design expertise, our engineering team delivers solutions ranging from compact controller boards to complex high-speed electronic systems. Our team provides comprehensive signal integrity, power integrity, and thermal analysis to ensure reliable and high-performance electronic systems.",
@@ -37,8 +37,8 @@ const SERVICE_DESCRIPTIONS = {
 };
 
 const SERVICE_IMAGES = {
-  "Embedded Hardware": imgEmbeddedHardware,
-  "Embedded Firmware": imgEmbeddedFirmware,
+  "Hardware Design": imgEmbeddedHardware,
+  "Firmware Development": imgEmbeddedFirmware,
   "PCB Design & Analysis": imgPcbDesign,
   "Reverse Engineering": imgReverseEngineering,
   "Component Sourcing": images.coreServiceComponentSourcing,

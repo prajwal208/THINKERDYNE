@@ -8,8 +8,8 @@ const prefersReducedMotion = () =>
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const ELECTRONIC_HARDWARE = [
-  "Embedded Hardware",
-  "Embedded Firmware",
+  "Hardware Design",
+  "Firmware Development",
   "PCB Design & Analysis",
   "Reverse Engineering",
 ];
