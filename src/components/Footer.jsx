@@ -12,7 +12,7 @@ const QUICK_LINKS = [
   { label: "ABOUT US", to: "/about" },
   { label: "ENGINEERING SERVICES", to: routes.home },
   { label: "CONTACT US", to: "/contact" },
-   { label: "LINKEDIN", to: "/contact" },
+   { label: "LINKEDIN", to: "https://www.linkedin.com/company/thinkerdyne", external: true },
 ];
 
 export default function Footer() {
@@ -104,7 +104,7 @@ export default function Footer() {
           <div className="footer__core-services-grid">
             <div className="footer__core-services-col">
               <h4 className="footer__subheading">
-                Electronic Hardware Development
+                Hardware Development
               </h4>
               <ul className="footer__list">
                 {coreServicesCategory1.map((service) => (
@@ -116,7 +116,7 @@ export default function Footer() {
             </div>
             <div className="footer__core-services-col">
               <h4 className="footer__subheading">
-                Integrated Manufacturing Service
+                Manufacturing Service
               </h4>
               <ul className="footer__list">
                 {coreServicesCategory2.map((service) => (
@@ -128,12 +128,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="footer__col">
+        <div className="footer__col footer__col--quick-links">
           <h3 className="footer__heading">Quick Links</h3>
           <ul className="footer__list">
             {QUICK_LINKS.map((link) => (
               <li key={link.label}>
-                {link.to.startsWith("http") ? (
+                {link.external || link.to.startsWith("http") ? (
                   <a href={link.to} target="_blank" rel="noopener noreferrer">
                     {link.label}
                   </a>

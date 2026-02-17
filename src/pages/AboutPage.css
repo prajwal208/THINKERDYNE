@@ -5,8 +5,8 @@
 .about-page__section-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
+  gap: 2rem;
+  align-items: stretch;
 }
 
 .about-page__section-inner--expertise .about-page__img-wrap {
@@ -43,8 +43,11 @@
 }
 
 .about-page__section p {
-  color: var(--color-text-muted);
   margin-bottom: 1rem;
+}
+
+.about-page__section-inner .about-page__img-wrap {
+  height: 100%;
 }
 
 .about-page__img-wrap {
@@ -55,9 +58,9 @@
 
 .about-page__img-wrap img {
   width: 100%;
-  height: auto;
+  height: 522px;
+  min-height: 280px;
   display: block;
-  aspect-ratio: 4/3;
   object-fit: cover;
 }
 
@@ -190,6 +193,10 @@
 }
 
 /* Why Work With Thinkerdyne */
+.about-page__why-work {
+  margin-bottom: 2rem;
+}
+
 .about-page__why-work-title {
   text-align: center;
   margin-bottom: 1.25rem;
@@ -262,6 +269,37 @@
   padding: 2rem;
 }
 
+.about-page__infra-frame--img {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  min-height: 280px;
+  aspect-ratio: 4/3;
+}
+
+.about-page__infra-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-page__infra-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(to top, rgba(10, 61, 138, 0.9), transparent);
+  color: var(--color-white);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
 .about-page__infra-placeholder-text {
   font-size: 1rem;
   color: var(--color-primary);
@@ -293,6 +331,12 @@
 .about-page__cta-inner {
   text-align: center;
   padding: 2rem 0;
+}
+
+.about-page__cta-text {
+  margin: 0 0 1.5rem;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .about-page__cta-inner .btn {

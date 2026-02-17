@@ -220,3 +220,32 @@ p {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 }
+
+/* Responsive mobile – reduced font sizes */
+@media (max-width: 767px) {
+  :root {
+    --text-hero: clamp(1.5rem, 5vw, 2.25rem);
+    --text-h1: clamp(1.35rem, 4vw, 1.75rem);
+    --text-h2: clamp(1.2rem, 3vw, 1.5rem);
+    --text-h3: clamp(1rem, 2vw, 1.15rem);
+  }
+
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section--lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+
+  p {
+    font-size: 0.9375rem;
+  }
+}

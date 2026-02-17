@@ -146,6 +146,11 @@ export default function Contact() {
                       placeholder="Tell us about your project..."
                     />
                   </div>
+                  <div className="contact-page__response-note-wrap">
+                    <p className="contact-page__response-note">
+                      We typically respond within 12 hours. Our experienced engineering team brings decades of combined expertise in hardware design, PCB development, and system integration.
+                    </p>
+                  </div>
                   <button
                     type="submit"
                     className="btn btn--primary contact-page__submit"

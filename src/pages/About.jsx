@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import { images } from "../constants/images";
+import aboutUsImg from "../assets/aboutus.png";
+import engineeringTeamImg from "../assets/Engineeringteam.jpg";
+import electronicsLabImg from "../assets/Electronicslab.jpg";
 import "./AboutPage.css";
 
 const MISSION_TEXT =
@@ -35,12 +38,15 @@ export default function About() {
         <section className="about-page__section section section--alt">
           <div className="container about-page__section-inner about-page__section-inner--expertise">
             <div className="about-page__img-wrap" aria-hidden="true">
-              <img src={images.aboutEvolution} alt="" />
+              <img src={aboutUsImg} alt="" />
             </div>
             <div className="about-page__text">
               <h2 className="about-page__h2">Thinkerdyne - Engineering Beyond Expectations</h2>
               <p className="about-page__lead">
-                Content to be provided. Replace this block with the final copy for this section.
+                Established in 2024 and based in Bengaluru, Thinkerdyne Technologies is an electronics engineering services company focused on end-to-end electronics product development. We specialize in hardware design, PCB development, system integration, and manufacturing support, delivering reliable and production-ready solutions for industrial automation, embedded systems, power electronics, and IoT applications.
+              </p>
+              <p className="about-page__lead">
+                Founded by engineers with over two decades of combined experience, Thinkerdyne brings deep technical expertise and practical insight to every project. We work closely with our customers from concept to production, providing efficient, scalable, and cost-effective solutions that meet global quality standards and accelerate product development.
               </p>
             </div>
           </div>
@@ -100,31 +106,31 @@ export default function About() {
             <div className="about-page__infra-grid">
               <div className="about-page__infra-col">
                 <h3 className="about-page__infra-col-title">Engineering Team</h3>
-                <div className="about-page__infra-frame">
-                  <span className="about-page__infra-placeholder-text">Keep the photo frame – Will provide the image later</span>
+                <div className="about-page__infra-frame about-page__infra-frame--img">
+                  <img src={engineeringTeamImg} alt="" className="about-page__infra-img" />
+                  <p className="about-page__infra-caption">
+                    Our experienced engineering team brings decades of combined expertise in hardware design, PCB development, and system integration.
+                  </p>
                 </div>
               </div>
               <div className="about-page__infra-col">
                 <h3 className="about-page__infra-col-title">Electronics LAB</h3>
-                <div className="about-page__infra-frame">
-                  <span className="about-page__infra-placeholder-text">Keep the photo frame – Will provide the image later</span>
+                <div className="about-page__infra-frame about-page__infra-frame--img">
+                  <img src={electronicsLabImg} alt="" className="about-page__infra-img" />
+                  <p className="about-page__infra-caption">
+                    State-of-the-art electronics lab equipped for prototyping, testing, and validation of electronic designs and products.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="about-page__section section section--alt about-page__mission-full">
-          <div className="container about-page__narrow">
-            {/* <p className="about-page__lead">
-              At THINKERDYNE Technologies, our mission is to be a trusted
-              engineering partner for global electronics innovators by
-              delivering high-quality, cost-effective, and technically superior
-              electronics product development solutions. We are driven by a
-              passion for engineering excellence and a commitment to helping our
-              clients accelerate product development and achieve technological
-              success.
-            </p> */}
+        <section className="about-page__section section section--dark about-page__cta">
+          <div className="container about-page__cta-inner">
+            <h2 className="about-page__h2 about-page__h2--light">Let&apos;s Build Your Next Hardware Product</h2>
+            <p className="about-page__cta-text">Partner with Thinkerdyne Technologies for reliable and efficient electronics design solutions.</p>
+            <Link to="/contact" className="btn btn--light">Contact Us</Link>
           </div>
         </section>
 

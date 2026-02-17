@@ -3,8 +3,11 @@
   background-color: var(--color-bg-dark);
   text-align: left;
   overflow: hidden;
-
+  min-height: 100vh;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero__video-wrap {
@@ -57,15 +60,7 @@
 
 .hero .hero__container {
   position: relative;
-  top: -50px;
   z-index: 2;
-
-  width: 0%;
-  left: 0;
-  right: 0;
-  /* margin-bottom: 5rem; */
-  margin-top: 3rem;
-  width: 90% !important;
 }
 
 .hero .hero__title,
@@ -78,13 +73,11 @@
 }
 
 .hero__container {
-  /* max-width: var(--container-max); */
-  width: 100% !important;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: var(--container-max);
+  width: 100%;
+  margin: 0 auto;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
-  margin-bottom: 5rem !important;
 }
 
 .hero__title {
@@ -100,12 +93,9 @@
 }
 
 .hero__subline {
-  /* font-size: clamp(1rem, 2vw, 1.25rem); */
   margin-bottom: 1.5rem;
-  color: var(--color-text-muted);
-  font-size: 1.7rem;
-  font-weight: 600;
-  width: 100% !important;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 /* Service groups in hero */
