@@ -44,12 +44,13 @@
   --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Typography scale */
-  --text-hero: clamp(2.5rem, 5vw, 4rem);
-  --text-h1: clamp(2rem, 4vw, 3.25rem);
-  --text-h2: clamp(1.75rem, 3vw, 2.5rem);
-  --text-h3: clamp(1.25rem, 2vw, 1.5rem);
-  --text-body: 1rem;
-  --text-small: 0.875rem;
+  /* Standard scale (per provided typography table) */
+  --text-hero: 3.25rem; /* 52px */
+  --text-h1: 3.25rem; /* 52px */
+  --text-h2: 1.875rem; /* 30px */
+  --text-h3: 1.3125rem; /* 21px */
+  --text-body: 1.0625rem; /* 17px */
+  --text-small: 0.875rem; /* 14px */
 }
 
 *,
@@ -145,7 +146,7 @@ img {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.5em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }

@@ -1,35 +1,37 @@
 import PageHero from '../components/PageHero';
 import { images } from '../constants/images';
+import imgPcbAssembly from '../assets/pcb_design.jpg';
 import './ServicePage.css';
 
-const FABRICATION_BULLETS = [
-  'Fabrication of single-layer, double-layer, and multilayer PCBs',
-  'Support for standard, complex, and high-density PCB designs',
-  'Selection of appropriate PCB materials based on application requirements',
-  'Stack-up definition, board thickness control, and layer configuration',
-  'Surface finish options including HASL, ENIG, and lead-free finishes',
-  'Solder mask, silkscreen, and board marking support',
-  'Fabrication file verification before manufacturing release',
-  'Prototype, low-volume, and production fabrication support',
+const FABRICATION_SUPPORT = [
+  "Support for PCB fabrication through trusted and qualified manufacturing vendors",
+  "Manufacturing coordination for single-layer, double-layer, and multi-layer PCB designs",
+  "Guidance on PCB material selection based on electrical, thermal, and application requirements",
+  "Controlled impedance and stack-up implementation to meet signal integrity and design specifications",
+  "Support for prototype, pre-production, and production fabrication requirements",
+  "Preparation and verification of fabrication files to ensure accurate and reliable manufacturing outcomes",
+  "Engineering coordination with fabrication partners to ensure design compliance and manufacturing readiness",
 ];
 
-const ASSEMBLY_BULLETS = [
-  'Surface Mount Technology (SMT) assembly support',
-  'Through-Hole assembly support',
-  'Mixed-technology PCB assembly',
-  'Assembly of fine-pitch and high-density components',
-  'Prototype assembly and batch production support',
-  'Accurate component placement and soldering',
-  'Support for complex and high-reliability electronic assemblies',
+const ASSEMBLY_SUPPORT = [
+  "Coordination with trusted assembly vendors for SMT, through-hole, and mixed-technology PCB assemblies",
+  "Quick turnaround support for prototype and engineering validation builds",
+  "Assembly support for prototype, pre-production, and volume manufacturing",
+  "BOM verification and component readiness coordination for efficient assembly",
+  "Preparation and validation of Pick and Place data and assembly documentation",
+  "Support for assembly of fine-pitch and high-density PCB designs",
+  "Support for assembly of fine-pitch and high-density PCB designs",
+  "Assembly support to ensure reliable and production-ready PCB boards",
 ];
 
-const REWORK_BULLETS = [
-  'Replacement of faulty or damaged components',
-  'Removal and reinstallation of components',
-  'Correction of assembly issues and soldering defects',
-  'Support for engineering changes and design updates',
-  'PCB modification and upgrade support',
-  'Rework support during prototype and testing stages',
+const PCB_REWORK = [
+  "Component replacement, correction of assembly defects, and solder rework",
+  "PCB modifications to implement design updates, engineering changes, or component revisions",
+  "Rework support for prototype, engineering validation, and production boards",
+  "Repair and restoration of faulty, damaged, or non-functional PCB assemblies",
+  "Removal and replacement of SMT and through-hole components with proper handling and precision",
+  "Support for rework of fine-pitch and sensitive components using controlled processes",
+  "Engineering validation and functional verification after rework to ensure reliable operation",
 ];
 
 export default function FabricationAssembly() {
@@ -43,18 +45,21 @@ export default function FabricationAssembly() {
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
-            <div className="service-page__split">
-              <div className="service-page__media">
-                <img src={images.factory} alt="PCB fabrication and assembly" />
-              </div>
-              <div className="service-page__content">
-                <p className="service-page__lead">
-                  THINKERDYNE Technologies provides reliable PCB fabrication and assembly services to convert your PCB designs into high-quality, fully assembled electronic boards. We work closely with trusted and qualified manufacturing vendors to ensure precision fabrication, accurate assembly, and consistent product quality.
-                </p>
-                <p className="service-page__lead">
-                  Our strong vendor network and engineering-driven approach ensure that every PCB meets design specifications, quality standards, and manufacturing requirements—from prototype builds to production volumes.
-                </p>
-              </div>
+            <div className="service-page__panel">
+              <h2 className="service-page__panel-title">Fabrication, Assembly, and PCB Rework</h2>
+              <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                Thinkerdyne provides professional PCB fabrication, assembly, and rework support to ensure reliable and efficient manufacturing of electronic products. We work closely with trusted and qualified fabrication and assembly vendors to deliver high-quality PCB boards that meet design specifications, performance requirements, and production standards.
+              </p>
+              <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                Our engineering-driven approach ensures accurate manufacturing preparation, component coordination, and assembly support, enabling a seamless transition from design to prototype and production. In addition, we provide PCB rework and modification support to correct issues, implement design updates, and restore functionality, helping extend product lifecycle and ensure manufacturing reliability.
+              </p>
+
+              <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: "1.25rem" }}>
+                PCB Fabrication Support
+              </h3>
+              <ul className="service-page__arrowlist">
+                {FABRICATION_SUPPORT.map((i) => <li key={i}>{i}</li>)}
+              </ul>
             </div>
           </div>
         </section>
@@ -63,47 +68,23 @@ export default function FabricationAssembly() {
           <div className="container">
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={images.pcbFabricationService} alt="PCB fabrication services" />
+                <img src={imgPcbAssembly} alt="PCB fabrication and assembly" />
               </div>
-              <div className="service-page__content">
-                <h2 className="service-page__h2">PCB Fabrication Services</h2>
-                <p className="service-page__lead">
-                  We coordinate with trusted PCB fabrication partners to ensure precision manufacturing and consistent board quality.
-                </p>
-                <ul className="service-page__list">
-                  {FABRICATION_BULLETS.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
+              <div className="service-page__panel">
+                <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: 0 }}>
+                  PCB Assembly Support
+                </h3>
+                <ul className="service-page__arrowlist">
+                  {ASSEMBLY_SUPPORT.map((i) => <li key={i}>{i}</li>)}
                 </ul>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section className="section section--alt">
-          <div className="container">
-            <div className="service-page__split">
-              <div className="service-page__media">
-                <img src={images.pcbLayout} alt="PCB assembly services" />
-              </div>
-              <div className="service-page__content">
-                <h2 className="service-page__h2">PCB Assembly Services</h2>
-                <p className="service-page__lead">
-                  We provide complete PCB assembly coordination through experienced and qualified assembly vendors.
-                </p>
-                <ul className="service-page__list">
-                  {ASSEMBLY_BULLETS.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <h2 className="service-page__h2">PCB Rework Services</h2>
-                <p className="service-page__lead">
-                  We provide professional PCB rework support to correct, modify, or improve existing PCB assemblies.
-                </p>
-                <ul className="service-page__list">
-                  {REWORK_BULLETS.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
+                <div style={{ height: "1rem" }} />
+
+                <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: 0 }}>
+                  PCB Rework
+                </h3>
+                <ul className="service-page__arrowlist">
+                  {PCB_REWORK.map((i) => <li key={i}>{i}</li>)}
                 </ul>
               </div>
             </div>

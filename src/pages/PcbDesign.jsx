@@ -13,6 +13,15 @@ const LIBRARY_BULLETS = [
   'Continuous library validation and maintenance',
 ];
 
+const SCHEMATIC_ENTRY_BULLETS = [
+  "Structured schematic creation based on system requirements",
+  "Accurate connectivity and verified component integration",
+  "Use of controlled and validated component libraries",
+  "ERC validation to ensure electrical correctness",
+  "Hierarchical schematic design for complex systems",
+  "Design review and optimization for PCB layout readiness",
+];
+
 const PCB_LAYOUT_BULLETS = [
   'Schematic capture and circuit design based on product requirements',
   'PCB layout for single-layer, multi-layer, and high-density designs',
@@ -67,16 +76,16 @@ export default function PcbDesign() {
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
-            <SectionSplit
-              image={imgPcbDesign}
-              imageAlt="PCB design and analysis"
-            >
-              <p className="service-page__lead">
-                THINKERDYNE Technologies offers professional PCB design, engineering analysis, and component library management services to support the development of reliable, high-performance electronic products. With over two decades of combined engineering experience, our team delivers precision PCB layouts that ensure strong electrical performance, signal integrity, thermal reliability, and smooth manufacturability.
-              </p>
-              <p className="service-page__lead">
-                We support the complete PCB development cycle—from schematic design and verified library creation to layout, analysis, and manufacturing documentation—ensuring every design is accurate, optimized, and ready for production.
-              </p>
+            <SectionSplit image={imgPcbDesign} imageAlt="PCB design and analysis">
+              <div className="service-page__panel">
+                <h2 className="service-page__panel-title">PCB Design &amp; Analysis</h2>
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  We deliver professional PCB design and engineering services, including schematic entry, component library development, and engineering analysis, enabling the development of high-reliability electronic systems. Backed by over two decades of combined engineering expertise, we create precision PCB layouts optimized for signal integrity, power integrity, thermal performance, and manufacturability.
+                </p>
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  We support the complete PCB development lifecycle—from schematic entry and controlled library creation to PCB layout, design validation, and manufacturing documentation—ensuring every design is accurate, production-ready, and aligned with industry standards.
+                </p>
+              </div>
             </SectionSplit>
           </div>
         </section>
@@ -98,6 +107,25 @@ export default function PcbDesign() {
               </ul>
               <p>Proper library management improves design accuracy, reduces errors, and ensures smooth manufacturing.</p>
             </SectionSplit>
+          </div>
+        </section>
+
+        <section className="section section--alt">
+          <div className="container">
+            <div className="service-page__split">
+              <div className="service-page__media">
+                <img src={imgPcbDesign} alt="Schematic entry" />
+              </div>
+              <div className="service-page__panel">
+                <h2 className="service-page__panel-title">Schematic Entry</h2>
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  Our schematic entry services ensure accurate capture of circuit and system requirements into clear, organized designs. We focus on electrical correctness, component accuracy, and design clarity, enabling efficient PCB layout, validation, and production readiness.
+                </p>
+                <ul className="service-page__arrowlist">
+                  {SCHEMATIC_ENTRY_BULLETS.map((i) => <li key={i}>{i}</li>)}
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 

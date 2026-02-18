@@ -2,20 +2,13 @@ import PageHero from '../components/PageHero';
 import { images } from '../constants/images';
 import './ServicePage.css';
 
-const SUPPLIER_BULLETS = [
-  'Sourcing from authorized and trusted global suppliers',
-  'Ensuring genuine and original components',
-  'Supplier verification and quality assurance',
-  'Component traceability and documentation support',
-  'Proper handling and storage to maintain component integrity',
-];
-
-const BOM_BULLETS = [
-  'Bill of Materials (BOM) review and validation',
-  'Complete component procurement for prototype and production builds',
-  'Lead time analysis and availability planning',
-  'Cost optimization and sourcing recommendations',
-  'Consolidated sourcing to simplify supply chain management',
+const CAPABILITIES = [
+  "Sourcing through authorized distributors",
+  "BOM sourcing for prototype and production builds",
+  "Component authenticity verification and counterfeit risk prevention",
+  "Alternate component identification and lifecycle management",
+  "Lead time optimization and supply chain coordination",
+  "Support for prototype, low-volume, and production manufacturing",
 ];
 
 export default function ComponentSourcing() {
@@ -33,39 +26,20 @@ export default function ComponentSourcing() {
               <div className="service-page__media">
                 <img src={images.componentSourcing} alt="Component sourcing" />
               </div>
-              <div className="service-page__content">
-                <p className="service-page__lead">
-                  THINKERDYNE Technologies provides professional component sourcing and procurement services to ensure reliable, efficient, and uninterrupted electronics product development and manufacturing. With over two decades of combined engineering experience, we understand the importance of selecting the right components for performance, reliability, and long-term product support.
+              <div className="service-page__panel">
+                <h2 className="service-page__panel-title">Component Sourcing</h2>
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  Thinkerdyne provides professional component sourcing and procurement services to ensure reliable and uninterrupted electronics product development and manufacturing. As authorized partners with leading global distributors such as Digi-Key and Mouser, and through our network of trusted local authorized distributors, we source genuine, high-quality electronic components that meet stringent performance, reliability, and lifecycle requirements.
                 </p>
-                <p className="service-page__lead">
-                  We work with trusted suppliers and authorized distributors to source genuine, high-quality electronic components that meet design specifications and production requirements. Our structured sourcing process helps reduce lead times, prevent counterfeit risks, and ensure consistent component availability for both prototype and production stages.
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  Our engineering-driven procurement approach ensures accurate component selection aligned with design specifications and production needs. By working exclusively with authorized global and local supply channels, we minimize lead times, eliminate counterfeit risks, and ensure consistent component availability for both prototype development and volume manufacturing.
                 </p>
-                <h2 className="service-page__h2">Supplier Network and Quality Assurance</h2>
-                <ul className="service-page__list">
-                  {SUPPLIER_BULLETS.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section className="section">
-          <div className="container">
-            <div className="service-page__split">
-              <div className="service-page__media">
-                <img src={images.bomManagement} alt="BOM management and procurement" />
-              </div>
-              <div className="service-page__content">
-                <h2 className="service-page__h2">BOM Management and Procurement Support</h2>
-                <p className="service-page__lead">
-                  We provide complete BOM-based sourcing support to streamline production and reduce procurement complexity.
-                </p>
-                <ul className="service-page__list">
-                  {BOM_BULLETS.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
+                <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: "1.25rem" }}>
+                  Component Sourcing Capabilities
+                </h3>
+                <ul className="service-page__arrowlist">
+                  {CAPABILITIES.map((i) => <li key={i}>{i}</li>)}
                 </ul>
               </div>
             </div>

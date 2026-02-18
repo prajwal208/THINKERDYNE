@@ -3,28 +3,52 @@ import { images } from '../constants/images';
 import imgEmbeddedHardware from '../assets/embedd_ hardware.jpg';
 import './ServicePage.css';
 
-const CAPABILITIES = [
-  'Processor, MCU, SoC, and FPGA-based Hardware Design',
-  'System Architecture and Circuit Development',
-  'High-Speed Interface Design (DDR, PCIe, USB, Ethernet, CAN, SPI, I2C, UART)',
-  'Power Management and Mixed-Signal Hardware Design',
-  'Multilayer, High-Density PCB Implementation',
-  'Design Optimization for Signal Integrity and Power Integrity',
-  'Manufacturing Documentation and Production Support',
+const KEY_CAPABILITIES = [
+  "Embedded hardware architecture and system design",
+  "Processor and microcontroller selection and integration",
+  "Schematic design and hardware implementation",
+  "High-speed and mixed-signal hardware design",
+  "Power supply and power management circuit design",
+  "Hardware design validation and engineering support",
 ];
 
-const PLATFORM_EXPERTISE = [
-  'Texas Instruments (TI) Processors and Controllers',
-  'ARM Cortex-based Embedded Systems',
-  'STM32, NXP, and Microchip Platforms',
-  'FPGA and High-Performance Embedded Systems',
+const HW_INTERFACE_SUPPORT = [
+  "UART, SPI, and I2C interfaces",
+  "USB, CAN, and Ethernet interfaces",
+  "ADC, DAC, and PWM interfaces",
+  "Sensor and peripheral integration",
+  "Communication and control interfaces",
 ];
 
-const ENGINEERING_APPROACH = [
-  'System Architecture and Component Selection',
-  'Schematic Design and Hardware Engineering',
-  'PCB Implementation and Design Optimization',
-  'Manufacturing Support and Production Enablement',
+const DELIVERABLES = [
+  "Complete schematic design files",
+  "PCB layout design support files",
+  "Component libraries and documentation",
+  "Bill of Materials (BOM)",
+  "Manufacturing and engineering documentation",
+];
+
+const SUPPORTED_PROCESSORS = [
+  "ARM Cortex-M based microcontrollers",
+  "Microchip, NXP, STMicroelectronics, and TI platforms",
+  "Processor-based embedded systems",
+  "Industrial and IoT hardware platforms",
+];
+
+const SCOPE = [
+  "Hardware architecture definition",
+  "Schematic design and component selection",
+  "PCB design support and integration",
+  "Hardware bring-up and validation",
+  "Engineering support during testing and production",
+];
+
+const APPLICATIONS = [
+  "Industrial embedded systems",
+  "IoT and connected devices",
+  "Control and automation systems",
+  "Communication and interface hardware",
+  "Custom embedded electronic products",
 ];
 
 export default function EmbeddedHardware() {
@@ -38,69 +62,63 @@ export default function EmbeddedHardware() {
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
-            <div className="service-page__split">
-              <div className="service-page__media">
-                <img src={imgEmbeddedHardware} alt="Embedded hardware design" />
+            <div>
+              <div className="service-page__split">
+                <div className="service-page__media">
+                  <img src={imgEmbeddedHardware} alt="Hardware design" />
+                </div>
+                <div className="service-page__panel">
+                  <h2 className="service-page__panel-title">Hardware Design</h2>
+                  <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                    Thinkerdyne Technologies delivers advanced hardware design solutions for embedded and electronic systems. We specialize in developing processor-based hardware platforms that meet demanding requirements for performance, reliability, and manufacturability.
+                  </p>
+                  <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                    We work closely with customers from concept to production, providing efficient, scalable, and cost-effective solutions that meet global quality standards and accelerate product development.
+                  </p>
+                </div>
               </div>
-              <div className="service-page__content">
-                <p className="service-page__lead">
-                  Thinkerdyne Technologies delivers advanced embedded hardware design solutions for high-performance electronic systems. We specialize in developing processor-based hardware platforms that meet demanding requirements for performance, reliability, and manufacturability.
-                </p>
-                <p className="service-page__lead">
-                  From system architecture to production support, we design robust and scalable hardware tailored for industrial, IoT, automotive, and communication applications. Our engineering approach ensures optimized performance, stable operation, and seamless integration into production environments.
-                </p>
+
+              <div style={{ height: "1.75rem" }} />
+
+              <div className="service-page__grid-2x2">
+                <div className="service-page__panel">
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Key Capabilities</h3>
+                  <ul className="service-page__arrowlist">
+                    {KEY_CAPABILITIES.map((i) => <li key={i}>{i}</li>)}
+                  </ul>
+                </div>
+                <div className="service-page__panel">
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Supported Processors and Platforms</h3>
+                  <ul className="service-page__arrowlist">
+                    {SUPPORTED_PROCESSORS.map((i) => <li key={i}>{i}</li>)}
+                  </ul>
+                </div>
+                <div className="service-page__panel">
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Hardware Interface Support</h3>
+                  <ul className="service-page__arrowlist">
+                    {HW_INTERFACE_SUPPORT.map((i) => <li key={i}>{i}</li>)}
+                  </ul>
+                </div>
+                <div className="service-page__panel">
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Design and Development Scope</h3>
+                  <ul className="service-page__arrowlist">
+                    {SCOPE.map((i) => <li key={i}>{i}</li>)}
+                  </ul>
+                </div>
+                <div className="service-page__panel">
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Deliverables</h3>
+                  <ul className="service-page__arrowlist">
+                    {DELIVERABLES.map((i) => <li key={i}>{i}</li>)}
+                  </ul>
+                </div>
+                <div className="service-page__panel">
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Applications</h3>
+                  <ul className="service-page__arrowlist">
+                    {APPLICATIONS.map((i) => <li key={i}>{i}</li>)}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="container">
-            <div className="service-page__two-cols">
-              <div className="service-page__col">
-                <h2 className="service-page__h2">Our Capabilities:</h2>
-                <ul className="service-page__list">
-                  {CAPABILITIES.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="service-page__col service-page__col--border">
-                <h2 className="service-page__h2">Platform and Technology Expertise:</h2>
-                <p className="service-page__lead">
-                  We work with industry-leading embedded technologies, including:
-                </p>
-                <ul className="service-page__list">
-                  {PLATFORM_EXPERTISE.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <p>Our designs support complex, high-speed, and mission-critical applications.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="section section--alt">
-          <div className="container">
-            <h2 className="service-page__h2">Engineering Approach</h2>
-            <p className="service-page__lead">
-              We follow a structured, engineering-driven process to ensure reliable and production-ready hardware:
-            </p>
-            <ul className="service-page__list">
-              {ENGINEERING_APPROACH.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="container">
-            <h2 className="service-page__h2">Delivering Reliable Hardware Solutions</h2>
-            <p className="service-page__lead" style={{ maxWidth: '100%' }}>
-              We focus on developing hardware that meets performance targets, reduces development risk, and ensures successful manufacturing. Our commitment to engineering excellence enables customers to accelerate product development and deliver reliable electronic systems to market.
-            </p>
           </div>
         </section>
       </div>
