@@ -3,7 +3,7 @@ import './CtaProject.css';
 
 export default function CtaProject() {
   return (
-    <section style={{padding:"3rem 0"}}>
+    <section className="section section--alt cta-project">
       <div className="container cta-project__inner">
         <h2 className="cta-project__title">Have a Hardware Project in Mind?</h2>
         <p className="cta-project__text">

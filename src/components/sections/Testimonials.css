@@ -1,5 +1,5 @@
 .testimonials {
-  background: #e8eef5;
+  background: var(--color-bg);
 }
 
 .testimonials__header {
@@ -9,13 +9,14 @@
 
 .testimonials__title {
   margin-bottom: 0.5rem;
+  color: var(--color-text);
 }
 
 .testimonials__subtitle {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--text-body);
   color: var(--color-text-muted);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .testimonials__grid {
@@ -80,10 +81,10 @@
   height: 48px;
   min-width: 48px;
   border-radius: 50%;
-  background: #e0e0e0;
-  color: var(--color-text);
+  background: var(--color-border);
+  color: var(--color-primary);
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: var(--text-small);
   display: flex;
   align-items: center;
   justify-content: center;

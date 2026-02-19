@@ -52,15 +52,26 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(10, 61, 138, 0.92) 0%,
-    rgba(13, 71, 161, 0.85) 50%
+    rgba(10, 61, 138, 0.88) 0%,
+    rgba(13, 71, 161, 0.82) 50%
   );
   z-index: 1;
 }
 
+.hero__particles {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero__particles canvas {
+  display: block;
+}
+
 .hero .hero__container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero .hero__title,
@@ -89,7 +100,7 @@
 }
 
 .hero__title-nowrap {
-  /* white-space: nowrap; */
+  white-space: normal;
 }
 
 .hero__subline {
@@ -109,7 +120,7 @@
 
 .hero__service-group-title {
   margin: 0 0 0.75rem;
-      font-size: 24px;
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
   font-weight: 700;
   color: rgba(255, 255, 255, 0.95);
   text-transform: none;
@@ -128,18 +139,22 @@
 .hero__service-item {
   position: relative;
   padding-left: 1.5rem;
-  font-size:18px;
+  font-size: clamp(0.875rem, 1.8vw, 1.125rem);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.7;
 }
 
 .hero__service-item::before {
-  content: "▸";
+  content: "";
   position: absolute;
   left: 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9em;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -166,4 +181,45 @@
   background-color: transparent;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+/* Very small screens: prevent hero content from sitting under fixed navbar */
+@media (max-width: 380px) {
+  .hero {
+    padding-top: 8rem;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+
+  .hero .hero__container {
+    padding-top: 0.5rem;
+  }
+
+  .hero__title {
+    font-size: clamp(1.35rem, 5vw, 1.75rem);
+  }
+
+  .hero__subline {
+    font-size: 0.9375rem;
+  }
+
+  .hero__service-group-title {
+    font-size: 0.9375rem;
+  }
+
+  .hero__service-item {
+    font-size: 0.875rem;
+  }
+
+  .hero__service-groups {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__cta {
+    font-size: 1rem;
+    min-width: 140px;
+    padding: 0.65rem 1.25rem;
+  }
 }

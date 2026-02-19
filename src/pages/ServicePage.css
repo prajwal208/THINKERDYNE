@@ -111,12 +111,15 @@
 }
 
 .service-page__arrowlist li::before {
-  content: "→";
+  content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  color: var(--color-primary);
-  font-weight: 700;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(13, 71, 161, 0.15);
 }
 
 .service-page__grid-2x2 {

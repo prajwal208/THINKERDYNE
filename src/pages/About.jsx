@@ -126,11 +126,11 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-page__section section section--dark about-page__cta">
+        <section className="about-page__section section about-page__cta about-page__cta--light">
           <div className="container about-page__cta-inner">
-            <h2 className="about-page__h2 about-page__h2--light">Let&apos;s Build Your Next Hardware Product</h2>
+            <h2 className="about-page__h2 about-page__cta-title">Let&apos;s Build Your Next Hardware Product</h2>
             <p className="about-page__cta-text">Partner with Thinkerdyne Technologies for reliable and efficient electronics design solutions.</p>
-            <Link to="/contact" className="btn btn--light">Contact Us</Link>
+            <Link to="/contact" className="btn btn--primary">Contact Us</Link>
           </div>
         </section>
 

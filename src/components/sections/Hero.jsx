@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import heroVideo from "../../assets/6466100-uhd_3840_2160_30fps.mp4";
+import ParticleBackground from "../ParticleBackground";
 import "./Hero.css";
 
 const prefersReducedMotion = () =>
@@ -62,6 +63,7 @@ export default function Hero() {
           tabIndex={-1}
         />
       </div>
+      <ParticleBackground />
       <div className="hero__graphics" aria-hidden="true" />
       <div className=" hero__container">
         <h1 className="hero__title" ref={titleRef}>

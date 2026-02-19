@@ -61,12 +61,12 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 1rem;
+  scroll-padding-top: 5.5rem; /* clear fixed navbar (72px + spacing) */
 }
 
 /* When scrolling to a section, keep the whole section in view */
 section[id] {
-  scroll-margin-top: 1rem;
+  scroll-margin-top: 5.5rem;
 }
 
 
@@ -97,6 +97,19 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Modern list bullet – small circle, use on list items with .list-bullet or per-section */
+.list-bullet-dot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.85;
 }
 
 /* Container */
@@ -248,5 +261,15 @@ p {
 
   p {
     font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 6rem;
   }
 }

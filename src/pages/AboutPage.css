@@ -215,18 +215,34 @@
   font-weight: 700;
   color: var(--color-text);
   margin: 0 0 1rem;
+  padding-top: 40px;
 }
 
 .about-page__strengths-list {
   margin: 0;
   padding-left: 1.5rem;
+  list-style: none;
   color: var(--color-text-muted);
   font-size: 1rem;
   line-height: 1.7;
 }
 
 .about-page__strengths-list li {
+  position: relative;
   margin-bottom: 1rem;
+  padding-left: 0.75rem;
+}
+
+.about-page__strengths-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(13, 71, 161, 0.15);
 }
 
 .about-page__strengths-list li:last-child {
@@ -324,6 +340,12 @@
   color: var(--color-text-muted);
 }
 
+/* CTA block: white background, outside footer style */
+.about-page__cta.about-page__cta--light {
+  background-color: #fff;
+  color: var(--color-text);
+}
+
 .about-page__cta .container {
   max-width: 700px;
 }
@@ -333,10 +355,20 @@
   padding: 2rem 0;
 }
 
+.about-page__cta-title {
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .about-page__cta-text {
   margin: 0 0 1.5rem;
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-muted);
+}
+
+.about-page__cta--light .about-page__cta-text {
+  color: var(--color-text-muted);
 }
 
 .about-page__cta-inner .btn {

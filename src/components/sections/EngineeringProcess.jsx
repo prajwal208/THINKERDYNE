@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { useFadeInUp, useStaggerChildren } from '../../hooks/useScrollAnimation';
 import engineeringProcessImg from '../../assets/engineering_process.jpg';
 import './EngineeringProcess.css';
 
@@ -13,24 +15,32 @@ const STEPS = [
 ];
 
 export default function EngineeringProcess() {
+  const headerRef = useRef(null);
+  const listRef = useRef(null);
+  const visualRef = useRef(null);
+  useFadeInUp({ ref: headerRef });
+  useFadeInUp({ ref: visualRef, delay: 0.1 });
+  useStaggerChildren({ containerRef: listRef, selector: '.engineering-process__item', stagger: 0.06 });
+
   return (
     <section id="engineering-process" className="engineering-process section section--alt">
       <div className="container engineering-process__inner">
         <div className="engineering-process__content">
-          <h2 className="engineering-process__title">Our Engineering Process</h2>
-          <p className="engineering-process__intro">
-            We follow a systematic development approach to ensure quality and reliability.
-          </p>
-          <ul className="engineering-process__list" role="list">
+          <div ref={headerRef}>
+            <h2 className="engineering-process__title">Our Engineering Process</h2>
+            <p className="engineering-process__intro">
+              We follow a systematic development approach to ensure quality and reliability.
+            </p>
+          </div>
+          <ul className="engineering-process__list" role="list" ref={listRef}>
             {STEPS.map((step) => (
               <li key={step} className="engineering-process__item">
-                <span className="engineering-process__arrow" aria-hidden="true">→</span>
                 {step}
               </li>
             ))}
           </ul>
         </div>
-        <div className="engineering-process__visual" aria-hidden="true">
+        <div className="engineering-process__visual" aria-hidden="true" ref={visualRef}>
           <img src={engineeringProcessImg} alt="" className="engineering-process__img" />
         </div>
       </div>

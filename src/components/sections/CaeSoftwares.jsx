@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { useFadeInUp } from '../../hooks/useScrollAnimation';
 import altiumLogo from "../../assets/altium_logo.png";
 import kicadLogo from "../../assets/kicad_logo.png";
 import "./CaeSoftwares.css";
@@ -8,9 +10,12 @@ const CAE_LOGOS = [
 ];
 
 export default function CaeSoftwares() {
+  const titleRef = useRef(null);
+  useFadeInUp({ ref: titleRef });
+
   return (
     <section className="cae-softwares" aria-label="CAE Softwares">
-      <h2 className="cae-softwares__title">Engineering Tools & Technologies</h2>
+      <h2 className="cae-softwares__title" ref={titleRef}>Engineering Tools & Technologies</h2>
       {/* <p className="cae-softwares__subtitle">Software We Use</p> */}
       <div className="cae-softwares__logos-wrap">
         <div className="cae-softwares__logos">

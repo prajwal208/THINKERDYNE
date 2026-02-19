@@ -147,6 +147,9 @@ export default function Footer() {
       </div>
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
+          <Link to={routes.home} className="footer__logo-link" aria-label="THINKERDYNE Home">
+            <img src="/thinkerdyne-logo.png" alt="" className="footer__logo-img" />
+          </Link>
           <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p>
           {/* <div className="footer__socials">
             <a
