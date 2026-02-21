@@ -1,7 +1,7 @@
-import PageHero from '../components/PageHero';
-import { images } from '../constants/images';
-import imgEmbeddedFirmware from '../assets/embedded_firmware.jpg';
-import './ServicePage.css';
+import PageHero from "../components/PageHero";
+import { images } from "../constants/images";
+import imgEmbeddedFirmware from "../assets/firmwre.jpg";
+import "./ServicePage.css";
 
 const KEY_CAPABILITIES = [
   "Embedded firmware development for microcontrollers and embedded processors",
@@ -49,12 +49,30 @@ export default function EmbeddedFirmware() {
                   <img src={imgEmbeddedFirmware} alt="Firmware development" />
                 </div>
                 <div className="service-page__panel">
-                  <h2 className="service-page__panel-title">Firmware Development</h2>
-                  <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                    At THINKERDYNE Technologies, we develop high-performance embedded firmware that enables precise hardware control, reliable system operation, and seamless integration between processors, peripherals, and communication interfaces. Our firmware is designed for stability, scalability, and production readiness, supporting both prototype validation and high-volume deployment.
+                  <h2 className="service-page__panel-title">
+                    Firmware Development
+                  </h2>
+                  <p
+                    className="service-page__lead"
+                    style={{ maxWidth: "100%" }}
+                  >
+                    At THINKERDYNE Technologies, we develop high-performance
+                    embedded firmware that enables precise hardware control,
+                    reliable system operation, and seamless integration between
+                    processors, peripherals, and communication interfaces. Our
+                    firmware is designed for stability, scalability, and
+                    production readiness, supporting both prototype validation
+                    and high-volume deployment.
                   </p>
-                  <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                    Our engineers work closely with hardware teams to ensure smooth hardware bring-up, efficient debugging, and optimized system performance. Using structured development practices and rigorous validation, we deliver robust firmware solutions for real-world applications.
+                  <p
+                    className="service-page__lead"
+                    style={{ maxWidth: "100%" }}
+                  >
+                    Our engineers work closely with hardware teams to ensure
+                    smooth hardware bring-up, efficient debugging, and optimized
+                    system performance. Using structured development practices
+                    and rigorous validation, we deliver robust firmware
+                    solutions for real-world applications.
                   </p>
                 </div>
               </div>
@@ -63,27 +81,43 @@ export default function EmbeddedFirmware() {
 
               <div className="service-page__grid-2x2">
                 <div className="service-page__panel">
-                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Key Capabilities</h3>
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                    Key Capabilities
+                  </h3>
                   <ul className="service-page__arrowlist">
-                    {KEY_CAPABILITIES.map((i) => <li key={i}>{i}</li>)}
+                    {KEY_CAPABILITIES.map((i) => (
+                      <li key={i}>{i}</li>
+                    ))}
                   </ul>
                 </div>
                 <div className="service-page__panel">
-                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Supported Platforms</h3>
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                    Supported Platforms
+                  </h3>
                   <ul className="service-page__arrowlist">
-                    {SUPPORTED_PLATFORMS.map((i) => <li key={i}>{i}</li>)}
+                    {SUPPORTED_PLATFORMS.map((i) => (
+                      <li key={i}>{i}</li>
+                    ))}
                   </ul>
                 </div>
                 <div className="service-page__panel">
-                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Deliverables</h3>
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                    Deliverables
+                  </h3>
                   <ul className="service-page__arrowlist">
-                    {DELIVERABLES.map((i) => <li key={i}>{i}</li>)}
+                    {DELIVERABLES.map((i) => (
+                      <li key={i}>{i}</li>
+                    ))}
                   </ul>
                 </div>
                 <div className="service-page__panel">
-                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>Applications</h3>
+                  <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                    Applications
+                  </h3>
                   <ul className="service-page__arrowlist">
-                    {APPLICATIONS.map((i) => <li key={i}>{i}</li>)}
+                    {APPLICATIONS.map((i) => (
+                      <li key={i}>{i}</li>
+                    ))}
                   </ul>
                 </div>
               </div>

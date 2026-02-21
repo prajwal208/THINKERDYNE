@@ -1,7 +1,9 @@
-import PageHero from '../components/PageHero';
-import { images } from '../constants/images';
-import imgPcbAssembly from '../assets/pcb_design.jpg';
-import './ServicePage.css';
+import PageHero from "../components/PageHero";
+import { images } from "../constants/images";
+import imgPcbAssembly from "../assets/pcb_design.jpg";
+import assembly from "../assets/assembly.jpg";
+import pcbboard from "../assets/pcbb.png";
+import "./ServicePage.css";
 
 const FABRICATION_SUPPORT = [
   "Support for PCB fabrication through trusted and qualified manufacturing vendors",
@@ -40,25 +42,43 @@ export default function FabricationAssembly() {
       <PageHero
         title="Engineering Services:"
         serviceName="PCB Fabrication & Assembly"
-        backgroundImage={images.factory}
+        backgroundImage={pcbboard}
       />
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
             <div className="service-page__panel">
-              <h2 className="service-page__panel-title">Fabrication, Assembly, and PCB Rework</h2>
+              <h2 className="service-page__panel-title">
+                Fabrication, Assembly, and PCB Rework
+              </h2>
               <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                Thinkerdyne provides professional PCB fabrication, assembly, and rework support to ensure reliable and efficient manufacturing of electronic products. We work closely with trusted and qualified fabrication and assembly vendors to deliver high-quality PCB boards that meet design specifications, performance requirements, and production standards.
+                Thinkerdyne provides professional PCB fabrication, assembly, and
+                rework support to ensure reliable and efficient manufacturing of
+                electronic products. We work closely with trusted and qualified
+                fabrication and assembly vendors to deliver high-quality PCB
+                boards that meet design specifications, performance
+                requirements, and production standards.
               </p>
               <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                Our engineering-driven approach ensures accurate manufacturing preparation, component coordination, and assembly support, enabling a seamless transition from design to prototype and production. In addition, we provide PCB rework and modification support to correct issues, implement design updates, and restore functionality, helping extend product lifecycle and ensure manufacturing reliability.
+                Our engineering-driven approach ensures accurate manufacturing
+                preparation, component coordination, and assembly support,
+                enabling a seamless transition from design to prototype and
+                production. In addition, we provide PCB rework and modification
+                support to correct issues, implement design updates, and restore
+                functionality, helping extend product lifecycle and ensure
+                manufacturing reliability.
               </p>
 
-              <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: "1.25rem" }}>
+              <h3
+                className="service-page__h3"
+                style={{ color: "var(--color-text)", marginTop: "1.25rem" }}
+              >
                 PCB Fabrication Support
               </h3>
               <ul className="service-page__arrowlist">
-                {FABRICATION_SUPPORT.map((i) => <li key={i}>{i}</li>)}
+                {FABRICATION_SUPPORT.map((i) => (
+                  <li key={i}>{i}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -68,23 +88,33 @@ export default function FabricationAssembly() {
           <div className="container">
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={imgPcbAssembly} alt="PCB fabrication and assembly" />
+                <img src={assembly} alt="PCB fabrication and assembly" />
               </div>
               <div className="service-page__panel">
-                <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: 0 }}>
+                <h3
+                  className="service-page__h3"
+                  style={{ color: "var(--color-text)", marginTop: 0 }}
+                >
                   PCB Assembly Support
                 </h3>
                 <ul className="service-page__arrowlist">
-                  {ASSEMBLY_SUPPORT.map((i) => <li key={i}>{i}</li>)}
+                  {ASSEMBLY_SUPPORT.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
 
                 <div style={{ height: "1rem" }} />
 
-                <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: 0 }}>
+                <h3
+                  className="service-page__h3"
+                  style={{ color: "var(--color-text)", marginTop: 0 }}
+                >
                   PCB Rework
                 </h3>
                 <ul className="service-page__arrowlist">
-                  {PCB_REWORK.map((i) => <li key={i}>{i}</li>)}
+                  {PCB_REWORK.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
               </div>
             </div>

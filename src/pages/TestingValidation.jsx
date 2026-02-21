@@ -1,6 +1,7 @@
-import PageHero from '../components/PageHero';
-import { images } from '../constants/images';
-import './ServicePage.css';
+import PageHero from "../components/PageHero";
+import { images } from "../constants/images";
+import testing from "../assets/testing.png";
+import "./ServicePage.css";
 
 const TESTING_CAPABILITIES = [
   "Functional testing to verify correct system operation",
@@ -37,18 +38,30 @@ export default function TestingValidation() {
       <PageHero
         title="Engineering Services:"
         serviceName="PCB Testing & Validation"
-        backgroundImage={images.lab}
+        backgroundImage={testing}
       />
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
             <div className="service-page__panel">
-              <h2 className="service-page__panel-title">PCB Testing &amp; Validation</h2>
+              <h2 className="service-page__panel-title">
+                PCB Testing &amp; Validation
+              </h2>
               <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                Thinkerdyne provides professional PCB testing and validation services to ensure electronic assemblies meet functional, electrical, and performance requirements with confidence. Our engineering-driven testing approach verifies hardware functionality, confirms design integrity, and identifies potential issues early to ensure reliable and stable system operation.
+                Thinkerdyne provides professional PCB testing and validation
+                services to ensure electronic assemblies meet functional,
+                electrical, and performance requirements with confidence. Our
+                engineering-driven testing approach verifies hardware
+                functionality, confirms design integrity, and identifies
+                potential issues early to ensure reliable and stable system
+                operation.
               </p>
               <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                We support validation throughout the product development lifecycle, including hardware bring-up, prototype testing, design verification, and pre-production readiness. This structured process ensures every PCB is fully validated, production-ready, and prepared for seamless system integration.
+                We support validation throughout the product development
+                lifecycle, including hardware bring-up, prototype testing,
+                design verification, and pre-production readiness. This
+                structured process ensures every PCB is fully validated,
+                production-ready, and prepared for seamless system integration.
               </p>
             </div>
           </div>
@@ -58,27 +71,43 @@ export default function TestingValidation() {
           <div className="container">
             <div className="service-page__grid-2x2">
               <div className="service-page__panel">
-                <h3 className="service-page__h3" style={{ marginTop: 0 }}>Testing Capabilities</h3>
+                <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                  Testing Capabilities
+                </h3>
                 <ul className="service-page__arrowlist">
-                  {TESTING_CAPABILITIES.map((i) => <li key={i}>{i}</li>)}
+                  {TESTING_CAPABILITIES.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
               </div>
               <div className="service-page__panel">
-                <h3 className="service-page__h3" style={{ marginTop: 0 }}>Debug and Failure Analysis</h3>
+                <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                  Debug and Failure Analysis
+                </h3>
                 <ul className="service-page__arrowlist">
-                  {DEBUG_FAILURE_ANALYSIS.map((i) => <li key={i}>{i}</li>)}
+                  {DEBUG_FAILURE_ANALYSIS.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
               </div>
               <div className="service-page__panel">
-                <h3 className="service-page__h3" style={{ marginTop: 0 }}>Validation and Verification</h3>
+                <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                  Validation and Verification
+                </h3>
                 <ul className="service-page__arrowlist">
-                  {VALIDATION_VERIFICATION.map((i) => <li key={i}>{i}</li>)}
+                  {VALIDATION_VERIFICATION.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
               </div>
               <div className="service-page__panel">
-                <h3 className="service-page__h3" style={{ marginTop: 0 }}>Prototype to Production Testing</h3>
+                <h3 className="service-page__h3" style={{ marginTop: 0 }}>
+                  Prototype to Production Testing
+                </h3>
                 <ul className="service-page__arrowlist">
-                  {PROTOTYPE_TO_PRODUCTION.map((i) => <li key={i}>{i}</li>)}
+                  {PROTOTYPE_TO_PRODUCTION.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
               </div>
             </div>

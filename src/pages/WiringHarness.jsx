@@ -1,7 +1,9 @@
-import PageHero from '../components/PageHero';
-import { images } from '../constants/images';
-import imgWiringHarness from '../assets/wiringharness.jpg';
-import './ServicePage.css';
+import PageHero from "../components/PageHero";
+import { images } from "../constants/images";
+import imgWiringHarness from "../assets/wiringharness.jpg";
+import wiring from "../assets/wiring.png";
+import cableh from "../assets/cableh.jpg";
+import "./ServicePage.css";
 
 const HARNESS_CAPABILITIES = [
   "Custom wiring harness design based on system requirements",
@@ -23,7 +25,7 @@ export default function WiringHarness() {
       <PageHero
         title="Engineering Services:"
         serviceName="Wiring Harness"
-        backgroundImage={images.electronics}
+        backgroundImage={wiring}
       />
       <div className="service-page">
         <section className="section section--alt">
@@ -32,28 +34,47 @@ export default function WiringHarness() {
               <div className="service-page__panel">
                 <h2 className="service-page__panel-title">Wiring Harness</h2>
                 <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                  Thinkerdyne provides reliable wiring harness solutions that ensure secure electrical connectivity and seamless integration for embedded and electronic systems. Our harnesses are developed with precise wire selection, connector integration, and optimized routing to support stable power delivery, signal integrity, and long-term reliability.
+                  Thinkerdyne provides reliable wiring harness solutions that
+                  ensure secure electrical connectivity and seamless integration
+                  for embedded and electronic systems. Our harnesses are
+                  developed with precise wire selection, connector integration,
+                  and optimized routing to support stable power delivery, signal
+                  integrity, and long-term reliability.
                 </p>
                 <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                  We work with trusted manufacturing partners to support both prototype and production requirements, delivering high-quality, production-ready wiring harness solutions for embedded hardware, control systems, and custom electronic products.
+                  We work with trusted manufacturing partners to support both
+                  prototype and production requirements, delivering
+                  high-quality, production-ready wiring harness solutions for
+                  embedded hardware, control systems, and custom electronic
+                  products.
                 </p>
 
-                <h3 className="service-page__h3" style={{ color: "var(--color-text)", marginTop: "1.25rem" }}>
+                <h3
+                  className="service-page__h3"
+                  style={{ color: "var(--color-text)", marginTop: "1.25rem" }}
+                >
                   Wiring Harness Capabilities
                 </h3>
                 <ul className="service-page__arrowlist">
-                  {HARNESS_CAPABILITIES.map((i) => <li key={i}>{i}</li>)}
+                  {HARNESS_CAPABILITIES.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
 
-                <h3 className="service-page__h3" style={{ color: "var(--color-text)" }}>
+                <h3
+                  className="service-page__h3"
+                  style={{ color: "var(--color-text)" }}
+                >
                   Assembly and Integration Support
                 </h3>
                 <ul className="service-page__arrowlist">
-                  {ASSEMBLY_INTEGRATION.map((i) => <li key={i}>{i}</li>)}
+                  {ASSEMBLY_INTEGRATION.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
                 </ul>
               </div>
               <div className="service-page__media">
-                <img src={imgWiringHarness} alt="Wiring harness" />
+                <img src={cableh} alt="Wiring harness" />
               </div>
             </div>
           </div>
