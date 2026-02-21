@@ -9,12 +9,15 @@ import {
   coreServicesCategory2,
   images,
 } from "../../constants/images";
-import imgEmbeddedHardware from "../../assets/embedd_ hardware.jpg";
-import imgEmbeddedFirmware from "../../assets/embedded_firmware.jpg";
-import imgPcbDesign from "../../assets/pcb_design.jpg";
-import imgReverseEngineering from "../../assets/reverse_engineering.jpg";
-import imgWiringHarness from "../../assets/wiringharness.jpg";
+import imgEmbeddedHardware from "../../assets/homecore_hardware.png";
+import imgEmbeddedFirmware from "../../assets/firmwre.jpg";
+import imgPcbDesign from "../../assets/pcb.png";
+import imgReverseEngineering from "../../assets/reverse.jpg";
+import imgWiringHarness from "../../assets/wiring.png";
 import bgImage from "../../assets/bg.jpeg";
+import compo from "../../assets/component.png";
+import fab from "../../assets/fab.png";
+import testing from "../../assets/testing.png";
 import "./Services.css";
 
 const SERVICE_DESCRIPTIONS = {
@@ -41,9 +44,9 @@ const SERVICE_IMAGES = {
   "Firmware Development": imgEmbeddedFirmware,
   "PCB Design & Analysis": imgPcbDesign,
   "Reverse Engineering": imgReverseEngineering,
-  "Component Sourcing": images.coreServiceComponentSourcing,
-  "Fabrication & Assembly": images.coreServiceFabrication,
-  "Testing & Validation": images.coreServiceTesting,
+  "Component Sourcing": compo,
+  "Fabrication & Assembly": fab,
+  "Testing & Validation": testing,
   "Wiring Harness": imgWiringHarness,
 };
 
