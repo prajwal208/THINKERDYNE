@@ -18,6 +18,7 @@ import bgImage from "../../assets/bg.jpeg";
 import compo from "../../assets/component.png";
 import fab from "../../assets/fab.png";
 import testing from "../../assets/testing.png";
+import core_bg from "../../assets/core_bg.jpg";
 import "./Services.css";
 
 const SERVICE_DESCRIPTIONS = {
@@ -62,7 +63,7 @@ export default function Services() {
     <section
       id="services"
       className="services section"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{ backgroundImage: `url(${core_bg})` }}
     >
       <div className="services__overlay" aria-hidden="true" />
       <div className="services__content">

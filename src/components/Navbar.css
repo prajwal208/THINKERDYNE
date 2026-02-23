@@ -5,7 +5,9 @@
   z-index: 1000;
   background-color: rgba(240, 245, 252, 0.97);
   backdrop-filter: blur(8px);
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .navbar--scrolled {
@@ -71,7 +73,9 @@
   height: 2px;
   background-color: var(--color-text);
   border-radius: 1px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .navbar__toggle--open .navbar__toggle-bar:nth-child(1) {
@@ -156,6 +160,7 @@
   font-weight: 500;
   font-size: 0.9375rem;
   color: var(--color-text);
+  letter-spacing: 0.06em;
   cursor: pointer;
   padding: 0;
 }
@@ -172,6 +177,8 @@
   border-right: 4px solid transparent;
   border-top: 5px solid currentColor;
   transition: transform 0.2s ease;
+
+  /* border: 2px solid red; */
 }
 
 .navbar__link--open .navbar__dropdown-chevron {
@@ -193,7 +200,10 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4px);
-  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
   z-index: 100;
 }
 
@@ -246,7 +256,10 @@
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: max-height 0.35s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transition:
+      max-height 0.35s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
     text-align: left;
   }
 
@@ -263,7 +276,7 @@
     gap: 0;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--color-border);
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 
   .navbar__list li {
@@ -315,9 +328,14 @@
 
   .navbar__contact {
     display: block;
-    padding: 0.75rem 0;
+    /* padding: 0.75rem 0; */
     text-align: left;
     width: 100%;
+  }
+  .navbar__dropdown-chevron {
+    margin-bottom: 3px;
+    margin-left: 4px;
+    /* border: 2px solid red; */
   }
 }
 

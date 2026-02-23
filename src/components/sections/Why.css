@@ -35,6 +35,18 @@
   text-align: center;
   color: var(--color-text);
   margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.why__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
 }
 
 .why__subtitle {
@@ -65,23 +77,31 @@
 }
 
 .why__card {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   text-align: center;
-  background: var(--color-bg-card);
-  border-radius: 12px;
-  border: 1px solid var(--color-border);
-  transition:
-    box-shadow var(--transition-base),
-    transform var(--transition-base);
-  box-shadow: 0 2px 8px rgba(26, 35, 50, 0.06);
-  display: flex;
-  flex-direction: column;
-  min-height: 280px;
+  background: linear-gradient(
+    165deg,
+    #ffffff 0%,
+    #f8fafd 50%,
+    #f2f6fc 100%
+  );
+  border-radius: 14px;
+  border: none;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+  box-shadow:
+    0 2px 8px rgba(26, 35, 50, 0.04),
+    0 8px 24px rgba(26, 35, 50, 0.06),
+    0 0 0 1px rgba(13, 71, 161, 0.06);
+  position: relative;
+  overflow: hidden;
 }
 
 .why__card:hover {
-  box-shadow: 0 8px 24px rgba(26, 35, 50, 0.12);
   transform: translateY(-4px);
+  box-shadow:
+    0 12px 32px rgba(26, 35, 50, 0.08),
+    0 24px 48px rgba(13, 71, 161, 0.12),
+    0 0 0 1px rgba(13, 71, 161, 0.06);
 }
 
 .why__card-img-wrap {
@@ -102,6 +122,31 @@
 
 .why__card-title {
   margin-bottom: 0.5rem;
+}
+.why__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(13, 71, 161, 0.08) 0%,
+    rgba(21, 101, 192, 0.12) 100%
+  );
+  color: var(--color-primary);
+  font-size: 28px;
+  transition: background var(--transition-base), color var(--transition-base), transform var(--transition-base);
+  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.08);
+}
+
+.why__card:hover .why__icon {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.25);
 }
 
 .why__card-desc {

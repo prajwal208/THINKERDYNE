@@ -142,7 +142,13 @@ img {
 }
 
 .section--alt {
-  background-color: var(--color-bg-alt);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fafd 50%,
+    #f2f6fc 100%
+  );
+  position: relative;
 }
 
 /* Remove gap where Solutions section was removed (Services followed by Why) */
