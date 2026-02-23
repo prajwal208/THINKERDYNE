@@ -1,8 +1,5 @@
 import PageHero from "../components/PageHero";
 import { images } from "../constants/images";
-import imgPcbAssembly from "../assets/pcb_design.jpg";
-import assembly from "../assets/assembly.jpg";
-import pcbboard from "../assets/pcbb.png";
 import "./ServicePage.css";
 
 const FABRICATION_SUPPORT = [
@@ -42,7 +39,7 @@ export default function FabricationAssembly() {
       <PageHero
         title="Engineering Services:"
         serviceName="PCB Fabrication & Assembly"
-        backgroundImage={pcbboard}
+        backgroundImage={images.manufacturing}
       />
       <div className="service-page">
         <section className="section section--alt">
@@ -88,7 +85,7 @@ export default function FabricationAssembly() {
           <div className="container">
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={assembly} alt="PCB fabrication and assembly" />
+                <img src={images.assembly} alt="PCB fabrication and assembly" />
               </div>
               <div className="service-page__panel">
                 <h3
