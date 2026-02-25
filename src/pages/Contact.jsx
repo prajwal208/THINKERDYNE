@@ -52,7 +52,7 @@ export default function Contact() {
 
               <h3 className="contact-page__info-heading">Let's Talk</h3>
               <p className="contact-page__phones">
-                <a href="tel:+919677510113">+91 9000000000</a>
+                <a href="tel:+919677510113">+91  9620233838</a>
               </p>
 
               <h3 className="contact-page__info-heading">Email Us</h3>
