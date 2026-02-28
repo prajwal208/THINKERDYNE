@@ -16,7 +16,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Sathish Kumar",
-    role: "Senior Manager Hardwared development",
+    role: "Senior Manager H&D",
     text: "Expert in multi-layer Hi Speed mixed signal PCB design and providing turnkey product service with end-to-end tech.",
     rating: 5,
     initial: "C",
