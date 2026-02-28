@@ -3,7 +3,7 @@
   right: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(240, 245, 252, 0.97);
+  background-color: #fff;
   backdrop-filter: blur(8px);
   transition:
     box-shadow 0.3s ease,
@@ -22,7 +22,7 @@
   gap: 1rem;
   width: 100%;
   margin: 0;
- padding: 0 10rem;
+  padding: 0 10rem;
   box-sizing: border-box;
 }
 

@@ -1,8 +1,8 @@
 import PageHero from "../components/PageHero";
 import { images } from "../constants/images";
-import fab from "../assets/fab.png";
-import fab_first from "../assets/fab_first.jpeg";
-import rework from "../assets/rework_fab.jpeg";
+import rework from "../assets/fab.png";
+import fab_assembly from "../assets/fab_first.jpeg";
+import fab from "../assets/rework_fab.jpeg";
 import "./ServicePage.css";
 
 const FABRICATION_SUPPORT = [
@@ -71,7 +71,7 @@ export default function FabricationAssembly() {
             <h2 className="service-page__section-title">PCB Fabrication</h2>
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={fab_first} alt="PCB fabrication" />
+                <img src={fab} alt="PCB fabrication" />
               </div>
               <div className="service-page__panel">
                 <p
@@ -98,7 +98,7 @@ export default function FabricationAssembly() {
             <h2 className="service-page__section-title">PCB Assembly</h2>
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={fab} alt="PCB assembly" />
+                <img src={fab_assembly} alt="PCB assembly" />
               </div>
               <div className="service-page__panel">
                 <p

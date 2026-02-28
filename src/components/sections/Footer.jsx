@@ -1,10 +1,10 @@
-import './Footer.css';
+import "./Footer.css";
 
 const SERVICE_LINKS = [
-  { label: 'PCB Design', href: '#services' },
-  { label: 'PCB Analysis', href: '#services' },
-  { label: 'Manufacturing Service', href: '#services' },
-  { label: 'Reverse Engineering', href: '#services' },
+  { label: "PCB Design", href: "#services" },
+  { label: "PCB Analysis", href: "#services" },
+  { label: "Manufacturing Service", href: "#services" },
+  { label: "Reverse Engineering", href: "#services" },
 ];
 
 export default function Footer() {
@@ -16,7 +16,8 @@ export default function Footer() {
             THINKERDYNE
           </a>
           <p className="footer__tagline">
-            PCB Design | Electronics Prototyping | Electronics Manufacturing | Reverse Engineering
+            PCB Design | Electronics Prototyping | Electronics Manufacturing |
+            Reverse Engineering
           </p>
         </div>
         <nav className="footer__nav" aria-label="Footer navigation">
@@ -38,7 +39,8 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container">
           <p className="footer__copy">
-            &copy; {new Date().getFullYear()} THINKERDYNE. All rights reserved.
+            {/* Copyright © {new Date().getFullYear()} | Thinkerdyne. All rights
+            reserved. */}
           </p>
         </div>
       </div>
