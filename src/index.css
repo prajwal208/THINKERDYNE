@@ -4,18 +4,18 @@
 /* Sacrasys-style design system */
 :root {
     --font-primary: "Montserrat", "Inter", system-ui, -apple-system, sans-serif;
-  /* Colors – professional blue theme */
-  --color-primary: #0d47a1;
-  --color-primary-dark: #0a3d8a;
-  --color-primary-light: #1565c0;
-  --color-bg: #f0f5fc;
+  /* Colors – primary #044364 and derivatives */
+  --color-primary: #044364;
+  --color-primary-dark: #032d44;
+  --color-primary-light: #065a85;
+  --color-bg: #f0f4f7;
   --color-bg-alt: #fff;
-  --color-bg-dark: #0a3d8a;
+  --color-bg-dark: #032d44;
   --color-bg-card: #ffffff;
   --color-text: #1a2332;
   --color-text-muted: #4a5f7f;
-  --color-accent: #0d47a1;
-  --color-border: #c5d4eb;
+  --color-accent: #044364;
+  --color-border: #b5c9d6;
   --color-white: #ffffff;
 
   /* Typography */
@@ -209,7 +209,7 @@ p {
 
 .btn--primary:hover {
   background-color: var(--color-primary-dark);
-  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.4);
+  box-shadow: 0 4px 14px rgba(4, 67, 100, 0.4);
 }
 
 .btn--secondary {
@@ -221,7 +221,7 @@ p {
 .btn--secondary:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
-  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.25);
+  box-shadow: 0 4px 14px rgba(4, 67, 100, 0.25);
 }
 
 .btn--light {

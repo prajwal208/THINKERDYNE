@@ -91,7 +91,7 @@
   box-shadow:
     0 2px 8px rgba(26, 35, 50, 0.04),
     0 8px 24px rgba(26, 35, 50, 0.06),
-    0 0 0 1px rgba(13, 71, 161, 0.06);
+    0 0 0 1px rgba(4, 67, 100, 0.06);
   position: relative;
   overflow: hidden;
   height: 200px;
@@ -101,8 +101,8 @@
   transform: translateY(-4px);
   box-shadow:
     0 12px 32px rgba(26, 35, 50, 0.08),
-    0 24px 48px rgba(13, 71, 161, 0.12),
-    0 0 0 1px rgba(13, 71, 161, 0.06);
+    0 24px 48px rgba(4, 67, 100, 0.12),
+    0 0 0 1px rgba(4, 67, 100, 0.06);
 }
 
 .why__card-img-wrap {
@@ -135,20 +135,20 @@
   justify-content: center;
   background: linear-gradient(
     135deg,
-    rgba(13, 71, 161, 0.08) 0%,
+    rgba(4, 67, 100, 0.08) 0%,
     rgba(21, 101, 192, 0.12) 100%
   );
   color: var(--color-primary);
   font-size: 28px;
   transition: background var(--transition-base), color var(--transition-base), transform var(--transition-base);
-  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.08);
+  box-shadow: 0 2px 8px rgba(4, 67, 100, 0.08);
 }
 
 .why__card:hover .why__icon {
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: white;
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.25);
+  box-shadow: 0 4px 12px rgba(4, 67, 100, 0.25);
 }
 
 .why__card-desc {

@@ -29,8 +29,8 @@
   border-radius: 16px;
   box-shadow:
     0 2px 12px rgba(26, 35, 50, 0.06),
-    0 12px 40px rgba(13, 71, 161, 0.08),
-    0 0 0 1px rgba(13, 71, 161, 0.06);
+    0 12px 40px rgba(4, 67, 100, 0.08),
+    0 0 0 1px rgba(4, 67, 100, 0.06);
   position: relative;
   z-index: 1;
 }
@@ -52,5 +52,5 @@
 
 .cta-project__btn {
   display: inline-flex;
-  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.3);
+  box-shadow: 0 4px 14px rgba(4, 67, 100, 0.3);
 }

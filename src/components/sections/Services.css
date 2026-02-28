@@ -151,7 +151,7 @@
   box-shadow:
     0 1px 3px rgba(26, 35, 50, 0.04),
     0 6px 20px rgba(26, 35, 50, 0.08),
-    0 0 0 1px rgba(13, 71, 161, 0.06);
+    0 0 0 1px rgba(4, 67, 100, 0.06);
   border: none;
   position: relative;
   overflow: hidden;
@@ -160,8 +160,8 @@
 .services__card:hover {
   box-shadow:
     0 12px 32px rgba(26, 35, 50, 0.1),
-    0 24px 48px rgba(13, 71, 161, 0.12),
-    0 0 0 1px rgba(13, 71, 161, 0.08);
+    0 24px 48px rgba(4, 67, 100, 0.12),
+    0 0 0 1px rgba(4, 67, 100, 0.08);
   transform: translateY(-4px);
 }
 

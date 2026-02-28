@@ -77,9 +77,9 @@ export const images = {
   aboutVision: `${BASE}/photo-1552664730-d307ca884978?w=800`,
   aboutAwards: `${BASE}/photo-1568992687947-868a62a9f521?w=800`,
   aboutEvolution: `${BASE}/photo-1497366216548-37526070297c?w=800`,
-  aboutMissionIcon: 'https://cdn.simpleicons.org/target/0d47a1',
-  aboutVisionIcon: 'https://cdn.simpleicons.org/eye/0d47a1',
-  aboutValuesIcon: 'https://cdn.simpleicons.org/heart/0d47a1',
+  aboutMissionIcon: 'https://cdn.simpleicons.org/target/044364',
+  aboutVisionIcon: 'https://cdn.simpleicons.org/eye/044364',
+  aboutValuesIcon: 'https://cdn.simpleicons.org/heart/044364',
   // Contact page background
   contactBg: `${BASE}/photo-1423666639041-f56000c27a9a?w=1200`,
 };

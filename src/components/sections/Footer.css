@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-color: #0a3d8a;
+  background-color: var(--color-primary-dark);
   color: var(--color-white);
   overflow: hidden;
 }
@@ -8,7 +8,7 @@
 .footer__bg {
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30 30 60 0 30 30 0zm0 5L5 30l25 25 25-25L30 5z' fill='%231565c0' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30 30 60 0 30 30 0zm0 5L5 30l25 25 25-25L30 5z' fill='%23065a85' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-size: 80px 80px;
   filter: blur(0.5px);
   opacity: 0.7;

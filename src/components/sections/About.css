@@ -46,7 +46,7 @@
 .about__visual {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(13, 71, 161, 0.15);
+  box-shadow: 0 8px 32px rgba(4, 67, 100, 0.15);
 }
 
 .about__visual img {

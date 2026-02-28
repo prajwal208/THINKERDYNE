@@ -75,7 +75,7 @@
 .about-page__img-wrap {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(13, 71, 161, 0.15);
+  box-shadow: 0 8px 32px rgba(4, 67, 100, 0.15);
 }
 
 .about-page__img-wrap img {
@@ -175,9 +175,9 @@
     #f5f9ff 100%
   );
   box-shadow:
-    0 4px 16px rgba(13, 71, 161, 0.06),
-    0 12px 40px rgba(13, 71, 161, 0.08),
-    0 0 0 1px rgba(13, 71, 161, 0.06);
+    0 4px 16px rgba(4, 67, 100, 0.06),
+    0 12px 40px rgba(4, 67, 100, 0.08),
+    0 0 0 1px rgba(4, 67, 100, 0.06);
 }
 
 .about-page__pillar::before {
@@ -189,7 +189,7 @@
   height: 100%;
   background: radial-gradient(
     ellipse 80% 100% at 100% 50%,
-    rgba(13, 71, 161, 0.06) 0%,
+    rgba(4, 67, 100, 0.06) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -198,9 +198,9 @@
 .about-page__pillar:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 16px 48px rgba(13, 71, 161, 0.1),
-    0 32px 64px rgba(13, 71, 161, 0.08),
-    0 0 0 1px rgba(13, 71, 161, 0.08);
+    0 16px 48px rgba(4, 67, 100, 0.1),
+    0 32px 64px rgba(4, 67, 100, 0.08),
+    0 0 0 1px rgba(4, 67, 100, 0.08);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -225,8 +225,8 @@
   );
   color: #fff;
   box-shadow:
-    0 8px 24px rgba(13, 71, 161, 0.35),
-    0 4px 12px rgba(13, 71, 161, 0.2);
+    0 8px 24px rgba(4, 67, 100, 0.35),
+    0 4px 12px rgba(4, 67, 100, 0.2);
 }
 
 .about-page__pillar-icon-wrap svg {
@@ -339,7 +339,7 @@
   height: 6px;
   border-radius: 50%;
   background-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(13, 71, 161, 0.15);
+  box-shadow: 0 0 0 2px rgba(4, 67, 100, 0.15);
 }
 
 .about-page__strengths-list li:last-child {
@@ -426,7 +426,7 @@
   margin: 0;
 
   padding: 1.25rem 1.5rem;
-  background: linear-gradient(to top, rgba(10, 61, 138, 0.9), transparent);
+  background: linear-gradient(to top, rgba(3, 45, 68, 0.9), transparent);
   color: var(--color-white);
   font-size: 0.9375rem;
   line-height: 1.5;
