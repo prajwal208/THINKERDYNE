@@ -1,6 +1,7 @@
 import PageHero from "../components/PageHero";
 import imgWiringHarness from "../assets/wiringharness.jpg";
 import cableh from "../assets/cableh.jpg";
+import wiring from "../assets/fab_wire.jpeg";
 import "./ServicePage.css";
 
 const HARNESS_CAPABILITIES = [
@@ -20,10 +21,7 @@ const ASSEMBLY_INTEGRATION = [
 export default function WiringHarness() {
   return (
     <>
-      <PageHero
-        title="Engineering Services:"
-        serviceName="Wiring Harness"
-      />
+      <PageHero title="Engineering Services:" serviceName="Wiring Harness" />
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
@@ -71,7 +69,7 @@ export default function WiringHarness() {
                 </ul>
               </div>
               <div className="service-page__media">
-                <img src={cableh} alt="Wiring harness" />
+                <img src={wiring} alt="Wiring harness" />
               </div>
             </div>
           </div>

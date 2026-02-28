@@ -1,5 +1,8 @@
 import PageHero from "../components/PageHero";
 import { images } from "../constants/images";
+import fab from "../assets/fab.png";
+import fab_first from "../assets/fab_first.jpeg";
+import rework from "../assets/rework_fab.jpeg";
 import "./ServicePage.css";
 
 const FABRICATION_SUPPORT = [
@@ -8,8 +11,6 @@ const FABRICATION_SUPPORT = [
   "Guidance on PCB material selection based on electrical, thermal, and application requirements",
   "Controlled impedance and stack-up implementation to meet signal integrity and design specifications",
   "Support for prototype, pre-production, and production fabrication requirements",
-  "Preparation and verification of fabrication files to ensure accurate and reliable manufacturing outcomes",
-  "Engineering coordination with fabrication partners to ensure design compliance and manufacturing readiness",
 ];
 
 const ASSEMBLY_SUPPORT = [
@@ -18,8 +19,6 @@ const ASSEMBLY_SUPPORT = [
   "Assembly support for prototype, pre-production, and volume manufacturing",
   "BOM verification and component readiness coordination for efficient assembly",
   "Preparation and validation of Pick and Place data and assembly documentation",
-  "Support for assembly of fine-pitch and high-density PCB designs",
-  "Assembly support to ensure reliable and production-ready PCB boards",
 ];
 
 const PCB_REWORK = [
@@ -28,8 +27,6 @@ const PCB_REWORK = [
   "Rework support for prototype, engineering validation, and production boards",
   "Repair and restoration of faulty, damaged, or non-functional PCB assemblies",
   "Removal and replacement of SMT and through-hole components with proper handling and precision",
-  "Support for rework of fine-pitch and sensitive components using controlled processes",
-  "Engineering validation and functional verification after rework to ensure reliable operation",
 ];
 
 export default function FabricationAssembly() {
@@ -74,13 +71,16 @@ export default function FabricationAssembly() {
             <h2 className="service-page__section-title">PCB Fabrication</h2>
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={images.pcbFabricationService} alt="PCB fabrication" />
+                <img src={fab_first} alt="PCB fabrication" />
               </div>
               <div className="service-page__panel">
-                <p className="service-page__lead" style={{ maxWidth: "100%", marginBottom: "1.25rem" }}>
-                  We support PCB fabrication through qualified manufacturing partners,
-                  from prototype to production, with focus on quality, compliance,
-                  and manufacturability.
+                <p
+                  className="service-page__lead"
+                  style={{ maxWidth: "100%", marginBottom: ".5rem" }}
+                >
+                  We support PCB fabrication through qualified manufacturing
+                  partners, from prototype to production, with focus on quality,
+                  compliance, and manufacturability.
                 </p>
                 <ul className="service-page__arrowlist">
                   {FABRICATION_SUPPORT.map((i) => (
@@ -98,12 +98,16 @@ export default function FabricationAssembly() {
             <h2 className="service-page__section-title">PCB Assembly</h2>
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={images.assembly} alt="PCB assembly" />
+                <img src={fab} alt="PCB assembly" />
               </div>
               <div className="service-page__panel">
-                <p className="service-page__lead" style={{ maxWidth: "100%", marginBottom: "1.25rem" }}>
-                  Our assembly support covers SMT, through-hole, and mixed-technology
-                  builds with trusted vendors for prototype and volume manufacturing.
+                <p
+                  className="service-page__lead"
+                  style={{ maxWidth: "100%", marginBottom: "0.5rem" }}
+                >
+                  Our assembly support covers SMT, through-hole, and
+                  mixed-technology builds with trusted vendors for prototype and
+                  volume manufacturing.
                 </p>
                 <ul className="service-page__arrowlist">
                   {ASSEMBLY_SUPPORT.map((i) => (
@@ -121,12 +125,16 @@ export default function FabricationAssembly() {
             <h2 className="service-page__section-title">PCB Rework</h2>
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={images.manufacturingDocs} alt="PCB rework" />
+                <img src={rework} alt="PCB rework" />
               </div>
               <div className="service-page__panel">
-                <p className="service-page__lead" style={{ maxWidth: "100%", marginBottom: "1.25rem" }}>
+                <p
+                  className="service-page__lead"
+                  style={{ maxWidth: "100%", marginBottom: "0.5rem" }}
+                >
                   We provide rework and modification support to correct defects,
-                  implement design changes, and restore functionality of PCB assemblies.
+                  implement design changes, and restore functionality of PCB
+                  assemblies.
                 </p>
                 <ul className="service-page__arrowlist">
                   {PCB_REWORK.map((i) => (

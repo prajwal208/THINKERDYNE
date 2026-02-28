@@ -234,6 +234,7 @@
   padding: 1rem 1.25rem;
   background: var(--color-primary);
   border-radius: 8px;
+  text-align: center;
 }
 
 .contact-page__response-note {

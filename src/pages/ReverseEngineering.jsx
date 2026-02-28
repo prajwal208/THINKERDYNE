@@ -1,8 +1,7 @@
 import PageHero from "../components/PageHero";
 import imgReverseEngineering from "../assets/reverse_engineering.jpg";
 import "./ServicePage.css";
-import rvp from "../assets/rvp.jpg";
-
+import rvp from "../assets/reverse_engi.jpeg";
 const RE_CAPABILITIES = [
   "PCB hardware analysis and circuit architecture identification",
   "Schematic reconstruction and connectivity verification",

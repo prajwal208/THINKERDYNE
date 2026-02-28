@@ -29,7 +29,7 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_yqznqwa",   
+        "service_yqznqwa",
         "template_ti6tfoo",
         {
           firstName: formData.firstName,
@@ -38,7 +38,7 @@ export default function Contact() {
           phone: formData.phone,
           comments: formData.comments,
         },
-        "Maevv6RMC5TXA7COQ"         // Replace with EmailJS Public Key
+        "Maevv6RMC5TXA7COQ", // Replace with EmailJS Public Key
       );
 
       setSubmitted(true);
@@ -52,7 +52,6 @@ export default function Contact() {
         phone: "",
         comments: "",
       });
-
     } catch (err) {
       console.log("Email Error:", err);
       setError(true);
@@ -71,7 +70,6 @@ export default function Contact() {
       <div className="contact-page">
         <section className="contact-page__main section">
           <div className="container contact-page__main-inner">
-
             {/* LEFT INFO */}
             <div className="contact-page__info">
               <h3 className="contact-page__info-heading">Contact Address</h3>
@@ -99,7 +97,7 @@ export default function Contact() {
               <p className="contact-page__hours">
                 Monday to Saturday
                 <br />
-                09:30 am to 06:30 pm
+                09 am to 07 pm
               </p>
             </div>
 
@@ -110,19 +108,19 @@ export default function Contact() {
               </h2>
 
               <p className="contact-page__form-subtitle">
-                We operate in an industry built on trust. This can only be achieved
-                through communication and experience.
+                We operate in an industry built on trust. This can only be
+                achieved through communication and experience.
               </p>
 
               <p className="contact-page__form-cta">Request a Call Back!</p>
 
               {submitted ? (
                 <div className="contact-page__feedback contact-page__feedback--success">
-                  Thank you! We have received your request and will get back to you soon.
+                  Thank you! We have received your request and will get back to
+                  you soon.
                 </div>
               ) : (
                 <form className="contact-page__form" onSubmit={handleSubmit}>
-                  
                   <div className="contact-page__row">
                     <div className="contact-page__field">
                       <label>First Name</label>
@@ -180,11 +178,11 @@ export default function Contact() {
                       placeholder="Tell us about your project..."
                     />
                   </div>
-
-                  <p className="contact-page__response-note">
-                    We typically respond within 12 hours.
-                  </p>
-
+                  <div className="contact-page__response-note-wrap">
+                    <p className="contact-page__response-note">
+                      We typically respond within 12 hours!!
+                    </p>
+                  </div>
                   <button
                     type="submit"
                     className="btn btn--primary contact-page__submit"
@@ -198,7 +196,6 @@ export default function Contact() {
                       Failed to send message. Please try again.
                     </p>
                   )}
-
                 </form>
               )}
             </div>
