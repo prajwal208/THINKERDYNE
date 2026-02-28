@@ -1,7 +1,5 @@
 import PageHero from "../components/PageHero";
-import { images } from "../constants/images";
 import imgWiringHarness from "../assets/wiringharness.jpg";
-import wiring from "../assets/wiring.png";
 import cableh from "../assets/cableh.jpg";
 import "./ServicePage.css";
 
@@ -25,7 +23,6 @@ export default function WiringHarness() {
       <PageHero
         title="Engineering Services:"
         serviceName="Wiring Harness"
-        backgroundImage={wiring}
       />
       <div className="service-page">
         <section className="section section--alt">

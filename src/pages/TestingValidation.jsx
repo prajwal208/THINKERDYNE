@@ -1,6 +1,4 @@
 import PageHero from "../components/PageHero";
-import { images } from "../constants/images";
-import testing from "../assets/testing.png";
 import "./ServicePage.css";
 
 const TESTING_CAPABILITIES = [
@@ -38,7 +36,6 @@ export default function TestingValidation() {
       <PageHero
         title="Engineering Services:"
         serviceName="PCB Testing & Validation"
-        backgroundImage={testing}
       />
       <div className="service-page">
         <section className="section section--alt">

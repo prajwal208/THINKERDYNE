@@ -1,7 +1,12 @@
 .about-page__section .container {
   max-width: var(--container-max);
 }
-
+.about-page__pillars {
+  background: linear-gradient(180deg, #f8fafd 0%, #ffffff 30%, #f2f6fc 100%);
+}
+.aboutus_first_section {
+  background: #fff;
+}
 .about-page__section-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -252,9 +257,9 @@
 }
 
 /* Why Work With Thinkerdyne */
-/* .about-page__why-work {
-
-} */
+.about-page__why-work {
+  background-color: #fff !important;
+}
 
 .about-page__why-work-title {
   text-align: center;
@@ -344,7 +349,9 @@
 .about-page__strengths-list strong {
   color: var(--color-primary);
 }
-
+.about-page__infra {
+  background: linear-gradient(180deg, #f8fafd 0%, #ffffff 30%, #f2f6fc 100%);
+}
 /* Our Infrastructure */
 .about-page__infra-title {
   text-align: center;
@@ -387,7 +394,7 @@
   min-height: 280px;
   border-radius: 16px;
   border: 2px solid var(--color-primary-dark);
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,7 +474,7 @@
 
 .about-page__cta-title {
   color: var(--color-text);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -591,6 +598,7 @@
     text-align: center;
     padding: 2rem 1.5rem;
     gap: 1.5rem;
+    border: 2px solid yellow;
   }
 
   .about-page__pillar-icon-wrap {

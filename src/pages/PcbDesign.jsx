@@ -74,7 +74,6 @@ export default function PcbDesign() {
       <PageHero
         title="Engineering Services:"
         serviceName="PCB Design & Analysis"
-        backgroundImage={images.pcbDesign}
       />
       <div className="service-page">
         <section className="section section--alt">

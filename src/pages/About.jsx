@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import { images } from "../constants/images";
 import aboutUsImg from "../assets/aboutus.png";
-import engineeringTeamImg from "../assets/Engineeringteam.jpg";
-import electronicsLabImg from "../assets/Electronicslab.jpg";
+// import engineeringTeamImg from "../assets/Engineeringteam.jpg";
+// import electronicsLabImg from "../assets/Electronicslab.jpg";
 import aboutTeam from "../assets/aboutus.jpeg";
 import "./AboutPage.css";
 
@@ -54,7 +54,7 @@ export default function About() {
         backgroundImage={images.about}
       />
       <div className="about-page">
-        <section className="about-page__section section section--alt">
+        <section className="about-page__section section aboutus_first_section">
           <div className="container about-page__section-inner about-page__section-inner--expertise">
             <div className="about-page__img-wrap" aria-hidden="true">
               <img src={aboutUsImg} alt="" />
@@ -117,7 +117,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-page__section section section--alt about-page__why-work">
+        <section className="about-page__section section  about-page__why-work">
           <div className="container">
             <h2 className="about-page__h2 about-page__why-work-title">
               Why Work With Thinkerdyne

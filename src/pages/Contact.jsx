@@ -28,7 +28,7 @@ export default function Contact() {
       <PageHero
         title="CONTACT US"
         subtitle="Delivering reliable solutions backed by engineering expertise."
-        backgroundImage={images.contactBg}
+        backgroundImage={images.about}
       />
       <div className="contact-page">
         {/* <section className="contact-page__intro section section--alt">
@@ -52,7 +52,7 @@ export default function Contact() {
 
               <h3 className="contact-page__info-heading">Let's Talk</h3>
               <p className="contact-page__phones">
-                <a href="tel:+919677510113">+91  9620233838</a>
+                <a href="tel:+919677510113">+91 9620233838</a>
               </p>
 
               <h3 className="contact-page__info-heading">Email Us</h3>
@@ -148,7 +148,9 @@ export default function Contact() {
                   </div>
                   <div className="contact-page__response-note-wrap">
                     <p className="contact-page__response-note">
-                      We typically respond within 12 hours. Our experienced engineering team brings decades of combined expertise in hardware design, PCB development, and system integration.
+                      We typically respond within 12 hours. Our experienced
+                      engineering team brings decades of combined expertise in
+                      hardware design, PCB development, and system integration.
                     </p>
                   </div>
                   <button

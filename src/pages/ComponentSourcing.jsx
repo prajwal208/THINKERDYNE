@@ -1,5 +1,4 @@
 import PageHero from "../components/PageHero";
-import { images } from "../constants/images";
 import compo from "../assets/component.png";
 import "./ServicePage.css";
 
@@ -18,7 +17,6 @@ export default function ComponentSourcing() {
       <PageHero
         title="Engineering Services:"
         serviceName="Component Sourcing"
-        backgroundImage={images.aboutSection}
       />
       <div className="service-page">
         <section className="section section--alt">

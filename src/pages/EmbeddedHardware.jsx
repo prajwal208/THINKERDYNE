@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
-import { images } from "../constants/images";
 import imgEmbeddedHardware from "../assets/homecore_hardware.png";
 import "./ServicePage.css";
 
@@ -58,7 +57,6 @@ export default function EmbeddedHardware() {
       <PageHero
         title="Engineering Services:"
         serviceName="Hardware Design"
-        backgroundImage={images.pcbDesign}
       />
       <div className="service-page">
         <section className="section section--alt">

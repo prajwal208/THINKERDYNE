@@ -1,7 +1,5 @@
 import PageHero from "../components/PageHero";
-import { images } from "../constants/images";
 import imgReverseEngineering from "../assets/reverse_engineering.jpg";
-import revb from "../assets/revb.png";
 import "./ServicePage.css";
 import rvp from "../assets/rvp.jpg";
 
@@ -29,7 +27,6 @@ export default function ReverseEngineering() {
       <PageHero
         title="Engineering Services:"
         serviceName="Reverse Engineering"
-        backgroundImage={revb}
       />
       <div className="service-page">
         <section className="section section--alt">

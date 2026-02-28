@@ -39,7 +39,6 @@ export default function FabricationAssembly() {
       <PageHero
         title="Engineering Services:"
         serviceName="PCB Fabrication & Assembly"
-        backgroundImage={images.manufacturing}
       />
       <div className="service-page">
         <section className="section section--alt">

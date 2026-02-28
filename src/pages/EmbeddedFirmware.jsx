@@ -1,5 +1,4 @@
 import PageHero from "../components/PageHero";
-import { images } from "../constants/images";
 import imgEmbeddedFirmware from "../assets/firmwre.jpg";
 import "./ServicePage.css";
 
@@ -38,7 +37,6 @@ export default function EmbeddedFirmware() {
       <PageHero
         title="Engineering Services:"
         serviceName="Firmware Development"
-        backgroundImage={images.pcbAnalysis}
       />
       <div className="service-page">
         <section className="section section--alt">
