@@ -11,7 +11,11 @@
 .page-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10, 61, 138, 0.9) 0%, rgba(13, 71, 161, 0.82) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(10, 61, 138, 0.9) 0%,
+    rgba(13, 71, 161, 0.82) 100%
+  );
 }
 
 .page-hero__content {
@@ -36,5 +40,5 @@
   margin: 0.75rem 0 0;
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.125rem;
-  max-width: 600px;
+  max-width: 700px;
 }
