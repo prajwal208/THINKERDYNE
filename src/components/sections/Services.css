@@ -30,7 +30,7 @@
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
   padding-top: 2rem;
-  padding-bottom: var(--section-padding-y);
+  /* padding-bottom: var(--section-padding-y); */
 }
 
 .services__header-wrap {

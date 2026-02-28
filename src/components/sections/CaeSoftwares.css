@@ -97,6 +97,7 @@
 
 .cae-softwares__logo-text {
   display: block;
+  white-space: noWrap;
 }
 
 @media (max-width: 767px) {

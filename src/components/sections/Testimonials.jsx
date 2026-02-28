@@ -8,7 +8,7 @@ import "./Testimonials.css";
 const TESTIMONIALS = [
   {
     name: "Arindam Ghosh",
-    role: "Client",
+    role: "Founder",
     text: "Extremely professional and talent team. We rely on this team completely for PCB services. Our design included an auto grade camera FPDlink module and quad core ARM processor based edge computing unit. It was a first pass success, thanks to this team. Would highly recommend.",
     rating: 5,
     initial: "AR",
@@ -16,7 +16,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Sathish Kumar",
-    role: "Verified User in Consulting · Owner at Small-Business (50 or fewer emp.)",
+    role: "Senior Manager Hardwared development",
     text: "Expert in multi-layer Hi Speed mixed signal PCB design and providing turnkey product service with end-to-end tech.",
     rating: 5,
     initial: "C",
