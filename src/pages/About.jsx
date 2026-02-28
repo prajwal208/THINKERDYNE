@@ -190,10 +190,10 @@ export default function About() {
                     alt=""
                     className="about-page__infra-img"
                   />
-                  <p className="about-page__infra-caption">
+                  {/* <p className="about-page__infra-caption">
                     Our experienced engineering team brings decades of combined
                     expertise in hardware design, PCB development.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="about-page__infra-col">
@@ -204,10 +204,10 @@ export default function About() {
                     alt=""
                     className="about-page__infra-img"
                   />
-                  <p className="about-page__infra-caption">
+                  {/* <p className="about-page__infra-caption">
                     State-of-the-art electronics lab equipped for prototyping,
                     testing, and validation of electronic designs and products.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
