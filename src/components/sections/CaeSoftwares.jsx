@@ -2,11 +2,13 @@ import { useRef } from 'react';
 import { useFadeInUp } from '../../hooks/useScrollAnimation';
 import altiumLogo from "../../assets/altium_logo.png";
 import kicadLogo from "../../assets/kicad_logo.png";
+import cadence from "../../assets/candence.jpeg"
 import "./CaeSoftwares.css";
 
 const CAE_LOGOS = [
   { name: "Altium Designer", src: altiumLogo },
   { name: "KiCad", src: kicadLogo },
+  { name: "Cadence",src:cadence}
 ];
 
 export default function CaeSoftwares() {

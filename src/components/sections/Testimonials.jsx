@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import {
   useFadeInUp,
   useStaggerChildren,
@@ -24,33 +23,33 @@ const TESTIMONIALS = [
     platform: "G",
   },
   {
-    name: "Feraud O.",
+    name: "Mahesh",
     role: "Engineering Lead",
-    text: "Professional team with deep expertise in signal integrity and power design. Our go-to partner for critical electronics projects. Delivery has always been on time with clear communication throughout.",
+    text: "Thinkerdyne Technologies has provided excellent PCB design services. Their team is easy to work with, responsive, and highly professional. They handle design changes and modifications efficiently, making the entire process smooth and hassle-free.",
     rating: 5,
     initial: "FO",
     platform: "G",
   },
   {
-    name: "Daniel Armendariz",
+    name: "Kaws Patsha",
     role: "Technical Director",
-    text: "We have partnered with Thinkerdyne for embedded hardware and firmware development. Their engineering approach and quality of deliverables are excellent. Strong recommendation for complex product development.",
+    text: "Very happy with the support, Team is very friendly and deliver the projects on time with quality, really appreciate the team.",
     rating: 5,
     initial: "DA",
     platform: null,
   },
   {
-    name: "Ajay Sahoo",
+    name: "Thangapandi Arumugam",
     role: "Product Manager",
-    text: "Thinkerdyne delivered our PCB fabrication and assembly project with great attention to detail. The team was responsive and the final boards met all our specifications. We will use them again for future builds.",
+    text: "Thinkerdyne providing pcb design and development solutions for turnkey and service requirements.Very talented team of engineers with deep technical expertise, strong understanding of design concepts and tools, and commitment to quality with on time delivery.",
     rating: 5,
     initial: "AS",
     platform: "P",
   },
-   {
-    name: "Ajay Sahoo",
+  {
+    name: "Dhanasekar C",
     role: "Product Manager",
-    text: "Thinkerdyne delivered our PCB fabrication and assembly project with great attention to detail. The team was responsive and the final boards met all our specifications. We will use them again for future builds.",
+    text: "Strongly Recommended PCB Design Partner We’ve had an excellent experience working with Thinkerdyne for PCB design and development solutions—both turnkey and service requirements.",
     rating: 5,
     initial: "AS",
     platform: "P",
@@ -60,8 +59,11 @@ const TESTIMONIALS = [
 function TestimonialCard({ t, isExpanded, onToggle }) {
   const truncateLength = 120;
   const isLong = t.text.length > truncateLength;
+
   const displayText =
-    isExpanded || !isLong ? t.text : t.text.slice(0, truncateLength) + "...";
+    isExpanded || !isLong
+      ? t.text
+      : t.text.slice(0, truncateLength) + "...";
 
   return (
     <div className="testimonials__card">
@@ -70,27 +72,33 @@ function TestimonialCard({ t, isExpanded, onToggle }) {
           {t.platform}
         </span>
       )}
+
       <div className="testimonials__card-body">
         <div className="testimonials__card-header">
           <div className="testimonials__avatar" aria-hidden="true">
             <span>{t.initial}</span>
           </div>
+
           <div className="testimonials__card-meta">
             <p className="testimonials__card-name">{t.name}</p>
             <p className="testimonials__card-role">{t.role}</p>
           </div>
         </div>
+
         <div
           className="testimonials__card-rating"
           aria-label={`${t.rating} out of 5 stars`}
         >
           {Array.from({ length: t.rating }).map((_, i) => (
-            <span key={i} className="testimonials__star" aria-hidden="true">
+            <span key={i} className="testimonials__star">
               ★
             </span>
           ))}
         </div>
+
         <p className="testimonials__card-text">"{displayText}"</p>
+
+        {/* Optional Read More */}
         {/* {isLong && (
           <button
             type="button"
@@ -107,9 +115,12 @@ function TestimonialCard({ t, isExpanded, onToggle }) {
 
 export default function Testimonials() {
   const [expandedId, setExpandedId] = useState(null);
+
   const headerRef = useRef(null);
   const gridRef = useRef(null);
+
   useFadeInUp({ ref: headerRef });
+
   useStaggerChildren({
     containerRef: gridRef,
     selector: ".testimonials__card",
@@ -119,24 +130,27 @@ export default function Testimonials() {
     <section id="testimonials" className="testimonials section section--alt">
       <div className="container">
         <div className="testimonials__header" ref={headerRef}>
-          <h2 className="testimonials__title">Reviews</h2>
-          <p className="testimonials__subtitle">
+          <h2 className="testimonials__title">
             What our clients say about us
-          </p>
+          </h2>
         </div>
+
         <div className="testimonials__grid" ref={gridRef}>
-          {TESTIMONIALS.map((t) => (
-            <TestimonialCard
-              key={t.name + t.role}
-              t={t}
-              isExpanded={expandedId === t.name + t.role}
-              onToggle={() =>
-                setExpandedId((prev) =>
-                  prev === t.name + t.role ? null : t.name + t.role,
-                )
-              }
-            />
-          ))}
+          {/* Limit to only 6 cards */}
+          {TESTIMONIALS.slice(0, 6).map((t) => {
+            const id = t.name + t.role;
+
+            return (
+              <TestimonialCard
+                key={id}
+                t={t}
+                isExpanded={expandedId === id}
+                onToggle={() =>
+                  setExpandedId((prev) => (prev === id ? null : id))
+                }
+              />
+            );
+          })}
         </div>
       </div>
     </section>

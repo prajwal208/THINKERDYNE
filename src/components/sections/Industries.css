@@ -65,7 +65,7 @@
 .industries__item {
   position: relative;
   width: 100%;
-  min-height: 220px;
+  min-height: 200px;
   flex-shrink: 0;
   border-radius: 14px;
   overflow: hidden;

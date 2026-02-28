@@ -77,7 +77,7 @@
 }
 
 .why__card {
-  padding: 2rem 1.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   background: linear-gradient(
     165deg,
@@ -94,6 +94,7 @@
     0 0 0 1px rgba(13, 71, 161, 0.06);
   position: relative;
   overflow: hidden;
+  height: 200px;
 }
 
 .why__card:hover {
@@ -121,6 +122,7 @@
 }
 
 .why__card-title {
+  font-size:1.1rem !important;
   margin-bottom: 0.5rem;
 }
 .why__icon {
@@ -151,7 +153,7 @@
 
 .why__card-desc {
   margin-bottom: 0;
-  font-size: var(--text-small);
+  font-size: 0.75rem;
   flex-grow: 1;
 }
 

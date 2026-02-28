@@ -67,7 +67,7 @@ export default function Hero() {
       </div>
       <ParticleBackground />
       <ParticleBackground />
-      <div className="hero__graphics" aria-hidden="true" />
+      {/* <div className="hero__graphics" aria-hidden="true" /> */}
       <div className="hero__graphics_right" aria-hidden="true" />
       <div className=" hero__container">
         <h1 className="hero__title" ref={titleRef}>
