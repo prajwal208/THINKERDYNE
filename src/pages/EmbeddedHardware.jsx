@@ -54,10 +54,7 @@ const APPLICATIONS = [
 export default function EmbeddedHardware() {
   return (
     <>
-      <PageHero
-        title="Engineering Services:"
-        serviceName="Hardware Design"
-      />
+      <PageHero title="Engineering Services:" serviceName="Hardware Design" />
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
@@ -72,10 +69,10 @@ export default function EmbeddedHardware() {
                     className="service-page__lead"
                     style={{ maxWidth: "100%" }}
                   >
-                    Thinkerdyne Technologies delivers advanced hardware design
-                    solutions for embedded and electronic systems. We specialize
-                    in developing processor-based hardware platforms that meet
-                    demanding requirements for performance, reliability, and
+                    Thinkerdyne delivers advanced hardware design solutions for
+                    embedded and electronic systems. We specialize in developing
+                    processor-based hardware platforms that meet demanding
+                    requirements for performance, reliability, and
                     manufacturability.
                   </p>
                   <p

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { routes, serviceRoutes } from "../constants/images";
 import "./Navbar.css";
+import thinkerdynelogo from "../assets/tlogo.jpeg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Navbar() {
       <div className="navbar__inner">
         <Link to={routes.home} className="navbar__brand" onClick={closeMenu}>
           <img
-            src="/thinkerdyne-logo.png"
+            src={thinkerdynelogo}
             alt="THINKERDYNE"
             className="navbar__logo-img"
           />

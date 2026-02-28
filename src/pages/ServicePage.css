@@ -2,6 +2,24 @@
   margin-bottom: 1rem;
 }
 
+.service-page__section-title {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.service-page__section-title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  margin: 0.5rem 0 0;
+  border-radius: 2px;
+}
+
 .service-page__h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;

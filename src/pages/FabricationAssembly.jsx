@@ -19,7 +19,6 @@ const ASSEMBLY_SUPPORT = [
   "BOM verification and component readiness coordination for efficient assembly",
   "Preparation and validation of Pick and Place data and assembly documentation",
   "Support for assembly of fine-pitch and high-density PCB designs",
-  "Support for assembly of fine-pitch and high-density PCB designs",
   "Assembly support to ensure reliable and production-ready PCB boards",
 ];
 
@@ -41,6 +40,7 @@ export default function FabricationAssembly() {
         serviceName="PCB Fabrication & Assembly"
       />
       <div className="service-page">
+        {/* Intro */}
         <section className="section section--alt">
           <div className="container">
             <div className="service-page__panel">
@@ -64,49 +64,70 @@ export default function FabricationAssembly() {
                 functionality, helping extend product lifecycle and ensure
                 manufacturing reliability.
               </p>
-
-              <h3
-                className="service-page__h3"
-                style={{ color: "var(--color-text)", marginTop: "1.25rem" }}
-              >
-                PCB Fabrication Support
-              </h3>
-              <ul className="service-page__arrowlist">
-                {FABRICATION_SUPPORT.map((i) => (
-                  <li key={i}>{i}</li>
-                ))}
-              </ul>
             </div>
           </div>
         </section>
 
+        {/* Section 1: Fabrication */}
         <section className="section">
           <div className="container">
+            <h2 className="service-page__section-title">PCB Fabrication</h2>
             <div className="service-page__split">
               <div className="service-page__media">
-                <img src={images.assembly} alt="PCB fabrication and assembly" />
+                <img src={images.pcbFabricationService} alt="PCB fabrication" />
               </div>
               <div className="service-page__panel">
-                <h3
-                  className="service-page__h3"
-                  style={{ color: "var(--color-text)", marginTop: 0 }}
-                >
-                  PCB Assembly Support
-                </h3>
+                <p className="service-page__lead" style={{ maxWidth: "100%", marginBottom: "1.25rem" }}>
+                  We support PCB fabrication through qualified manufacturing partners,
+                  from prototype to production, with focus on quality, compliance,
+                  and manufacturability.
+                </p>
+                <ul className="service-page__arrowlist">
+                  {FABRICATION_SUPPORT.map((i) => (
+                    <li key={i}>{i}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 2: Assembly */}
+        <section className="section section--alt">
+          <div className="container">
+            <h2 className="service-page__section-title">PCB Assembly</h2>
+            <div className="service-page__split">
+              <div className="service-page__media">
+                <img src={images.assembly} alt="PCB assembly" />
+              </div>
+              <div className="service-page__panel">
+                <p className="service-page__lead" style={{ maxWidth: "100%", marginBottom: "1.25rem" }}>
+                  Our assembly support covers SMT, through-hole, and mixed-technology
+                  builds with trusted vendors for prototype and volume manufacturing.
+                </p>
                 <ul className="service-page__arrowlist">
                   {ASSEMBLY_SUPPORT.map((i) => (
                     <li key={i}>{i}</li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <div style={{ height: "1rem" }} />
-
-                <h3
-                  className="service-page__h3"
-                  style={{ color: "var(--color-text)", marginTop: 0 }}
-                >
-                  PCB Rework
-                </h3>
+        {/* Section 3: PCB Rework */}
+        <section className="section">
+          <div className="container">
+            <h2 className="service-page__section-title">PCB Rework</h2>
+            <div className="service-page__split">
+              <div className="service-page__media">
+                <img src={images.manufacturingDocs} alt="PCB rework" />
+              </div>
+              <div className="service-page__panel">
+                <p className="service-page__lead" style={{ maxWidth: "100%", marginBottom: "1.25rem" }}>
+                  We provide rework and modification support to correct defects,
+                  implement design changes, and restore functionality of PCB assemblies.
+                </p>
                 <ul className="service-page__arrowlist">
                   {PCB_REWORK.map((i) => (
                     <li key={i}>{i}</li>

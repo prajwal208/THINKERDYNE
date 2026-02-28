@@ -54,9 +54,9 @@ export default function EmbeddedFirmware() {
                     className="service-page__lead"
                     style={{ maxWidth: "100%" }}
                   >
-                    At THINKERDYNE Technologies, we develop high-performance
-                    embedded firmware that enables precise hardware control,
-                    reliable system operation, and seamless integration between
+                    At Thinkerdyne, we develop high-performance embedded
+                    firmware that enables precise hardware control, reliable
+                    system operation, and seamless integration between
                     processors, peripherals, and communication interfaces. Our
                     firmware is designed for stability, scalability, and
                     production readiness, supporting both prototype validation

@@ -598,7 +598,6 @@
     text-align: center;
     padding: 2rem 1.5rem;
     gap: 1.5rem;
-    border: 2px solid yellow;
   }
 
   .about-page__pillar-icon-wrap {
@@ -622,5 +621,16 @@
 
   .about-page__find-visual {
     order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page__infra-frame--img {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    min-height: 280px;
+    /* width: 100%; */
+    aspect-ratio: 0/0;
   }
 }

@@ -44,9 +44,10 @@ export default function Contact() {
             <div className="contact-page__info">
               <h3 className="contact-page__info-heading">Contact Address</h3>
               <p className="contact-page__address">
-                THINKERDYNE TECHNOLOGIES PRIVATE LIMITED
+                <span>THINKERDYNE TECHNOLOGIES PRIVATE LIMITED</span>
                 <br />
-                No 59, 60, NL Arcade, Second Main, Vinayaka Layout, Shanthipura,
+                No 59, 60, NL Arcade, Second Main, Vinayaka Layout,Shanthipura,
+                <br />
                 Electronic City, Phase II, Bengaluru, Karnataka, India – 560100.
               </p>
 
@@ -148,9 +149,7 @@ export default function Contact() {
                   </div>
                   <div className="contact-page__response-note-wrap">
                     <p className="contact-page__response-note">
-                      We typically respond within 12 hours. Our experienced
-                      engineering team brings decades of combined expertise in
-                      hardware design, PCB development, and system integration.
+                      We typically respond within 12 hours.
                     </p>
                   </div>
                   <button
