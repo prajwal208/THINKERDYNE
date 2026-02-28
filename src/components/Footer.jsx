@@ -52,7 +52,8 @@ export default function Footer() {
                   <circle cx="12" cy="10" r="3" />
                 </svg>
               </span>
-              THINKERDYNE TECHNOLOGIES NO: 59,60, NL ARCADE, SECOND MAIN,
+              THINKERDYNE TECHNOLOGIES PRIVATE LIMITED<br></br>
+              NO: 59,60, NL ARCADE, SECOND MAIN,
               VINAYAKA LAYOUT, SHANTHIPURA ELECTRONIC CITY, PHASE II, BANGALORE,
               KARNATAKA. 560100
             </p>
@@ -74,7 +75,7 @@ export default function Footer() {
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </span>
-              <a href="tel:+919677510113">+91  9620233838</a>
+              <a href="tel:+919677510113" style={{fontSize:"15px"}}>+91  9620233838</a>
             </p>
             <p className="footer__line">
               <span
@@ -95,9 +96,9 @@ export default function Footer() {
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
               </span>
-              <a href="mailto:info@thinkerdyne.com">info@thinkerdyne.com</a>
+              <a href="mailto:info@thinkerdyne.com" style={{fontSize:"15px"}}>info@thinkerdyne.com</a>
             </p>
-             <p className="footer__line">© THINKERDYNE, All Right Reserved.</p>
+             
           </address>
         </div>
         <div className="footer__col footer__core-services">
@@ -145,7 +146,12 @@ export default function Footer() {
             ))}
           </ul>
         </div>
+
+        
       </div>
+      <div style={{textAlign:"center",width:"100%"}}>
+        <p style={{textAlign:"center",color:"#fff"}}>© THINKERDYNE, All Right Reserved.</p>
+        </div>
       {/* <div className="footer__bottom">
         <div className="footer__bottom-inner">
           <Link to={routes.home} className="footer__logo-link" aria-label="THINKERDYNE Home">

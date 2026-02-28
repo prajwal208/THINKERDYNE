@@ -66,7 +66,9 @@ export default function Hero() {
         <img src={bg} alt="image" className="hero__video"/>
       </div>
       <ParticleBackground />
+      <ParticleBackground />
       <div className="hero__graphics" aria-hidden="true" />
+      <div className="hero__graphics_right" aria-hidden="true" />
       <div className=" hero__container">
         <h1 className="hero__title" ref={titleRef}>
           <span className="hero__title-line">

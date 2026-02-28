@@ -1,10 +1,5 @@
 .cta-project {
-  background: linear-gradient(
-    135deg,
-    rgba(13, 71, 161, 0.06) 0%,
-    rgba(21, 101, 192, 0.08) 50%,
-    rgba(13, 71, 161, 0.04) 100%
-  );
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafd 50%, #f2f6fc 100%);
   position: relative;
 }
 
