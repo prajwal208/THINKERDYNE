@@ -5,7 +5,7 @@
     #f8fafd 50%,
     #f2f6fc 100%
   );
-  padding: var(--section-padding-y) var(--container-padding);
+  padding: 2rem;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;

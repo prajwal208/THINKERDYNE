@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import heroVideo from "../../assets/6466100-uhd_3840_2160_30fps.mp4";
 import ParticleBackground from "../ParticleBackground";
+import bg from "../../assets/bghome1.jpeg"
 import "./Hero.css";
 
 const prefersReducedMotion = () =>
@@ -53,7 +54,7 @@ export default function Hero() {
   return (
     <section id="hero" className="hero section section--lg">
       <div className="hero__video-wrap" aria-hidden="true">
-        <video
+        {/* <video
           className="hero__video"
           src={heroVideo}
           autoPlay
@@ -61,7 +62,8 @@ export default function Hero() {
           loop
           playsInline
           tabIndex={-1}
-        />
+        /> */}
+        <img src={bg} alt="image" className="hero__video"/>
       </div>
       <ParticleBackground />
       <div className="hero__graphics" aria-hidden="true" />

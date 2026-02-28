@@ -97,10 +97,11 @@ export default function Footer() {
               </span>
               <a href="mailto:info@thinkerdyne.com">info@thinkerdyne.com</a>
             </p>
+             <p className="footer__line">© THINKERDYNE, All Right Reserved.</p>
           </address>
         </div>
         <div className="footer__col footer__core-services">
-          <h3 className="footer__heading">Core Services</h3>
+          <h3 className="footer__heading_service">Core Services</h3>
           <div className="footer__core-services-grid">
             <div className="footer__core-services-col">
               <h4 className="footer__subheading">
@@ -145,13 +146,13 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="footer__bottom">
+      {/* <div className="footer__bottom">
         <div className="footer__bottom-inner">
           <Link to={routes.home} className="footer__logo-link" aria-label="THINKERDYNE Home">
             <img src="/thinkerdyne-logo.png" alt="" className="footer__logo-img" />
           </Link>
           <p className="footer__copy">© THINKERDYNE, All Right Reserved.</p>
-          {/* <div className="footer__socials">
+          <div className="footer__socials">
             <a
               href="https://www.linkedin.com/company/thinkerdyne"
               target="_blank"
@@ -161,9 +162,9 @@ export default function Footer() {
             >
               LINKEDIN
             </a>
-          </div> */}
+          </div>
         </div>
-      </div>
+      </div> */}
       {showScrollTop && (
         <button
           type="button"

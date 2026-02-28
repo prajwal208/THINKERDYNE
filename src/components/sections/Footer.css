@@ -73,6 +73,16 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
+.footer__heading_service {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
 .footer__heading::after {
   content: "";
   display: block;
