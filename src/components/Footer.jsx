@@ -12,7 +12,7 @@ const QUICK_LINKS = [
   { label: "ABOUT US", to: "/about" },
   { label: "ENGINEERING SERVICES", to: routes.home },
   { label: "CONTACT US", to: "/contact" },
-   { label: "LINKEDIN", to: "https://www.linkedin.com/company/thinkerdyne", external: true },
+   { label: "LINKEDIN", to: "https://www.linkedin.com/company/thinkerdynetechnologies/?viewAsMember=true", external: true },
 ];
 
 export default function Footer() {
