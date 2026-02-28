@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#044364"/>
+  <!-- T: top bar 8-24, stem 12-20 -->
+  <path fill="#fff" d="M8 8h16v2.5h-5.5V24h-5V10.5H8V8z"/>
+</svg>
