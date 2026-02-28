@@ -150,7 +150,7 @@ export default function Footer() {
         
       </div>
       <div style={{textAlign:"center",width:"100%"}}>
-        <p style={{textAlign:"center",color:"#fff"}}>© THINKERDYNE, All Right Reserved.</p>
+        <p style={{textAlign:"center",color:"#d6d1d1",fontSize:"14px"}}>© THINKERDYNE, All Right Reserved.</p>
         </div>
       {/* <div className="footer__bottom">
         <div className="footer__bottom-inner">
