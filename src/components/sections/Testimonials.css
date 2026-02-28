@@ -68,6 +68,7 @@
     0 2px 8px rgba(26, 35, 50, 0.04),
     0 8px 24px rgba(26, 35, 50, 0.06),
     0 0 0 1px rgba(4, 67, 100, 0.05);
+    
   transition: box-shadow var(--transition-base), transform var(--transition-base);
 }
 

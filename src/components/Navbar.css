@@ -348,13 +348,13 @@
 }
 
 .navbar__inner {
-  padding: 0 8rem; /* large desktop */
+  padding: 0 5rem; /* large desktop */
 }
 
 /* Large laptop */
 @media (max-width: 1400px) {
   .navbar__inner {
-    padding: 0 8rem;
+    padding: 0 5rem;
   }
 }
 
