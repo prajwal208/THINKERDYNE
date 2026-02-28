@@ -4,6 +4,7 @@ import {
   useStaggerChildren,
 } from "../../hooks/useScrollAnimation";
 import "./Testimonials.css";
+import reviewimg from "../../assets/review.jpeg"
 
 const TESTIMONIALS = [
   {
@@ -13,6 +14,7 @@ const TESTIMONIALS = [
     rating: 5,
     initial: "AG",
     // platform: "G",
+    icon:reviewimg
   },
   {
     name: "Sathish Kumar",
@@ -21,6 +23,7 @@ const TESTIMONIALS = [
     rating: 5,
     initial: "SK",
     // platform: "G",
+    icon:reviewimg
   },
   {
     name: "Mahesh",
@@ -28,6 +31,7 @@ const TESTIMONIALS = [
     text: "Thinkerdyne Technologies has provided excellent PCB design services. Their team is easy to work with, responsive, and highly professional. They handle design changes and modifications efficiently, making the entire process smooth and hassle-free.",
     rating: 5,
     initial: "MT",
+    icon:reviewimg
     // platform: "G",
   },
   {
@@ -36,22 +40,27 @@ const TESTIMONIALS = [
     text: "Very happy with the support, Team is very friendly and deliver the projects on time with quality, really appreciate the team.",
     rating: 5,
     initial: "KP",
+    icon:reviewimg
     // platform: null,
   },
   {
     name: "Thangapandi Arumugam",
     role: "Product Manager",
-    text: "Thinkerdyne providing pcb design and development solutions for turnkey and service requirements.Very talented team of engineers with deep technical expertise, strong understanding of design concepts and tools, and commitment to quality with on time delivery.",
+    text: "Thinkerdyne providing pcb design and development solutions for turnkey and service requirements.",
+    // Very talented team of engineers with deep technical expertise, strong understanding of design concepts and tools, and commitment to quality with on time delivery
     rating: 5,
     initial: "TA",
+    icon:reviewimg
     // platform: "P",
   },
   {
     name: "Dhanasekar C",
     role: "Product Manager",
-    text: "Strongly Recommended PCB Design Partner We’ve had an excellent experience working with Thinkerdyne for PCB design and development solutions—both turnkey and service requirements.",
+    text: "Strongly Recommended PCB Design Partner We’ve had an excellent experience working with Thinkerdyne",
+    //  for PCB design and development solutions—both turnkey and service requirements.
     rating: 5,
     initial: "DC",
+    icon:reviewimg
     // platform: "P",
   },
 ];
@@ -67,9 +76,12 @@ function TestimonialCard({ t, isExpanded, onToggle }) {
 
   return (
     <div className="testimonials__card">
-      {t.platform && (
-        <span className="testimonials__card-platform" aria-hidden="true">
-          {t.platform}
+      {!t.platform && (
+        // <span className="testimonials__card-platform" aria-hidden="true">
+        //   {t.platform}
+        // </span>
+        <span style={{position:"absolute",right:0,top:"0.6rem"}}>
+        <img src={t.icon} alt="" width={50} height={50}/>
         </span>
       )}
 
@@ -127,7 +139,7 @@ export default function Testimonials() {
   });
 
   return (
-    <section id="testimonials" className="testimonials section section--alt">
+  <section id="testimonials" className="testimonials section section--alt">
       <div className="container">
         <div className="testimonials__header" ref={headerRef}>
           <h2 className="testimonials__title">
@@ -136,20 +148,10 @@ export default function Testimonials() {
         </div>
 
         <div className="testimonials__grid" ref={gridRef}>
-          {/* Limit to only 6 cards */}
           {TESTIMONIALS.slice(0, 6).map((t) => {
             const id = t.name + t.role;
 
-            return (
-              <TestimonialCard
-                key={id}
-                t={t}
-                isExpanded={expandedId === id}
-                onToggle={() =>
-                  setExpandedId((prev) => (prev === id ? null : id))
-                }
-              />
-            );
+            return <TestimonialCard key={id} t={t} />;
           })}
         </div>
       </div>
