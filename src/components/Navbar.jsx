@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__inner">
-        <Link to={routes.home} className="navbar__brand" onClick={closeMenu}>
+        <Link to={"/"} className="navbar__brand" onClick={closeMenu}>
           <img
             src={thinkerdynelogo}
             alt="THINKERDYNE"
