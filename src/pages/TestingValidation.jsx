@@ -1,4 +1,5 @@
 import PageHero from "../components/PageHero";
+import testValideImg from "../assets/test_valide.jpeg";
 import "./ServicePage.css";
 
 const TESTING_CAPABILITIES = [
@@ -40,26 +41,31 @@ export default function TestingValidation() {
       <div className="service-page">
         <section className="section section--alt">
           <div className="container">
-            <div className="service-page__panel">
-              <h2 className="service-page__panel-title">
-                PCB Testing &amp; Validation
-              </h2>
-              <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                Thinkerdyne provides professional PCB testing and validation
-                services to ensure electronic assemblies meet functional,
-                electrical, and performance requirements with confidence. Our
-                engineering-driven testing approach verifies hardware
-                functionality, confirms design integrity, and identifies
-                potential issues early to ensure reliable and stable system
-                operation.
-              </p>
-              <p className="service-page__lead" style={{ maxWidth: "100%" }}>
-                We support validation throughout the product development
-                lifecycle, including hardware bring-up, prototype testing,
-                design verification, and pre-production readiness. This
-                structured process ensures every PCB is fully validated,
-                production-ready, and prepared for seamless system integration.
-              </p>
+            <div className="service-page__split">
+              <div className="service-page__media">
+                <img src={testValideImg} alt="PCB testing and validation" />
+              </div>
+              <div className="service-page__panel">
+                <h2 className="service-page__panel-title">
+                  PCB Testing &amp; Validation
+                </h2>
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  Thinkerdyne provides professional PCB testing and validation
+                  services to ensure electronic assemblies meet functional,
+                  electrical, and performance requirements with confidence. Our
+                  engineering-driven testing approach verifies hardware
+                  functionality, confirms design integrity, and identifies
+                  potential issues early to ensure reliable and stable system
+                  operation.
+                </p>
+                <p className="service-page__lead" style={{ maxWidth: "100%" }}>
+                  We support validation throughout the product development
+                  lifecycle, including hardware bring-up, prototype testing,
+                  design verification, and pre-production readiness. This
+                  structured process ensures every PCB is fully validated,
+                  production-ready, and prepared for seamless system integration.
+                </p>
+              </div>
             </div>
           </div>
         </section>
